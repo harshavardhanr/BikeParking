@@ -115,10 +115,16 @@ main {
   justify-content: center;
   transition: transform var(--transition-smooth);
 }
-.pin-inner svg {
-  width: 12px;
-  height: 12px;
-  fill: #ffffff;
+/* Bike icon image inside the marker pin. Source is 81x47, so we set
+   a fixed width and let height auto-scale to preserve aspect ratio.
+   The image sits centered inside the 24x24 .pin-inner circle. */
+.pin-inner img {
+  width: 18px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .custom-pin:hover .pin-inner {
@@ -418,57 +424,86 @@ search {
   box-shadow: var(--shadow-lg), 0 0 10px rgba(59, 130, 246, 0.3);
 }
 
-/* POP-OVER OVERLAYS (Native Top Layer API) */
+/* ============================================================================
+   PANELS — plain positioned <div>s controlled by an .is-open class.
+   We previously used the [popover] API, but iOS Safari's handling of the
+   top layer, @starting-style, and discrete transitions was unreliable
+   enough that marker taps sometimes left the panel in a stuck/half-shown
+   state. A plain div + class is simple, predictable, and works everywhere.
+   ============================================================================ */
 
-/* Base Overlay Panel Styling (Common details & directory) */
-.details-panel,
-.directory-panel {
-  /* Set popover defaults */
-  position: absolute;
-  z-index: 11;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  outline: none;
-  
-  /* Disable defaults of popover */
-  border: 1px solid var(--border-panel);
-  margin: 0;
-  
-  /* Top layer transitions setup */
+/* Shared backdrop. Sits above the map but below the panels. Tapping it
+   closes whichever panel is open. */
+.panel-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 50;
   opacity: 0;
-  transition-property: opacity, transform, display, overlay;
-  transition-duration: 0.35s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-behavior: allow-discrete;
+  /* Always click-through. Outside-tap dismissal is handled by a document
+     click listener (with target check) in app.js so the backdrop never
+     intercepts taps on markers, the panel itself, or other controls.
+     No backdrop-filter — keep the map sharp behind the dim overlay. */
+  pointer-events: none;
+  transition: opacity 0.25s ease;
 }
-
-/* Open states */
-.details-panel:popover-open,
-.directory-panel:popover-open {
+.panel-backdrop.is-open {
   opacity: 1;
 }
 
-/* Details Panel Placement & Dimensions */
+/* Base panel styles (closed state). The panel is always in the DOM; the
+   .is-open class controls visibility via opacity + transform. We use
+   `visibility: hidden` (not `display: none`) so the close animation can
+   play. visibility transition is delayed by the same duration on close so
+   the panel stays interactable until the slide-out finishes. */
+.details-panel,
+.directory-panel {
+  position: fixed;
+  z-index: 100;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  outline: none;
+  border: 1px solid var(--border-panel);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  /* Override the .glass-panel rules: no backdrop blur on the panel itself
+     (which would blur the map area underneath it), and a fully opaque
+     background so the map does not show through the translucent surface. */
+  background: rgb(var(--bg-panel-rgb));
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+}
+.details-panel.is-open,
+.directory-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+}
+
+/* Details panel (desktop): left-side, vertically centered.
+   Horizontal position is fixed at left: 30px. Vertical centering uses
+   top: 50% + a -50% translateY, with a small 20px offset for the
+   slide-in animation when .is-open is added. */
 .details-panel {
-  bottom: 30px;
+  top: 50%;
   left: 30px;
   width: 420px;
   max-height: 80vh;
-  transform: translateY(20px);
-  display: flex;
-  flex-direction: column;
+  transform: translate(0, calc(-50% + 20px));
+}
+.details-panel.is-open {
+  transform: translate(0, -50%);
 }
 
-.details-panel:popover-open {
-  transform: translateY(0);
-
-  @starting-style {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-
-/* Directory Panel Placement & Dimensions */
+/* Directory panel (desktop): right-side tall card */
 .directory-panel {
   top: 100px;
   right: 30px;
@@ -476,17 +511,9 @@ search {
   height: calc(100vh - 150px);
   max-height: 800px;
   transform: translateX(20px);
-  display: flex;
-  flex-direction: column;
 }
-
-.directory-panel:popover-open {
+.directory-panel.is-open {
   transform: translateX(0);
-
-  @starting-style {
-    opacity: 0;
-    transform: translateX(20px);
-  }
 }
 
 /* Panel Internals & Layouts */
@@ -649,8 +676,11 @@ search {
 
 /* Action button directions */
 .panel-actions {
-  margin-top: auto;
-  padding-top: 10px;
+  /* Sits inline between the parking-meta and the borough-policy card.
+     No auto-margin: previously it was pushed to the bottom of the
+     flex column when it was the last child of .panel-content. */
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .cta-button {
@@ -810,26 +840,20 @@ details::details-content {
 /* Reduced Motion Settings for UI Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .details-panel,
-  .directory-panel {
+  .directory-panel,
+  .panel-backdrop {
+    transition-duration: 0.05s !important;
+  }
+  .details-panel:not(.is-open),
+  .directory-panel:not(.is-open) {
     transform: none !important;
-    transition-duration: 0.1s;
   }
-  
-  .details-panel:popover-open,
-  .directory-panel:popover-open {
-    @starting-style {
-      transform: none !important;
-    }
-  }
-  
   .pin-inner, .floating-btn, .cta-button, summary::after {
     transition: none !important;
   }
-  
   .custom-pin:hover .pin-inner {
     transform: none;
   }
-  
   .user-location-inner {
     animation: none;
   }
@@ -837,7 +861,7 @@ details::details-content {
 
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN (Adaptive UX) */
 
-/* Tablet and Mobile adjustments */
+/* Tablet adjustments */
 @media (max-width: 992px) {
   .search-container {
     flex-direction: column;
@@ -865,82 +889,184 @@ details::details-content {
   }
   
   .leaflet-top.leaflet-left {
-    top: 155px; /* Push zoom control lower on tablet */
+    top: 155px;
   }
 
+  /* Directory panel: centered bottom overlay on tablet */
   .directory-panel {
     right: 50%;
-    transform: translateX(50%);
     width: 90%;
     max-width: 500px;
     height: 70vh;
     top: auto;
     bottom: 20px;
+    transform: translateX(50%) translateY(20px);
   }
-  
-  .directory-panel:popover-open {
+  .directory-panel.is-open {
     transform: translateX(50%) translateY(0);
-    @starting-style {
-      opacity: 0;
-      transform: translateX(50%) translateY(20px);
-    }
   }
 }
 
-/* Mobile Portrait Specifics */
+/* Mobile portrait – comprehensive overhaul */
 @media (max-width: 576px) {
+  /* --- Viewport --- */
+  /* dvh units adapt when the browser address bar shows/hides */
+  body, main {
+    height: 100dvh;
+  }
+
+  /* --- Search bar --- */
+  /* Hide the brand block to reclaim ~50px of vertical space */
+  .brand {
+    display: none;
+  }
+
   .search-container {
-    width: 92%;
-    top: 15px;
+    width: calc(100% - 24px);
+    top: 12px;
+    padding: 10px 14px;
+    gap: 8px;
   }
-  
+
+  .search-controls {
+    gap: 8px;
+  }
+
+  /*
+   * font-size: 1rem (16px) prevents iOS Safari from auto-zooming on focus.
+   * Fixed 44px height keeps every control on the same baseline (Apple/
+   * Android touch-target guideline) and stops the toggle-button label
+   * from wrapping to two lines on narrow phones.
+   */
+  #search-input,
+  #borough-filter,
+  .filter-toggle-btn {
+    font-size: 1rem;
+    height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Borough dropdown fills the row; toggle stays compact and one-line */
+  #borough-filter {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .filter-toggle-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* --- Leaflet zoom control --- */
+  /*
+   * Search bar height ≈ 10 + 44 + 8 + 44 + 10 = 116px, plus 12px top
+   * inset = ~128px to the bottom of the search bar. Add an 8px gap so
+   * the zoom buttons sit cleanly below the search bar.
+   */
   .leaflet-top.leaflet-left {
-    top: 165px;
+    top: 136px;
+    left: 12px;
   }
-  
+
+  /* --- Floating action buttons --- */
   .floating-controls {
-    bottom: 20px;
-    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    right: 16px;
+    gap: 10px;
   }
-  
+
+  /* Slightly larger tap targets for FABs on mobile */
+  .floating-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* --- Drag-handle indicator on bottom-sheet panels --- */
+  /* The panels are flex columns, so ::before becomes the topmost flex child */
+  .details-panel::before,
+  .directory-panel::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin: 10px auto 0;
+    align-self: center;
+    flex-shrink: 0;
+  }
+
+  /* --- Details panel: full-width bottom sheet on mobile --- */
   .details-panel {
     left: 0;
+    right: 0;
     bottom: 0;
-    width: 100vw;
-    max-height: 55vh;
+    top: auto;
+    width: 100%;
+    max-height: 72dvh;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     transform: translateY(100%);
     border-left: none;
     border-right: none;
     border-bottom: none;
   }
-  
-  .details-panel:popover-open {
+  .details-panel.is-open {
     transform: translateY(0);
-    @starting-style {
-      opacity: 0;
-      transform: translateY(100%);
-    }
   }
-  
+
+  /* --- Directory panel: full-width bottom sheet on mobile --- */
+  /* Override the tablet rule that translate-X centers a narrow card */
+  .directory-panel {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    max-width: none;
+    height: 78dvh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    transform: translateY(100%);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .directory-panel.is-open {
+    transform: translateY(0);
+  }
+
+  /* --- Panel internals --- */
+  /* Less top padding: the drag handle takes ~24px already */
   .panel-header {
-    padding: 16px 20px;
+    padding: 10px 20px 16px;
   }
-  
+
   .panel-content {
-    padding: 16px 20px 24px 20px;
-    gap: 16px;
+    padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+    gap: 14px;
   }
-  
+
+  .directory-content {
+    padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
   .parking-meta {
     gap: 8px;
   }
-  
+
   .meta-item {
-    padding: 8px;
+    padding: 10px 8px;
   }
-  
+
   .meta-value {
     font-size: 0.95rem;
+  }
+
+  /* Slightly larger CTA button for easier tapping */
+  .cta-button {
+    padding: 15px 20px;
+    font-size: 1rem;
   }
 }

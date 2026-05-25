@@ -244,6 +244,8 @@ let userLocationMarker = null;
 let userAccuracyCircle = null;
 let searchResultMarker = null;
 
+
+
 // Icons Definitions
 const locationIconSvg = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.82 2.82c-.41-.41-1.07-.41-1.48 0L9.5 10.66 4.66 5.82c-.41-.41-1.07-.41-1.48 0-.41.41-.41 1.07 0 1.48l5.59 5.59c.41.41 1.07.41 1.48 0l8.59-8.59c.41-.41.41-1.07 0-1.48z"/></svg>`;
 
@@ -253,14 +255,17 @@ function createMotorcycleMarkerIcon(feeStatus) {
   return L.divIcon({
     html: `
       <div class="pin-inner">
-        <svg viewBox="0 0 24 24">
-          <path d="M19 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-14 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm11.5-6h-3.8c-.8 0-1.5.5-1.7 1.3L9.6 12H7.2V9.6l1.3-1.3c.5-.5.5-1.3 0-1.8L7.2 5.2c-.5-.5-1.3-.5-1.8 0L4.1 6.5C3 7.6 2.5 9 2.5 10.5V12H1v2h2v1c0 1.1.9 2 2 2h1.5l1.1-1.1c.3.8 1.1 1.3 2 1.3h4c.9 0 1.7-.5 2-1.3L15 17h4.5c1.1 0 2-.9 2-2V13h1v-2h-3v-.7l1.7-2.6.3-.7V6z"/>
-        </svg>
+        <img src="Bike.png" alt="" draggable="false"
+             style="width:18px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
       </div>
     `,
     className: `custom-pin ${colorClass}`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12]
+    // Tap target is 44x44 (Apple HIG / Material Design minimum) but the
+    // visible pin (.pin-inner) is kept at 24x24 via flex-centering. This
+    // makes markers reliably tappable on phones — a 24px target leaves
+    // too much room to miss with a finger.
+    iconSize: [44, 44],
+    iconAnchor: [22, 22]
   });
 }
 
@@ -289,10 +294,9 @@ function initMap() {
   });
   map.addLayer(markerCluster);
 
-  // Handle map click to close panels (light-dismiss feel)
-  map.on('click', () => {
-    closeDetailsPanel();
-  });
+  // Panel dismissal is handled by the .panel-backdrop element's pointerdown
+  // listener (set up in setupListeners). No map.click handler here — that
+  // route was the source of the iOS "panel flashes closed" bug.
 }
 
 // 4. Load Data & Create Markers
@@ -334,47 +338,65 @@ function populateBoroughFilter() {
 // Render Markers onto the Map
 function renderParkingMarkers() {
   markerCluster.clearLayers();
-  
+
   filteredParkingSpots.forEach(spot => {
     if (!spot.lat || !spot.lng) return;
-    
+
     const marker = L.marker([spot.lat, spot.lng], {
-      icon: createMotorcycleMarkerIcon(spot.fee)
+      icon: createMotorcycleMarkerIcon(spot.fee),
+      // Hard-stop the click from bubbling to the underlying map handler,
+      // which would otherwise close the details panel right after we opened it.
+      bubblingMouseEvents: false
     });
-    
-    // Attach click handler
+
     marker.on('click', (e) => {
-      // Prevent propagation to map click (which closes panel)
+      // Stop propagation so the document-level click listener (which
+      // handles outside-tap dismiss) does not also fire and try to close
+      // the panel we are about to open/update.
       L.DomEvent.stopPropagation(e);
+      if (e.originalEvent && typeof e.originalEvent.stopPropagation === 'function') {
+        e.originalEvent.stopPropagation();
+      }
       showSpotDetails(spot);
-      map.setView([spot.lat, spot.lng], 17);
+      // Defer the zoom/pan so the panel transition starts cleanly first.
+      // Clamp the zoom to max(current, 16) so tapping a marker doesn't
+      // yank a zoomed-out user too aggressively.
+      setTimeout(() => {
+        const targetZoom = Math.max(map.getZoom(), 16);
+        map.setView([spot.lat, spot.lng], targetZoom);
+      }, 50);
     });
-    
+
     markerCluster.addLayer(marker);
   });
 }
 
 // 5. Filter Handler Logic
-function applyFilters() {
+//
+// `fitView` controls whether the map re-zooms to fit the filtered set:
+//   - true  : used when the borough filter changes (the user clearly wants
+//             the map to navigate to the new borough).
+//   - false : used for the "Free Only" toggle. Re-fitting on every toggle
+//             zooms the user out of the area they were inspecting, which is
+//             the opposite of what they want — they're trying to scan the
+//             *current* view for free spots.
+function applyFilters({ fitView = false } = {}) {
   const boroughValue = document.getElementById('borough-filter').value;
   const freeOnlyValue = document.getElementById('free-toggle-btn').getAttribute('aria-pressed') === 'true';
-  
+
   filteredParkingSpots = allParkingSpots.filter(spot => {
-    // Borough filter
     if (boroughValue && spot.borough !== boroughValue) {
       return false;
     }
-    // Free only filter
     if (freeOnlyValue && spot.fee !== 'no') {
       return false;
     }
     return true;
   });
-  
+
   renderParkingMarkers();
-  
-  // Zoom map to fit the filtered points if available
-  if (filteredParkingSpots.length > 0) {
+
+  if (fitView && filteredParkingSpots.length > 0) {
     const group = new L.featureGroup(
       filteredParkingSpots.map(spot => L.marker([spot.lat, spot.lng]))
     );
@@ -492,6 +514,13 @@ async function handleSearch(e) {
 
 // 8. Details Panel Drawer Control
 function showSpotDetails(spot) {
+  // Defensive: bail out if spot is missing or malformed. Better to keep the
+  // previously-shown content than to clear the panel to empty strings.
+  if (!spot || typeof spot !== 'object') {
+    console.warn('showSpotDetails called with invalid spot:', spot);
+    return;
+  }
+
   const panel = document.getElementById('details-panel');
   const badge = document.getElementById('details-badge');
   const streetName = document.getElementById('details-street');
@@ -501,12 +530,25 @@ function showSpotDetails(spot) {
   const policyDesc = document.getElementById('details-policy-desc');
   const policyHighlights = document.getElementById('details-policy-highlights');
   const directionsBtn = document.getElementById('directions-btn');
-  
-  // Populate standard details
-  streetName.textContent = spot.street;
-  boroughName.textContent = spot.borough;
-  capacity.textContent = spot.capacity ? `${spot.capacity} spaces` : 'Unknown';
-  
+
+  if (!panel || !badge || !streetName || !boroughName || !capacity ||
+      !price || !policyDesc || !policyHighlights || !directionsBtn) {
+    console.warn('showSpotDetails: one or more panel elements not found');
+    return;
+  }
+
+  // Populate standard details. Always use explicit string fallbacks so a
+  // missing field never renders as "" (which would look like the panel is
+  // broken). Empty string from `textContent = null/undefined` was the root
+  // cause of the "panel shows up with no data" bug on iOS.
+  const street  = (typeof spot.street  === 'string' && spot.street)  ? spot.street  : 'Solo Motorcycle Parking Bay';
+  const borough = (typeof spot.borough === 'string' && spot.borough) ? spot.borough : 'Unknown borough';
+  const capStr  = (spot.capacity != null && spot.capacity !== '') ? `${spot.capacity} spaces` : 'Unknown';
+
+  streetName.textContent = street;
+  boroughName.textContent = borough;
+  capacity.textContent = capStr;
+
   if (spot.fee === 'yes') {
     badge.textContent = 'Paid';
     badge.className = 'badge paid';
@@ -517,8 +559,8 @@ function showSpotDetails(spot) {
     price.textContent = 'Free Bay';
   }
   
-  // Populate borough regulations
-  const policy = BOROUGH_POLICIES[spot.borough];
+  // Populate borough regulations. Use the safe `borough` variable.
+  const policy = BOROUGH_POLICIES[borough];
   if (policy) {
     policyDesc.innerHTML = `<strong>Dedicated bays:</strong> ${policy.rules}<br><br><strong>Visitor Pricing:</strong> ${policy.pricing}`;
     
@@ -540,21 +582,34 @@ function showSpotDetails(spot) {
     policyHighlights.innerHTML = '';
   }
   
-  // Google Maps Directions link compilation
-  directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+  // Google Maps Directions link. Use defensive coords so we never produce
+  // a malformed URL even if lat/lng are missing.
+  const lat = (typeof spot.lat === 'number') ? spot.lat : '';
+  const lng = (typeof spot.lng === 'number') ? spot.lng : '';
+  directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   
-  // Show popover overlay natively
-  if (panel && typeof panel.showPopover === 'function') {
-    // Make sure other panels are hidden
-    closeDirectoryPanel();
-    panel.showPopover();
+  // Show the panel via .is-open class. Make sure other panels are hidden.
+  closeDirectoryPanel();
+  panel.classList.add('is-open');
+  panel.setAttribute('aria-hidden', 'false');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop) {
+    backdrop.classList.add('is-open');
+    backdrop.setAttribute('aria-hidden', 'false');
   }
 }
 
 function closeDetailsPanel() {
   const panel = document.getElementById('details-panel');
-  if (panel && typeof panel.hidePopover === 'function') {
-    panel.hidePopover();
+  if (!panel) return;
+  panel.classList.remove('is-open');
+  panel.setAttribute('aria-hidden', 'true');
+  // Hide the backdrop only if the directory panel is also closed.
+  const directory = document.getElementById('directory-panel');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop && (!directory || !directory.classList.contains('is-open'))) {
+    backdrop.classList.remove('is-open');
+    backdrop.setAttribute('aria-hidden', 'true');
   }
 }
 
@@ -592,22 +647,33 @@ function populateDirectory() {
 }
 
 function toggleDirectoryPanel(e) {
-  L.DomEvent.stopPropagation(e);
+  if (e) L.DomEvent.stopPropagation(e);
   const panel = document.getElementById('directory-panel');
-  if (panel && typeof panel.showPopover === 'function') {
-    if (panel.matches(':popover-open')) {
-      panel.hidePopover();
-    } else {
-      closeDetailsPanel();
-      panel.showPopover();
+  if (!panel) return;
+  if (panel.classList.contains('is-open')) {
+    closeDirectoryPanel();
+  } else {
+    closeDetailsPanel();
+    panel.classList.add('is-open');
+    panel.setAttribute('aria-hidden', 'false');
+    const backdrop = document.getElementById('panel-backdrop');
+    if (backdrop) {
+      backdrop.classList.add('is-open');
+      backdrop.setAttribute('aria-hidden', 'false');
     }
   }
 }
 
 function closeDirectoryPanel() {
   const panel = document.getElementById('directory-panel');
-  if (panel && typeof panel.hidePopover === 'function') {
-    panel.hidePopover();
+  if (!panel) return;
+  panel.classList.remove('is-open');
+  panel.setAttribute('aria-hidden', 'true');
+  const details = document.getElementById('details-panel');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop && (!details || !details.classList.contains('is-open'))) {
+    backdrop.classList.remove('is-open');
+    backdrop.setAttribute('aria-hidden', 'true');
   }
 }
 
@@ -617,13 +683,15 @@ function setupListeners() {
   document.getElementById('search-form').addEventListener('submit', handleSearch);
   
   // Filters
-  document.getElementById('borough-filter').addEventListener('change', applyFilters);
-  
+  // Borough dropdown: navigate the map to the chosen borough (re-fit bounds).
+  document.getElementById('borough-filter').addEventListener('change', () => applyFilters({ fitView: true }));
+
+  // Free Only toggle: just filter visible markers, keep the current view.
   const freeToggle = document.getElementById('free-toggle-btn');
   freeToggle.addEventListener('click', () => {
     const pressed = freeToggle.getAttribute('aria-pressed') === 'true';
     freeToggle.setAttribute('aria-pressed', !pressed);
-    applyFilters();
+    applyFilters({ fitView: false });
   });
   
   // Geolocation Button
@@ -642,6 +710,40 @@ function setupListeners() {
       closeDetailsPanel();
       closeDirectoryPanel();
     }
+  });
+
+  // Outside-tap dismissal via a document-level click listener with a
+  // deterministic target check. The backdrop element is purely visual
+  // (pointer-events: none), so clicks always reach the underlying map,
+  // markers, or panel content directly. We only close when the click
+  // landed on a plain "background" area.
+  //
+  // This handles iOS Safari's synthesised delayed click correctly: that
+  // click has target = the original touch element (e.g. the marker icon),
+  // which is excluded below, so the panel stays open.
+  document.addEventListener('click', (ev) => {
+    const detailsOpen = document.querySelector('.details-panel.is-open');
+    const directoryOpen = document.querySelector('.directory-panel.is-open');
+    if (!detailsOpen && !directoryOpen) return;
+
+    const target = ev.target;
+    if (!target || typeof target.closest !== 'function') return;
+
+    // Don't close if the click landed on any of these:
+    //   - inside an open panel (so users can interact with panel content)
+    //   - on a marker or cluster (so tapping switches to that marker)
+    //   - on the search bar or floating controls
+    //   - on any Leaflet UI element (zoom buttons, popups, etc.)
+    if (target.closest(
+      '.details-panel, .directory-panel, ' +
+      '.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, ' +
+      '.leaflet-control, .search-container, .floating-controls'
+    )) {
+      return;
+    }
+
+    closeDetailsPanel();
+    closeDirectoryPanel();
   });
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>London Motorbike Parking Map | Solo Motorcycle Bays Finder</title>
   <meta name="description" content="Find public motorbike parking in London. Search by postcode or borough, view rules and pricing, and get instant Google Maps directions.">
 
@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Backdrop overlay shared by both panels. Sits above the map but
+       below the panels. Tapping it closes whichever panel is open. -->
+  <div id="panel-backdrop" class="panel-backdrop" aria-hidden="true"></div>
 
   <main>
     <!-- Map Container -->
@@ -85,7 +89,7 @@
     </div>
 
     <!-- Details Overlay Panel (Top Layer via Popover API) -->
-    <article id="details-panel" class="glass-panel details-panel" popover="manual">
+    <article id="details-panel" class="glass-panel details-panel" role="dialog" aria-modal="true" aria-hidden="true">
       <header class="panel-header">
         <div class="panel-title-wrapper">
           <span class="badge" id="details-badge">Paid</span>
@@ -115,14 +119,6 @@
           </div>
         </div>
 
-        <div class="borough-policy-card">
-          <h3>Borough Parking Policy</h3>
-          <p id="details-policy-desc">Select a spot to view specific borough parking regulations.</p>
-          <div class="policy-highlights" id="details-policy-highlights">
-            <!-- Dynamic highlights like payment app or permit details -->
-          </div>
-        </div>
-
         <div class="panel-actions">
           <a id="directions-btn" href="#" target="_blank" rel="noopener" class="cta-button">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -131,11 +127,19 @@
             Navigate with Google Maps
           </a>
         </div>
+
+        <div class="borough-policy-card">
+          <h3>Borough Parking Policy</h3>
+          <p id="details-policy-desc">Select a spot to view specific borough parking regulations.</p>
+          <div class="policy-highlights" id="details-policy-highlights">
+            <!-- Dynamic highlights like payment app or permit details -->
+          </div>
+        </div>
       </section>
     </article>
 
     <!-- Borough Rules Directory Panel (Top Layer via Popover API) -->
-    <article id="directory-panel" class="glass-panel directory-panel" popover="manual">
+    <article id="directory-panel" class="glass-panel directory-panel" role="dialog" aria-modal="true" aria-hidden="true">
       <header class="panel-header">
         <h2>Borough Rules Directory</h2>
         <button id="directory-close-btn" class="close-btn" aria-label="Close directory">
