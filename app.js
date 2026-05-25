@@ -244,21 +244,7 @@ let userLocationMarker = null;
 let userAccuracyCircle = null;
 let searchResultMarker = null;
 
-// Timestamp of the last action that opened the details panel.
-//
-// iOS Safari dispatches a synthesised native `click` event ~300ms after a
-// touchend (the historical "click delay"). If the user taps a marker:
-//   1. Leaflet's tap handler fires the marker's `click` immediately → panel opens.
-//   2. ~300ms later, iOS fires a real native `click` which bubbles to the
-//      map container. The map's click handler would then close the panel
-//      that was just opened.
-//
-// We use this timestamp + a target check + a popover-toggle watchdog to make
-// the open robust against this and any other accidental close paths.
-let detailsPanelOpenedAt = 0;
-const PANEL_REOPEN_GUARD_MS = 1500;
-let detailsPanelReopenAttempts = 0;
-const MAX_PANEL_REOPEN_ATTEMPTS = 3;
+
 
 // Icons Definitions
 const locationIconSvg = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.82 2.82c-.41-.41-1.07-.41-1.48 0L9.5 10.66 4.66 5.82c-.41-.41-1.07-.41-1.48 0-.41.41-.41 1.07 0 1.48l5.59 5.59c.41.41 1.07.41 1.48 0l8.59-8.59c.41-.41.41-1.07 0-1.48z"/></svg>`;
@@ -309,14 +295,9 @@ function initMap() {
   });
   map.addLayer(markerCluster);
 
-  // NOTE: We intentionally do NOT auto-close the details panel on map
-  // outside-clicks. iOS Safari synthesises a delayed native click ~300ms
-  // after touchend that bubbles to the map container and reliably closed
-  // the panel that the user had just opened by tapping a marker. After
-  // trying timing guards, target checks, and a popover-toggle watchdog
-  // (all of which still produced intermittent failures on real hardware),
-  // the only bullet-proof fix is to remove the auto-close. The panel can
-  // still be dismissed via the X button (always visible) or the Escape key.
+  // Panel dismissal is handled by the .panel-backdrop element's pointerdown
+  // listener (set up in setupListeners). No map.click handler here — that
+  // route was the source of the iOS "panel flashes closed" bug.
 }
 
 // 4. Load Data & Create Markers
@@ -585,25 +566,28 @@ function showSpotDetails(spot) {
   // Google Maps Directions link compilation
   directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
   
-  // Show popover overlay natively
-  if (panel && typeof panel.showPopover === 'function') {
-    // Make sure other panels are hidden
-    closeDirectoryPanel();
-    // Record the open time BEFORE showing so the guards immediately apply
-    // (also reset the reopen counter for the new opening).
-    detailsPanelOpenedAt = performance.now();
-    detailsPanelReopenAttempts = 0;
-    panel.showPopover();
+  // Show the panel via .is-open class. Make sure other panels are hidden.
+  closeDirectoryPanel();
+  panel.classList.add('is-open');
+  panel.setAttribute('aria-hidden', 'false');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop) {
+    backdrop.classList.add('is-open');
+    backdrop.setAttribute('aria-hidden', 'false');
   }
 }
 
 function closeDetailsPanel() {
   const panel = document.getElementById('details-panel');
-  if (panel && typeof panel.hidePopover === 'function') {
-    // Reset the guard window so the toggle watchdog treats this as an
-    // intentional close (and does not re-open the panel).
-    detailsPanelOpenedAt = 0;
-    panel.hidePopover();
+  if (!panel) return;
+  panel.classList.remove('is-open');
+  panel.setAttribute('aria-hidden', 'true');
+  // Hide the backdrop only if the directory panel is also closed.
+  const directory = document.getElementById('directory-panel');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop && (!directory || !directory.classList.contains('is-open'))) {
+    backdrop.classList.remove('is-open');
+    backdrop.setAttribute('aria-hidden', 'true');
   }
 }
 
@@ -641,22 +625,33 @@ function populateDirectory() {
 }
 
 function toggleDirectoryPanel(e) {
-  L.DomEvent.stopPropagation(e);
+  if (e) L.DomEvent.stopPropagation(e);
   const panel = document.getElementById('directory-panel');
-  if (panel && typeof panel.showPopover === 'function') {
-    if (panel.matches(':popover-open')) {
-      panel.hidePopover();
-    } else {
-      closeDetailsPanel();
-      panel.showPopover();
+  if (!panel) return;
+  if (panel.classList.contains('is-open')) {
+    closeDirectoryPanel();
+  } else {
+    closeDetailsPanel();
+    panel.classList.add('is-open');
+    panel.setAttribute('aria-hidden', 'false');
+    const backdrop = document.getElementById('panel-backdrop');
+    if (backdrop) {
+      backdrop.classList.add('is-open');
+      backdrop.setAttribute('aria-hidden', 'false');
     }
   }
 }
 
 function closeDirectoryPanel() {
   const panel = document.getElementById('directory-panel');
-  if (panel && typeof panel.hidePopover === 'function') {
-    panel.hidePopover();
+  if (!panel) return;
+  panel.classList.remove('is-open');
+  panel.setAttribute('aria-hidden', 'true');
+  const details = document.getElementById('details-panel');
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop && (!details || !details.classList.contains('is-open'))) {
+    backdrop.classList.remove('is-open');
+    backdrop.setAttribute('aria-hidden', 'true');
   }
 }
 
@@ -695,32 +690,22 @@ function setupListeners() {
     }
   });
 
-  // Watchdog: if the details popover transitions to closed while the guard
-  // window is still active (i.e. by something other than the X button,
-  // Escape, or an outside-tap after the guard — all of which call
-  // closeDetailsPanel() which zeros detailsPanelOpenedAt), re-open it.
-  // Typical cause is an iOS Safari synthesised delayed click that slipped
-  // past the other guards. Capped at MAX_PANEL_REOPEN_ATTEMPTS so a stuck
-  // close can never cause an infinite loop.
-  const detailsPanel = document.getElementById('details-panel');
-  if (detailsPanel) {
-    detailsPanel.addEventListener('toggle', (e) => {
-      if (e.newState !== 'closed') return;
-      // detailsPanelOpenedAt === 0 means the close was intentional
-      // (closeDetailsPanel() was called) — leave it closed.
-      if (detailsPanelOpenedAt === 0) return;
-      const elapsed = performance.now() - detailsPanelOpenedAt;
-      if (elapsed >= PANEL_REOPEN_GUARD_MS) return;
-      if (detailsPanelReopenAttempts >= MAX_PANEL_REOPEN_ATTEMPTS) return;
-      detailsPanelReopenAttempts++;
-      // Extend the guard window from the moment of re-opening so the next
-      // delayed iOS click is still suppressed.
-      detailsPanelOpenedAt = performance.now();
-      requestAnimationFrame(() => {
-        if (typeof detailsPanel.showPopover === 'function') {
-          detailsPanel.showPopover();
-        }
-      });
+  // Backdrop closes whichever panel is open. Uses `pointerdown` (not
+  // `click`) so the iOS Safari synthesised-click-delay can't trigger it.
+  // pointerdown fires synchronously on the actual touch, click events do
+  // not. The iOS delayed click that reliably broke our previous popover-
+  // based panel never reaches this handler.
+  const backdrop = document.getElementById('panel-backdrop');
+  if (backdrop) {
+    backdrop.addEventListener('pointerdown', (ev) => {
+      ev.preventDefault();
+      closeDetailsPanel();
+      closeDirectoryPanel();
+    });
+    // Fallback for environments without Pointer Events.
+    backdrop.addEventListener('click', () => {
+      closeDetailsPanel();
+      closeDirectoryPanel();
     });
   }
 }

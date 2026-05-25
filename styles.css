@@ -418,72 +418,75 @@ search {
   box-shadow: var(--shadow-lg), 0 0 10px rgba(59, 130, 246, 0.3);
 }
 
-/* POP-OVER OVERLAYS (Native Top Layer API) */
+/* ============================================================================
+   PANELS — plain positioned <div>s controlled by an .is-open class.
+   We previously used the [popover] API, but iOS Safari's handling of the
+   top layer, @starting-style, and discrete transitions was unreliable
+   enough that marker taps sometimes left the panel in a stuck/half-shown
+   state. A plain div + class is simple, predictable, and works everywhere.
+   ============================================================================ */
 
-/* Base Overlay Panel Styling (Common details & directory) */
-.details-panel,
-.directory-panel {
-  position: absolute;
-  z-index: 11;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  outline: none;
-
-  /*
-   * Chrome's UA stylesheet applies `inset: 0` to every [popover]. When our
-   * per-panel rules only set some of `top/right/bottom/left`, the unset
-   * anchors stay at 0 — which leaves the *closed* panel stretched and
-   * intercepting clicks/touches on the map. Reset to auto so each panel
-   * only anchors on the sides it explicitly opts into.
-   */
-  inset: auto;
-
-  border: 1px solid var(--border-panel);
-  margin: 0;
-
-  /* Popover open/close transitions (display + overlay are discrete) */
+/* Shared backdrop. Sits above the map but below the panels. Tapping it
+   closes whichever panel is open. */
+.panel-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  z-index: 50;
   opacity: 0;
-  transition-property: opacity, transform, display, overlay;
-  transition-duration: 0.35s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-behavior: allow-discrete;
-
-  /*
-   * Closed popovers should never block touches/clicks on the map.
-   * `opacity: 0` hides them visually but they remain hit-testable
-   * unless we explicitly opt out.
-   */
   pointer-events: none;
+  transition: opacity 0.25s ease;
 }
-
-/* Open states */
-.details-panel:popover-open,
-.directory-panel:popover-open {
+.panel-backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Details Panel Placement & Dimensions */
+/* Base panel styles (closed state). The panel is always in the DOM; the
+   .is-open class controls visibility via opacity + transform. We use
+   `visibility: hidden` (not `display: none`) so the close animation can
+   play. visibility transition is delayed by the same duration on close so
+   the panel stays interactable until the slide-out finishes. */
+.details-panel,
+.directory-panel {
+  position: fixed;
+  z-index: 100;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  outline: none;
+  border: 1px solid var(--border-panel);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+}
+.details-panel.is-open,
+.directory-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
+}
+
+/* Details panel (desktop): bottom-left card */
 .details-panel {
   bottom: 30px;
   left: 30px;
   width: 420px;
   max-height: 80vh;
   transform: translateY(20px);
-  display: flex;
-  flex-direction: column;
 }
-
-.details-panel:popover-open {
+.details-panel.is-open {
   transform: translateY(0);
-
-  @starting-style {
-    opacity: 0;
-    transform: translateY(20px);
-  }
 }
 
-/* Directory Panel Placement & Dimensions */
+/* Directory panel (desktop): right-side tall card */
 .directory-panel {
   top: 100px;
   right: 30px;
@@ -491,17 +494,9 @@ search {
   height: calc(100vh - 150px);
   max-height: 800px;
   transform: translateX(20px);
-  display: flex;
-  flex-direction: column;
 }
-
-.directory-panel:popover-open {
+.directory-panel.is-open {
   transform: translateX(0);
-
-  @starting-style {
-    opacity: 0;
-    transform: translateX(20px);
-  }
 }
 
 /* Panel Internals & Layouts */
@@ -825,26 +820,20 @@ details::details-content {
 /* Reduced Motion Settings for UI Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .details-panel,
-  .directory-panel {
+  .directory-panel,
+  .panel-backdrop {
+    transition-duration: 0.05s !important;
+  }
+  .details-panel:not(.is-open),
+  .directory-panel:not(.is-open) {
     transform: none !important;
-    transition-duration: 0.1s;
   }
-  
-  .details-panel:popover-open,
-  .directory-panel:popover-open {
-    @starting-style {
-      transform: none !important;
-    }
-  }
-  
   .pin-inner, .floating-btn, .cta-button, summary::after {
     transition: none !important;
   }
-  
   .custom-pin:hover .pin-inner {
     transform: none;
   }
-  
   .user-location-inner {
     animation: none;
   }
@@ -886,20 +875,15 @@ details::details-content {
   /* Directory panel: centered bottom overlay on tablet */
   .directory-panel {
     right: 50%;
-    transform: translateX(50%);
     width: 90%;
     max-width: 500px;
     height: 70vh;
     top: auto;
     bottom: 20px;
+    transform: translateX(50%) translateY(20px);
   }
-  
-  .directory-panel:popover-open {
+  .directory-panel.is-open {
     transform: translateX(50%) translateY(0);
-    @starting-style {
-      opacity: 0;
-      transform: translateX(50%) translateY(20px);
-    }
   }
 }
 
@@ -995,10 +979,12 @@ details::details-content {
     flex-shrink: 0;
   }
 
-  /* --- Details panel: full-width bottom sheet --- */
+  /* --- Details panel: full-width bottom sheet on mobile --- */
   .details-panel {
     left: 0;
+    right: 0;
     bottom: 0;
+    top: auto;
     width: 100%;
     max-height: 72dvh;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -1007,17 +993,12 @@ details::details-content {
     border-right: none;
     border-bottom: none;
   }
-
-  .details-panel:popover-open {
+  .details-panel.is-open {
     transform: translateY(0);
-    @starting-style {
-      opacity: 0;
-      transform: translateY(100%);
-    }
   }
 
-  /* --- Directory panel: full-width bottom sheet --- */
-  /* Override the tablet-set translate-X centering */
+  /* --- Directory panel: full-width bottom sheet on mobile --- */
+  /* Override the tablet rule that translate-X centers a narrow card */
   .directory-panel {
     right: 0;
     left: 0;
@@ -1032,13 +1013,8 @@ details::details-content {
     border-right: none;
     border-bottom: none;
   }
-
-  .directory-panel:popover-open {
+  .directory-panel.is-open {
     transform: translateY(0);
-    @starting-style {
-      opacity: 0;
-      transform: translateY(20px);
-    }
   }
 
   /* --- Panel internals --- */

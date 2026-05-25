@@ -23,6 +23,10 @@
 </head>
 <body>
 
+  <!-- Backdrop overlay shared by both panels. Sits above the map but
+       below the panels. Tapping it closes whichever panel is open. -->
+  <div id="panel-backdrop" class="panel-backdrop" aria-hidden="true"></div>
+
   <main>
     <!-- Map Container -->
     <div id="map"></div>
@@ -85,7 +89,7 @@
     </div>
 
     <!-- Details Overlay Panel (Top Layer via Popover API) -->
-    <article id="details-panel" class="glass-panel details-panel" popover="manual">
+    <article id="details-panel" class="glass-panel details-panel" role="dialog" aria-modal="true" aria-hidden="true">
       <header class="panel-header">
         <div class="panel-title-wrapper">
           <span class="badge" id="details-badge">Paid</span>
@@ -135,7 +139,7 @@
     </article>
 
     <!-- Borough Rules Directory Panel (Top Layer via Popover API) -->
-    <article id="directory-panel" class="glass-panel directory-panel" popover="manual">
+    <article id="directory-panel" class="glass-panel directory-panel" role="dialog" aria-modal="true" aria-hidden="true">
       <header class="panel-header">
         <h2>Borough Rules Directory</h2>
         <button id="directory-close-btn" class="close-btn" aria-label="Close directory">
