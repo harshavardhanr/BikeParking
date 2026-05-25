@@ -475,7 +475,7 @@ async function handleSearch(e) {
   try {
     const response = await fetch(url, {
       headers: {
-        'User-Agent': 'MotoParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
+        'User-Agent': 'BikeParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
       }
     });
     

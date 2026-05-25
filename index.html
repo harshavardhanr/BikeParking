@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>London Motorbike Parking Map | Solo Motorcycle Bays Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikeParkLondon | Solo Motorcycle Bays Finder</title>
   <meta name="description" content="Find public motorbike parking in London. Search by postcode or borough, view rules and pricing, and get instant Google Maps directions.">
 
   <!-- Google Fonts -->
@@ -23,10 +23,6 @@
 </head>
 <body>
 
-  <!-- Backdrop overlay shared by both panels. Sits above the map but
-       below the panels. Tapping it closes whichever panel is open. -->
-  <div id="panel-backdrop" class="panel-backdrop" aria-hidden="true"></div>
-
   <main>
     <!-- Map Container -->
     <div id="map"></div>
@@ -34,12 +30,7 @@
     <!-- Top Floating Search & Filter Bar -->
     <header class="glass-panel search-container">
       <div class="brand">
-        <svg class="brand-logo" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <path d="M12 2v20"></path>
-          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-        </svg>
-        <h1>MotoPark<span>London</span></h1>
+        <h1>BikePark<span>London</span></h1>
       </div>
 
       <div class="search-controls">
@@ -89,7 +80,7 @@
     </div>
 
     <!-- Details Overlay Panel (Top Layer via Popover API) -->
-    <article id="details-panel" class="glass-panel details-panel" role="dialog" aria-modal="true" aria-hidden="true">
+    <article id="details-panel" class="glass-panel details-panel" popover="manual">
       <header class="panel-header">
         <div class="panel-title-wrapper">
           <span class="badge" id="details-badge">Paid</span>
@@ -119,6 +110,14 @@
           </div>
         </div>
 
+        <div class="borough-policy-card">
+          <h3>Borough Parking Policy</h3>
+          <p id="details-policy-desc">Select a spot to view specific borough parking regulations.</p>
+          <div class="policy-highlights" id="details-policy-highlights">
+            <!-- Dynamic highlights like payment app or permit details -->
+          </div>
+        </div>
+
         <div class="panel-actions">
           <a id="directions-btn" href="#" target="_blank" rel="noopener" class="cta-button">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -127,19 +126,11 @@
             Navigate with Google Maps
           </a>
         </div>
-
-        <div class="borough-policy-card">
-          <h3>Borough Parking Policy</h3>
-          <p id="details-policy-desc">Select a spot to view specific borough parking regulations.</p>
-          <div class="policy-highlights" id="details-policy-highlights">
-            <!-- Dynamic highlights like payment app or permit details -->
-          </div>
-        </div>
       </section>
     </article>
 
     <!-- Borough Rules Directory Panel (Top Layer via Popover API) -->
-    <article id="directory-panel" class="glass-panel directory-panel" role="dialog" aria-modal="true" aria-hidden="true">
+    <article id="directory-panel" class="glass-panel directory-panel" popover="manual">
       <header class="panel-header">
         <h2>Borough Rules Directory</h2>
         <button id="directory-close-btn" class="close-btn" aria-label="Close directory">
