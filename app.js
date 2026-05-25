@@ -351,17 +351,17 @@ function renderParkingMarkers() {
     });
 
     marker.on('click', (e) => {
-      // Belt-and-suspenders: stop both the Leaflet-level event and the
-      // underlying native DOM event so neither path bubbles to the map.
+      // Stop propagation so the document-level click listener (which
+      // handles outside-tap dismiss) does not also fire and try to close
+      // the panel we are about to open/update.
       L.DomEvent.stopPropagation(e);
-      if (e.originalEvent) {
-        L.DomEvent.stopPropagation(e.originalEvent);
-        L.DomEvent.preventDefault(e.originalEvent);
+      if (e.originalEvent && typeof e.originalEvent.stopPropagation === 'function') {
+        e.originalEvent.stopPropagation();
       }
       showSpotDetails(spot);
-      // Defer the zoom/pan so the popover transition starts cleanly first.
-      // We also clamp the zoom to max(current, 16) so tapping a marker
-      // doesn't yank a zoomed-out user too aggressively.
+      // Defer the zoom/pan so the panel transition starts cleanly first.
+      // Clamp the zoom to max(current, 16) so tapping a marker doesn't
+      // yank a zoomed-out user too aggressively.
       setTimeout(() => {
         const targetZoom = Math.max(map.getZoom(), 16);
         map.setView([spot.lat, spot.lng], targetZoom);
@@ -515,6 +515,13 @@ async function handleSearch(e) {
 
 // 8. Details Panel Drawer Control
 function showSpotDetails(spot) {
+  // Defensive: bail out if spot is missing or malformed. Better to keep the
+  // previously-shown content than to clear the panel to empty strings.
+  if (!spot || typeof spot !== 'object') {
+    console.warn('showSpotDetails called with invalid spot:', spot);
+    return;
+  }
+
   const panel = document.getElementById('details-panel');
   const badge = document.getElementById('details-badge');
   const streetName = document.getElementById('details-street');
@@ -524,12 +531,25 @@ function showSpotDetails(spot) {
   const policyDesc = document.getElementById('details-policy-desc');
   const policyHighlights = document.getElementById('details-policy-highlights');
   const directionsBtn = document.getElementById('directions-btn');
-  
-  // Populate standard details
-  streetName.textContent = spot.street;
-  boroughName.textContent = spot.borough;
-  capacity.textContent = spot.capacity ? `${spot.capacity} spaces` : 'Unknown';
-  
+
+  if (!panel || !badge || !streetName || !boroughName || !capacity ||
+      !price || !policyDesc || !policyHighlights || !directionsBtn) {
+    console.warn('showSpotDetails: one or more panel elements not found');
+    return;
+  }
+
+  // Populate standard details. Always use explicit string fallbacks so a
+  // missing field never renders as "" (which would look like the panel is
+  // broken). Empty string from `textContent = null/undefined` was the root
+  // cause of the "panel shows up with no data" bug on iOS.
+  const street  = (typeof spot.street  === 'string' && spot.street)  ? spot.street  : 'Solo Motorcycle Parking Bay';
+  const borough = (typeof spot.borough === 'string' && spot.borough) ? spot.borough : 'Unknown borough';
+  const capStr  = (spot.capacity != null && spot.capacity !== '') ? `${spot.capacity} spaces` : 'Unknown';
+
+  streetName.textContent = street;
+  boroughName.textContent = borough;
+  capacity.textContent = capStr;
+
   if (spot.fee === 'yes') {
     badge.textContent = 'Paid';
     badge.className = 'badge paid';
@@ -540,8 +560,8 @@ function showSpotDetails(spot) {
     price.textContent = 'Free Bay';
   }
   
-  // Populate borough regulations
-  const policy = BOROUGH_POLICIES[spot.borough];
+  // Populate borough regulations. Use the safe `borough` variable.
+  const policy = BOROUGH_POLICIES[borough];
   if (policy) {
     policyDesc.innerHTML = `<strong>Dedicated bays:</strong> ${policy.rules}<br><br><strong>Visitor Pricing:</strong> ${policy.pricing}`;
     
@@ -563,8 +583,11 @@ function showSpotDetails(spot) {
     policyHighlights.innerHTML = '';
   }
   
-  // Google Maps Directions link compilation
-  directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+  // Google Maps Directions link. Use defensive coords so we never produce
+  // a malformed URL even if lat/lng are missing.
+  const lat = (typeof spot.lat === 'number') ? spot.lat : '';
+  const lng = (typeof spot.lng === 'number') ? spot.lng : '';
+  directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   
   // Show the panel via .is-open class. Make sure other panels are hidden.
   closeDirectoryPanel();
