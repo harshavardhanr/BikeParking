@@ -334,47 +334,56 @@ function populateBoroughFilter() {
 // Render Markers onto the Map
 function renderParkingMarkers() {
   markerCluster.clearLayers();
-  
+
   filteredParkingSpots.forEach(spot => {
     if (!spot.lat || !spot.lng) return;
-    
+
     const marker = L.marker([spot.lat, spot.lng], {
-      icon: createMotorcycleMarkerIcon(spot.fee)
+      icon: createMotorcycleMarkerIcon(spot.fee),
+      // Hard-stop the click from bubbling to the underlying map handler,
+      // which would otherwise close the details panel right after we opened it.
+      bubblingMouseEvents: false
     });
-    
-    // Attach click handler
+
     marker.on('click', (e) => {
-      // Prevent propagation to map click (which closes panel)
       L.DomEvent.stopPropagation(e);
       showSpotDetails(spot);
-      map.setView([spot.lat, spot.lng], 17);
+      // Gently pan to the spot but keep the current zoom level (or zoom in
+      // only if the user is very zoomed out, so they still see some context).
+      const targetZoom = Math.max(map.getZoom(), 16);
+      map.setView([spot.lat, spot.lng], targetZoom);
     });
-    
+
     markerCluster.addLayer(marker);
   });
 }
 
 // 5. Filter Handler Logic
-function applyFilters() {
+//
+// `fitView` controls whether the map re-zooms to fit the filtered set:
+//   - true  : used when the borough filter changes (the user clearly wants
+//             the map to navigate to the new borough).
+//   - false : used for the "Free Only" toggle. Re-fitting on every toggle
+//             zooms the user out of the area they were inspecting, which is
+//             the opposite of what they want — they're trying to scan the
+//             *current* view for free spots.
+function applyFilters({ fitView = false } = {}) {
   const boroughValue = document.getElementById('borough-filter').value;
   const freeOnlyValue = document.getElementById('free-toggle-btn').getAttribute('aria-pressed') === 'true';
-  
+
   filteredParkingSpots = allParkingSpots.filter(spot => {
-    // Borough filter
     if (boroughValue && spot.borough !== boroughValue) {
       return false;
     }
-    // Free only filter
     if (freeOnlyValue && spot.fee !== 'no') {
       return false;
     }
     return true;
   });
-  
+
   renderParkingMarkers();
-  
-  // Zoom map to fit the filtered points if available
-  if (filteredParkingSpots.length > 0) {
+
+  if (fitView && filteredParkingSpots.length > 0) {
     const group = new L.featureGroup(
       filteredParkingSpots.map(spot => L.marker([spot.lat, spot.lng]))
     );
@@ -617,13 +626,15 @@ function setupListeners() {
   document.getElementById('search-form').addEventListener('submit', handleSearch);
   
   // Filters
-  document.getElementById('borough-filter').addEventListener('change', applyFilters);
-  
+  // Borough dropdown: navigate the map to the chosen borough (re-fit bounds).
+  document.getElementById('borough-filter').addEventListener('change', () => applyFilters({ fitView: true }));
+
+  // Free Only toggle: just filter visible markers, keep the current view.
   const freeToggle = document.getElementById('free-toggle-btn');
   freeToggle.addEventListener('click', () => {
     const pressed = freeToggle.getAttribute('aria-pressed') === 'true';
     freeToggle.setAttribute('aria-pressed', !pressed);
-    applyFilters();
+    applyFilters({ fitView: false });
   });
   
   // Geolocation Button
