@@ -244,6 +244,17 @@ let userLocationMarker = null;
 let userAccuracyCircle = null;
 let searchResultMarker = null;
 
+// Timestamp of the last action that opened the details panel.
+// iOS Safari dispatches a synthesised native `click` event ~300ms after a
+// touchend (the historical "click delay"). If the user taps a marker:
+//   1. Leaflet's tap handler fires the marker's `click` immediately → panel opens.
+//   2. ~300ms later, iOS fires a real native `click` which bubbles to the
+//      map container. The map's click handler would then close the panel
+//      that was just opened.
+// We use this timestamp to ignore map clicks that arrive in the small
+// window after the panel was just opened.
+let detailsPanelOpenedAt = 0;
+
 // Icons Definitions
 const locationIconSvg = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.82 2.82c-.41-.41-1.07-.41-1.48 0L9.5 10.66 4.66 5.82c-.41-.41-1.07-.41-1.48 0-.41.41-.41 1.07 0 1.48l5.59 5.59c.41.41 1.07.41 1.48 0l8.59-8.59c.41-.41.41-1.07 0-1.48z"/></svg>`;
 
@@ -291,6 +302,9 @@ function initMap() {
 
   // Handle map click to close panels (light-dismiss feel)
   map.on('click', () => {
+    // Ignore the synthesised iOS delayed click that fires right after
+    // a marker tap (see comment on detailsPanelOpenedAt).
+    if (performance.now() - detailsPanelOpenedAt < 600) return;
     closeDetailsPanel();
   });
 }
@@ -346,12 +360,21 @@ function renderParkingMarkers() {
     });
 
     marker.on('click', (e) => {
+      // Belt-and-suspenders: stop both the Leaflet-level event and the
+      // underlying native DOM event so neither path bubbles to the map.
       L.DomEvent.stopPropagation(e);
+      if (e.originalEvent) {
+        L.DomEvent.stopPropagation(e.originalEvent);
+        L.DomEvent.preventDefault(e.originalEvent);
+      }
       showSpotDetails(spot);
-      // Gently pan to the spot but keep the current zoom level (or zoom in
-      // only if the user is very zoomed out, so they still see some context).
-      const targetZoom = Math.max(map.getZoom(), 16);
-      map.setView([spot.lat, spot.lng], targetZoom);
+      // Defer the zoom/pan so the popover transition starts cleanly first.
+      // We also clamp the zoom to max(current, 16) so tapping a marker
+      // doesn't yank a zoomed-out user too aggressively.
+      setTimeout(() => {
+        const targetZoom = Math.max(map.getZoom(), 16);
+        map.setView([spot.lat, spot.lng], targetZoom);
+      }, 50);
     });
 
     markerCluster.addLayer(marker);
@@ -557,6 +580,9 @@ function showSpotDetails(spot) {
     // Make sure other panels are hidden
     closeDirectoryPanel();
     panel.showPopover();
+    // Record the open time so the map's click handler can ignore the
+    // synthesised iOS delayed click that's about to fire on the map.
+    detailsPanelOpenedAt = performance.now();
   }
 }
 
