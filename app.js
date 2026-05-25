@@ -255,9 +255,8 @@ function createMotorcycleMarkerIcon(feeStatus) {
   return L.divIcon({
     html: `
       <div class="pin-inner">
-        <svg viewBox="0 0 24 24">
-          <path d="M19 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-14 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm11.5-6h-3.8c-.8 0-1.5.5-1.7 1.3L9.6 12H7.2V9.6l1.3-1.3c.5-.5.5-1.3 0-1.8L7.2 5.2c-.5-.5-1.3-.5-1.8 0L4.1 6.5C3 7.6 2.5 9 2.5 10.5V12H1v2h2v1c0 1.1.9 2 2 2h1.5l1.1-1.1c.3.8 1.1 1.3 2 1.3h4c.9 0 1.7-.5 2-1.3L15 17h4.5c1.1 0 2-.9 2-2V13h1v-2h-3v-.7l1.7-2.6.3-.7V6z"/>
-        </svg>
+        <img src="Bike.png" alt="" draggable="false"
+             style="width:18px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
       </div>
     `,
     className: `custom-pin ${colorClass}`,

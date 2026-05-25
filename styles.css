@@ -115,10 +115,16 @@ main {
   justify-content: center;
   transition: transform var(--transition-smooth);
 }
-.pin-inner svg {
-  width: 12px;
-  height: 12px;
-  fill: #ffffff;
+/* Bike icon image inside the marker pin. Source is 81x47, so we set
+   a fixed width and let height auto-scale to preserve aspect ratio.
+   The image sits centered inside the 24x24 .pin-inner circle. */
+.pin-inner img {
+  width: 18px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .custom-pin:hover .pin-inner {
