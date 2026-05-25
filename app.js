@@ -690,24 +690,39 @@ function setupListeners() {
     }
   });
 
-  // Backdrop closes whichever panel is open. Uses `pointerdown` (not
-  // `click`) so the iOS Safari synthesised-click-delay can't trigger it.
-  // pointerdown fires synchronously on the actual touch, click events do
-  // not. The iOS delayed click that reliably broke our previous popover-
-  // based panel never reaches this handler.
-  const backdrop = document.getElementById('panel-backdrop');
-  if (backdrop) {
-    backdrop.addEventListener('pointerdown', (ev) => {
-      ev.preventDefault();
-      closeDetailsPanel();
-      closeDirectoryPanel();
-    });
-    // Fallback for environments without Pointer Events.
-    backdrop.addEventListener('click', () => {
-      closeDetailsPanel();
-      closeDirectoryPanel();
-    });
-  }
+  // Outside-tap dismissal via a document-level click listener with a
+  // deterministic target check. The backdrop element is purely visual
+  // (pointer-events: none), so clicks always reach the underlying map,
+  // markers, or panel content directly. We only close when the click
+  // landed on a plain "background" area.
+  //
+  // This handles iOS Safari's synthesised delayed click correctly: that
+  // click has target = the original touch element (e.g. the marker icon),
+  // which is excluded below, so the panel stays open.
+  document.addEventListener('click', (ev) => {
+    const detailsOpen = document.querySelector('.details-panel.is-open');
+    const directoryOpen = document.querySelector('.directory-panel.is-open');
+    if (!detailsOpen && !directoryOpen) return;
+
+    const target = ev.target;
+    if (!target || typeof target.closest !== 'function') return;
+
+    // Don't close if the click landed on any of these:
+    //   - inside an open panel (so users can interact with panel content)
+    //   - on a marker or cluster (so tapping switches to that marker)
+    //   - on the search bar or floating controls
+    //   - on any Leaflet UI element (zoom buttons, popups, etc.)
+    if (target.closest(
+      '.details-panel, .directory-panel, ' +
+      '.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, ' +
+      '.leaflet-control, .search-container, .floating-controls'
+    )) {
+      return;
+    }
+
+    closeDetailsPanel();
+    closeDirectoryPanel();
+  });
 }
 
 // Initialize application on DOM ready

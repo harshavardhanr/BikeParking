@@ -436,12 +436,14 @@ search {
   backdrop-filter: blur(1px);
   z-index: 50;
   opacity: 0;
+  /* Always click-through. Outside-tap dismissal is handled by a document
+     click listener (with target check) in app.js so the backdrop never
+     intercepts taps on markers, the panel itself, or other controls. */
   pointer-events: none;
   transition: opacity 0.25s ease;
 }
 .panel-backdrop.is-open {
   opacity: 1;
-  pointer-events: auto;
 }
 
 /* Base panel styles (closed state). The panel is always in the DOM; the
