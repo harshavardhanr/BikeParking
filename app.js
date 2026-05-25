@@ -256,7 +256,7 @@ function createMotorcycleMarkerIcon(feeStatus) {
     html: `
       <div class="pin-inner">
         <img src="Bike.png" alt="" draggable="false"
-             style="width:18px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
+             style="width:16.2px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
       </div>
     `,
     className: `custom-pin ${colorClass}`,
