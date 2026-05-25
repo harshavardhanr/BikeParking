@@ -275,8 +275,12 @@ function createMotorcycleMarkerIcon(feeStatus) {
       </div>
     `,
     className: `custom-pin ${colorClass}`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12]
+    // Tap target is 44x44 (Apple HIG / Material Design minimum) but the
+    // visible pin (.pin-inner) is kept at 24x24 via flex-centering. This
+    // makes markers reliably tappable on phones — a 24px target leaves
+    // too much room to miss with a finger.
+    iconSize: [44, 44],
+    iconAnchor: [22, 22]
   });
 }
 
@@ -305,26 +309,14 @@ function initMap() {
   });
   map.addLayer(markerCluster);
 
-  // Handle map click to close panels (light-dismiss feel) on outside tap.
-  // We're aggressive about filtering out clicks that are NOT genuine "tap
-  // empty map area" clicks, because any false-positive here would close the
-  // details panel the user just opened by tapping a marker.
-  map.on('click', (e) => {
-    // 1. Target check (deterministic): skip if the click landed on any
-    //    interactive map layer — marker, cluster, or popup.
-    const target = e && e.originalEvent && e.originalEvent.target;
-    if (target && typeof target.closest === 'function') {
-      if (target.closest('.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, .leaflet-control')) {
-        return;
-      }
-    }
-    // 2. Timing guard: ignore clicks that arrive in the window after the
-    //    panel was just opened (catches iOS-synthesised delayed clicks where
-    //    e.originalEvent.target may be unreliable or the cluster may have
-    //    been removed during a zoom-in).
-    if (performance.now() - detailsPanelOpenedAt < PANEL_REOPEN_GUARD_MS) return;
-    closeDetailsPanel();
-  });
+  // NOTE: We intentionally do NOT auto-close the details panel on map
+  // outside-clicks. iOS Safari synthesises a delayed native click ~300ms
+  // after touchend that bubbles to the map container and reliably closed
+  // the panel that the user had just opened by tapping a marker. After
+  // trying timing guards, target checks, and a popover-toggle watchdog
+  // (all of which still produced intermittent failures on real hardware),
+  // the only bullet-proof fix is to remove the auto-close. The panel can
+  // still be dismissed via the X button (always visible) or the Escape key.
 }
 
 // 4. Load Data & Create Markers
