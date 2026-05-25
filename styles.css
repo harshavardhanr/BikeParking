@@ -423,29 +423,44 @@ search {
 /* Base Overlay Panel Styling (Common details & directory) */
 .details-panel,
 .directory-panel {
-  /* Set popover defaults */
   position: absolute;
   z-index: 11;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   outline: none;
-  
-  /* Disable defaults of popover */
+
+  /*
+   * Chrome's UA stylesheet applies `inset: 0` to every [popover]. When our
+   * per-panel rules only set some of `top/right/bottom/left`, the unset
+   * anchors stay at 0 — which leaves the *closed* panel stretched and
+   * intercepting clicks/touches on the map. Reset to auto so each panel
+   * only anchors on the sides it explicitly opts into.
+   */
+  inset: auto;
+
   border: 1px solid var(--border-panel);
   margin: 0;
-  
-  /* Top layer transitions setup */
+
+  /* Popover open/close transitions (display + overlay are discrete) */
   opacity: 0;
   transition-property: opacity, transform, display, overlay;
   transition-duration: 0.35s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-behavior: allow-discrete;
+
+  /*
+   * Closed popovers should never block touches/clicks on the map.
+   * `opacity: 0` hides them visually but they remain hit-testable
+   * unless we explicitly opt out.
+   */
+  pointer-events: none;
 }
 
 /* Open states */
 .details-panel:popover-open,
 .directory-panel:popover-open {
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* Details Panel Placement & Dimensions */
@@ -913,21 +928,42 @@ details::details-content {
     gap: 8px;
   }
 
-  /* 
-   * font-size: 1rem (16px) prevents iOS Safari from auto-zooming inputs
-   * min-height: 44px meets Apple/Android touch-target guidelines
+  /*
+   * font-size: 1rem (16px) prevents iOS Safari from auto-zooming on focus.
+   * Fixed 44px height keeps every control on the same baseline (Apple/
+   * Android touch-target guideline) and stops the toggle-button label
+   * from wrapping to two lines on narrow phones.
    */
   #search-input,
   #borough-filter,
   .filter-toggle-btn {
     font-size: 1rem;
-    min-height: 44px;
+    height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Borough dropdown fills the row; toggle stays compact and one-line */
+  #borough-filter {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .filter-toggle-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   /* --- Leaflet zoom control --- */
-  /* Recalculate offset now that the brand row is gone */
+  /*
+   * Search bar height ≈ 10 + 44 + 8 + 44 + 10 = 116px, plus 12px top
+   * inset = ~128px to the bottom of the search bar. Add an 8px gap so
+   * the zoom buttons sit cleanly below the search bar.
+   */
   .leaflet-top.leaflet-left {
-    top: 122px;
+    top: 136px;
     left: 12px;
   }
 
