@@ -245,15 +245,20 @@ let userAccuracyCircle = null;
 let searchResultMarker = null;
 
 // Timestamp of the last action that opened the details panel.
+//
 // iOS Safari dispatches a synthesised native `click` event ~300ms after a
 // touchend (the historical "click delay"). If the user taps a marker:
 //   1. Leaflet's tap handler fires the marker's `click` immediately → panel opens.
 //   2. ~300ms later, iOS fires a real native `click` which bubbles to the
 //      map container. The map's click handler would then close the panel
 //      that was just opened.
-// We use this timestamp to ignore map clicks that arrive in the small
-// window after the panel was just opened.
+//
+// We use this timestamp + a target check + a popover-toggle watchdog to make
+// the open robust against this and any other accidental close paths.
 let detailsPanelOpenedAt = 0;
+const PANEL_REOPEN_GUARD_MS = 1500;
+let detailsPanelReopenAttempts = 0;
+const MAX_PANEL_REOPEN_ATTEMPTS = 3;
 
 // Icons Definitions
 const locationIconSvg = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.82 2.82c-.41-.41-1.07-.41-1.48 0L9.5 10.66 4.66 5.82c-.41-.41-1.07-.41-1.48 0-.41.41-.41 1.07 0 1.48l5.59 5.59c.41.41 1.07.41 1.48 0l8.59-8.59c.41-.41.41-1.07 0-1.48z"/></svg>`;
@@ -300,11 +305,24 @@ function initMap() {
   });
   map.addLayer(markerCluster);
 
-  // Handle map click to close panels (light-dismiss feel)
-  map.on('click', () => {
-    // Ignore the synthesised iOS delayed click that fires right after
-    // a marker tap (see comment on detailsPanelOpenedAt).
-    if (performance.now() - detailsPanelOpenedAt < 600) return;
+  // Handle map click to close panels (light-dismiss feel) on outside tap.
+  // We're aggressive about filtering out clicks that are NOT genuine "tap
+  // empty map area" clicks, because any false-positive here would close the
+  // details panel the user just opened by tapping a marker.
+  map.on('click', (e) => {
+    // 1. Target check (deterministic): skip if the click landed on any
+    //    interactive map layer — marker, cluster, or popup.
+    const target = e && e.originalEvent && e.originalEvent.target;
+    if (target && typeof target.closest === 'function') {
+      if (target.closest('.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, .leaflet-control')) {
+        return;
+      }
+    }
+    // 2. Timing guard: ignore clicks that arrive in the window after the
+    //    panel was just opened (catches iOS-synthesised delayed clicks where
+    //    e.originalEvent.target may be unreliable or the cluster may have
+    //    been removed during a zoom-in).
+    if (performance.now() - detailsPanelOpenedAt < PANEL_REOPEN_GUARD_MS) return;
     closeDetailsPanel();
   });
 }
@@ -579,16 +597,20 @@ function showSpotDetails(spot) {
   if (panel && typeof panel.showPopover === 'function') {
     // Make sure other panels are hidden
     closeDirectoryPanel();
-    panel.showPopover();
-    // Record the open time so the map's click handler can ignore the
-    // synthesised iOS delayed click that's about to fire on the map.
+    // Record the open time BEFORE showing so the guards immediately apply
+    // (also reset the reopen counter for the new opening).
     detailsPanelOpenedAt = performance.now();
+    detailsPanelReopenAttempts = 0;
+    panel.showPopover();
   }
 }
 
 function closeDetailsPanel() {
   const panel = document.getElementById('details-panel');
   if (panel && typeof panel.hidePopover === 'function') {
+    // Reset the guard window so the toggle watchdog treats this as an
+    // intentional close (and does not re-open the panel).
+    detailsPanelOpenedAt = 0;
     panel.hidePopover();
   }
 }
@@ -680,6 +702,35 @@ function setupListeners() {
       closeDirectoryPanel();
     }
   });
+
+  // Watchdog: if the details popover transitions to closed while the guard
+  // window is still active (i.e. by something other than the X button,
+  // Escape, or an outside-tap after the guard — all of which call
+  // closeDetailsPanel() which zeros detailsPanelOpenedAt), re-open it.
+  // Typical cause is an iOS Safari synthesised delayed click that slipped
+  // past the other guards. Capped at MAX_PANEL_REOPEN_ATTEMPTS so a stuck
+  // close can never cause an infinite loop.
+  const detailsPanel = document.getElementById('details-panel');
+  if (detailsPanel) {
+    detailsPanel.addEventListener('toggle', (e) => {
+      if (e.newState !== 'closed') return;
+      // detailsPanelOpenedAt === 0 means the close was intentional
+      // (closeDetailsPanel() was called) — leave it closed.
+      if (detailsPanelOpenedAt === 0) return;
+      const elapsed = performance.now() - detailsPanelOpenedAt;
+      if (elapsed >= PANEL_REOPEN_GUARD_MS) return;
+      if (detailsPanelReopenAttempts >= MAX_PANEL_REOPEN_ATTEMPTS) return;
+      detailsPanelReopenAttempts++;
+      // Extend the guard window from the moment of re-opening so the next
+      // delayed iOS click is still suppressed.
+      detailsPanelOpenedAt = performance.now();
+      requestAnimationFrame(() => {
+        if (typeof detailsPanel.showPopover === 'function') {
+          detailsPanel.showPopover();
+        }
+      });
+    });
+  }
 }
 
 // Initialize application on DOM ready
