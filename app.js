@@ -753,4 +753,43 @@ document.addEventListener('DOMContentLoaded', () => {
   setupListeners();
   populateDirectory();
   loadParkingData();
+  centreOnUserLocation();
 });
+
+// On startup, silently request the user's location and pan the map there.
+// If geolocation is unavailable or the user denies permission the map
+// simply stays on the default London view — no alert, no error shown.
+function centreOnUserLocation() {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const { latitude, longitude, accuracy } = position.coords;
+      const latlng = [latitude, longitude];
+
+      // Show the pulsing user-location dot
+      if (userLocationMarker) map.removeLayer(userLocationMarker);
+      if (userAccuracyCircle) map.removeLayer(userAccuracyCircle);
+
+      userAccuracyCircle = L.circle(latlng, {
+        radius: accuracy,
+        color: '#3b82f6',
+        fillColor: '#3b82f6',
+        fillOpacity: 0.15,
+        weight: 1
+      }).addTo(map);
+
+      const userIcon = L.divIcon({
+        html: '<div class="user-location-inner"></div>',
+        className: 'user-location-pin',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
+      userLocationMarker = L.marker(latlng, { icon: userIcon }).addTo(map);
+
+      // Zoom in on the user. Cap at 15 so they still see nearby markers.
+      map.setView(latlng, 15);
+    },
+    () => { /* permission denied or unavailable — stay on default view */ },
+    { enableHighAccuracy: true, timeout: 8000, maximumAge: 60000 }
+  );
+}
