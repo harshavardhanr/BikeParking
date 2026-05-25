@@ -476,16 +476,19 @@ search {
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s;
 }
 
-/* Details panel (desktop): bottom-left card */
+/* Details panel (desktop): left-side, vertically centered.
+   Horizontal position is fixed at left: 30px. Vertical centering uses
+   top: 50% + a -50% translateY, with a small 20px offset for the
+   slide-in animation when .is-open is added. */
 .details-panel {
-  bottom: 30px;
+  top: 50%;
   left: 30px;
   width: 420px;
   max-height: 80vh;
-  transform: translateY(20px);
+  transform: translate(0, calc(-50% + 20px));
 }
 .details-panel.is-open {
-  transform: translateY(0);
+  transform: translate(0, -50%);
 }
 
 /* Directory panel (desktop): right-side tall card */
@@ -661,8 +664,11 @@ search {
 
 /* Action button directions */
 .panel-actions {
-  margin-top: auto;
-  padding-top: 10px;
+  /* Sits inline between the parking-meta and the borough-policy card.
+     No auto-margin: previously it was pushed to the bottom of the
+     flex column when it was the last child of .panel-content. */
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .cta-button {
