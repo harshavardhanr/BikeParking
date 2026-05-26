@@ -243,7 +243,7 @@ main {
 .brand-tagline {
   margin: 0;
   font-family: var(--font-body);
-  font-size: calc(0.72rem + 2pt);
+  font-size: 0.72rem;
   font-weight: 500;
   color: var(--text-secondary);
   letter-spacing: 0.01em;
@@ -1199,7 +1199,7 @@ details::details-content {
   }
 
   .brand-tagline {
-    font-size: calc(0.62rem + 2pt);
+    font-size: calc(0.62rem + 1pt);
     line-height: 1.2;
     flex: 1 1 auto;
     min-width: 0;
