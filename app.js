@@ -459,7 +459,88 @@ function handleGeolocation() {
   );
 }
 
-// 7. Postcode and Location Search via Nominatim API
+// 7. Postcode, Place and Location Search via Nominatim API
+const NOMINATIM_HEADERS = {
+  'User-Agent': 'BikeParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
+};
+const LONDON_VIEWBOX = '-0.510,51.691,0.334,51.286';
+const LONDON_BOUNDS = { latMin: 51.28, latMax: 51.70, lonMin: -0.55, lonMax: 0.35 };
+
+function isInLondon(lat, lon) {
+  return lat >= LONDON_BOUNDS.latMin && lat <= LONDON_BOUNDS.latMax
+    && lon >= LONDON_BOUNDS.lonMin && lon <= LONDON_BOUNDS.lonMax;
+}
+
+function formatNominatimResult(result) {
+  const addr = result.address || {};
+  const label = result.name || result.display_name.split(',')[0].trim();
+
+  const subParts = [
+    addr.house_number,
+    addr.road,
+    addr.suburb || addr.neighbourhood || addr.city_district,
+    addr.postcode
+  ].filter(Boolean);
+
+  const sublabel = subParts.length
+    ? subParts.join(', ')
+    : result.display_name.split(',').slice(1, 3).join(',').trim();
+
+  return {
+    label,
+    sublabel,
+    lat: parseFloat(result.lat),
+    lon: parseFloat(result.lon)
+  };
+}
+
+async function nominatimSearch(query, limit = 5) {
+  const params = new URLSearchParams({
+    format: 'json',
+    q: query,
+    limit: String(limit),
+    addressdetails: '1',
+    countrycodes: 'gb',
+    viewbox: LONDON_VIEWBOX
+  });
+
+  const response = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
+    headers: NOMINATIM_HEADERS
+  });
+
+  if (!response.ok) throw new Error('Search failed');
+
+  const results = await response.json();
+  return results
+    .map(formatNominatimResult)
+    .filter(item => isInLondon(item.lat, item.lon));
+}
+
+async function fetchLocationSuggestions(query, limit = 5) {
+  let results = await nominatimSearch(query, limit);
+
+  // Retry with London appended when place/POI queries return nothing
+  if (!results.length && !/\blondon\b/i.test(query)) {
+    results = await nominatimSearch(`${query}, London`, limit);
+  }
+
+  return results;
+}
+
+function showSearchLocation(lat, lon) {
+  if (searchResultMarker) map.removeLayer(searchResultMarker);
+
+  searchResultMarker = L.marker([lat, lon], {
+    icon: L.divIcon({
+      html: `<div style="color:#ef4444;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))">${locationIconSvg}</div>`,
+      className: 'search-result-pin',
+      iconSize: [24, 24],
+      iconAnchor: [7, 14]
+    })
+  }).addTo(map);
+
+  map.setView([lat, lon], 16);
+}
 
 // Autocomplete: fetch up to 5 Nominatim suggestions for the typed query.
 // Returns an array of { label, sublabel, lat, lon }.
@@ -483,36 +564,7 @@ function setupSearchAutocomplete() {
   function selectSuggestion(item) {
     input.value = item.label;
     closeSuggestions();
-    // Place a temporary search pin and pan the map
-    if (searchResultMarker) map.removeLayer(searchResultMarker);
-    searchResultMarker = L.marker([item.lat, item.lon], {
-      icon: L.divIcon({
-        html: `<div style="color:#ef4444;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))">${locationIconSvg}</div>`,
-        className: 'search-result-pin',
-        iconSize: [24, 24],
-        iconAnchor: [7, 14]
-      })
-    }).addTo(map);
-    map.setView([item.lat, item.lon], 16);
-  }
-
-  async function fetchSuggestions(query) {
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query + ', London, UK')}&limit=5&addressdetails=1`;
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'BikeParkLondonApp/1.0' } });
-      if (!res.ok) return [];
-      const data = await res.json();
-      return data.map(r => {
-        const addr = r.address || {};
-        // Build a short human-readable main label
-        const main = addr.road || addr.pedestrian || addr.suburb || r.display_name.split(',')[0];
-        // Build a contextual sublabel (postcode + district)
-        const parts = [addr.postcode, addr.suburb || addr.city_district, addr.city || 'London'].filter(Boolean);
-        return { label: main, sublabel: parts.join(', '), lat: parseFloat(r.lat), lon: parseFloat(r.lon) };
-      });
-    } catch {
-      return [];
-    }
+    showSearchLocation(item.lat, item.lon);
   }
 
   input.addEventListener('input', () => {
@@ -523,7 +575,12 @@ function setupSearchAutocomplete() {
     _lastQuery = query;
 
     _autocompleteTimer = setTimeout(async () => {
-      const suggestions = await fetchSuggestions(query);
+      let suggestions = [];
+      try {
+        suggestions = await fetchLocationSuggestions(query);
+      } catch (error) {
+        console.error('Autocomplete search failed:', error);
+      }
       if (input.value.trim() !== query) return; // stale result
       closeSuggestions();
       if (!suggestions.length) return;
@@ -594,46 +651,21 @@ async function handleSearch(e) {
   e.preventDefault();
   const input = document.getElementById('search-input');
   const query = input.value.trim();
-  
+
   if (!query) return;
-  
+
   const submitBtn = document.querySelector('.search-submit-btn');
   submitBtn.style.opacity = 0.5;
-  
-  // Search Nominatim, restricting results to London UK
-  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}, London, UK&limit=1`;
-  
+
   try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'BikeParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
-      }
-    });
-    
-    if (!response.ok) throw new Error('Search failed');
-    
-    const results = await response.json();
-    
-    if (results && results.length > 0) {
+    const results = await fetchLocationSuggestions(query, 1);
+
+    if (results.length > 0) {
       const place = results[0];
-      const lat = parseFloat(place.lat);
-      const lon = parseFloat(place.lon);
-      
-      // Add/update temporary search pin
-      if (searchResultMarker) map.removeLayer(searchResultMarker);
-      
-      searchResultMarker = L.marker([lat, lon], {
-        icon: L.divIcon({
-          html: `<div style="color: #ef4444; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">${locationIconSvg}</div>`,
-          className: 'search-result-pin',
-          iconSize: [24, 24],
-          iconAnchor: [7, 14]
-        })
-      }).addTo(map);
-      
-      map.setView([lat, lon], 16);
+      input.value = place.label;
+      showSearchLocation(place.lat, place.lon);
     } else {
-      alert(`No results found for "${query}" in London. Try checking the postcode format.`);
+      alert(`No results found for "${query}" in London. Try a postcode, street name, or place.`);
     }
   } catch (error) {
     console.error('Error during search geocoding:', error);
