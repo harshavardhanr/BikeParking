@@ -1278,22 +1278,6 @@ details::details-content {
     height: 38px;
   }
 
-  /* --- Drag-handle indicator on bottom-sheet panels --- */
-  /* The panels are flex columns, so ::before becomes the topmost flex child */
-  .details-panel::before,
-  .directory-panel::before,
-  .info-panel::before {
-    content: '';
-    display: block;
-    width: 36px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
-    margin: 10px auto 0;
-    align-self: center;
-    flex-shrink: 0;
-  }
-
   /* --- Details panel: full-width bottom sheet on mobile --- */
   .details-panel {
     left: 0;
@@ -1377,9 +1361,8 @@ details::details-content {
   }
 
   /* --- Panel internals --- */
-  /* Less top padding: the drag handle takes ~24px already */
   .panel-header {
-    padding: 10px 20px 16px;
+    padding: 16px 20px 16px;
   }
 
   .panel-content {
