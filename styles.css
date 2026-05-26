@@ -286,12 +286,35 @@ search {
 }
 
 /* Style the search clear/cancel button built in browsers */
+/* Hide the native browser search-cancel button so we can use our own */
 #search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
-  height: 10px;
-  width: 10px;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>") no-repeat center;
+  display: none;
+}
+
+/* Custom clear button — 44×44 touch target, visually a centred 16px icon */
+.search-clear-btn {
+  position: absolute;
+  right: 44px; /* sits to the left of the submit button */
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
   cursor: pointer;
+  border-radius: 50%;
+  transition: color var(--transition-smooth), background-color var(--transition-smooth);
+}
+.search-clear-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+/* Reserve space in the input so text doesn't slide under the buttons */
+#search-input:not(:placeholder-shown) {
+  padding-right: 88px; /* room for clear (44px) + submit (44px) */
 }
 
 .search-submit-btn {

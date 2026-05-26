@@ -568,6 +568,26 @@ function setupSearchAutocomplete() {
   document.addEventListener('click', (e) => {
     if (!input.contains(e.target) && !list.contains(e.target)) closeSuggestions();
   });
+
+  // Clear button: show when input has content, hide when empty
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (clearBtn) {
+    const updateClearBtn = () => {
+      clearBtn.hidden = input.value.trim().length === 0;
+    };
+    input.addEventListener('input', updateClearBtn);
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      closeSuggestions();
+      clearBtn.hidden = true;
+      input.focus();
+      // Remove the search pin if one was placed
+      if (searchResultMarker) {
+        map.removeLayer(searchResultMarker);
+        searchResultMarker = null;
+      }
+    });
+  }
 }
 
 async function handleSearch(e) {
