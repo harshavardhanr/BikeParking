@@ -1176,26 +1176,35 @@ details::details-content {
 
   .brand {
     display: flex;
-    justify-content: center;
+    width: 100%;
     flex-shrink: 0;
     min-width: 0;
-    padding-bottom: 2px;
+    padding-bottom: 0;
   }
 
   .brand-text {
-    align-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
   }
 
   .brand h1 {
     font-size: 1.05rem;
     line-height: 1.15;
+    flex-shrink: 0;
+    text-align: left;
   }
 
   .brand-tagline {
     font-size: 0.62rem;
     line-height: 1.2;
-    max-width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 55%;
+    text-align: right;
   }
 
   .search-controls {
@@ -1241,11 +1250,11 @@ details::details-content {
 
   /* --- Leaflet zoom control --- */
   /*
-   * Search bar height ≈ brand (~34px) + 8 + 44 + 8 + 44 + padding (~22px)
-   * ≈ 160px, plus 12px top inset. Leave a small gap below the bar.
+   * Search bar height ≈ brand row (~20px) + 8 + 44 + 8 + 44 + padding (~22px)
+   * ≈ 146px, plus 12px top inset. Leave a small gap below the bar.
    */
   .leaflet-top.leaflet-left {
-    top: 176px;
+    top: 162px;
     left: 12px;
   }
 
