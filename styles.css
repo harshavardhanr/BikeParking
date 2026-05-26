@@ -1165,16 +1165,37 @@ details::details-content {
   }
 
   /* --- Search bar --- */
-  /* Hide the brand block to reclaim ~50px of vertical space */
-  .brand {
-    display: none;
-  }
-
   .search-container {
     width: calc(100% - 24px);
     top: 12px;
-    padding: 10px 14px;
+    padding: 10px 14px 12px;
     gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 0;
+    padding-bottom: 2px;
+  }
+
+  .brand-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 1.05rem;
+    line-height: 1.15;
+  }
+
+  .brand-tagline {
+    font-size: 0.62rem;
+    line-height: 1.2;
+    max-width: 100%;
   }
 
   .search-controls {
@@ -1220,12 +1241,11 @@ details::details-content {
 
   /* --- Leaflet zoom control --- */
   /*
-   * Search bar height ≈ 10 + 44 + 8 + 44 + 10 = 116px, plus 12px top
-   * inset = ~128px to the bottom of the search bar. Add an 8px gap so
-   * the zoom buttons sit cleanly below the search bar.
+   * Search bar height ≈ brand (~34px) + 8 + 44 + 8 + 44 + padding (~22px)
+   * ≈ 160px, plus 12px top inset. Leave a small gap below the bar.
    */
   .leaflet-top.leaflet-left {
-    top: 136px;
+    top: 176px;
     left: 12px;
   }
 
