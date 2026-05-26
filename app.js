@@ -694,17 +694,34 @@ async function handleSearch(e) {
 
 // Reverse-geocode lat/lng using Nominatim and return a formatted
 // "Road, Postcode" string, or null if unavailable.
+function formatAddressFromNominatim(data) {
+  const addr = data.address || {};
+  const line1Parts = [
+    addr.house_number,
+    addr.road || addr.pedestrian || addr.footway || addr.path || addr.street || addr.square
+  ].filter(Boolean);
+  const line1 = line1Parts.join(' ');
+  const postcode = addr.postcode || '';
+
+  if (line1 && postcode) return `${line1}, ${postcode}`;
+  if (line1) return line1;
+  if (postcode) return postcode;
+
+  // Fall back to a shortened display_name (street + postcode area)
+  if (data.display_name) {
+    const parts = data.display_name.split(',').map(p => p.trim());
+    return parts.slice(0, 3).join(', ');
+  }
+  return null;
+}
+
 async function reverseGeocode(lat, lng) {
   try {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=17&addressdetails=1`;
-    const res = await fetch(url, { headers: { 'User-Agent': 'BikeParkLondonApp/1.0' } });
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=18&addressdetails=1`;
+    const res = await fetch(url, { headers: NOMINATIM_HEADERS });
     if (!res.ok) return null;
     const data = await res.json();
-    const addr = data.address || {};
-    const road = addr.road || addr.pedestrian || addr.path || addr.footway || '';
-    const postcode = addr.postcode || '';
-    if (!road && !postcode) return null;
-    return [road, postcode].filter(Boolean).join(', ');
+    return formatAddressFromNominatim(data);
   } catch {
     return null;
   }
@@ -832,9 +849,15 @@ function showSpotDetails(spot) {
       });
     };
 
+    const spotId = spot.id;
+    const streetHint = (street !== 'Solo Motorcycle Parking Bay') ? street : '';
+
     reverseGeocode(lat, lng).then(result => {
-      addressEl.textContent = result || coordStr;
+      // Ignore stale responses if the user tapped another marker
+      if (panel.dataset.activeSpotId !== spotId) return;
+      addressEl.textContent = result || streetHint || coordStr;
     });
+    panel.dataset.activeSpotId = spotId;
   }
 }
 
