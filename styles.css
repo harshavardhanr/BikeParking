@@ -310,6 +310,55 @@ search {
 .search-submit-btn:hover {
   color: var(--brand-primary);
 }
+/* Search autocomplete suggestions dropdown */
+.search-suggestions {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: rgb(var(--bg-panel-rgb));
+  border: 1px solid var(--border-panel);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+  z-index: 200;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.search-suggestions.is-open {
+  display: block;
+}
+.search-suggestions li {
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  line-height: 1.35;
+  transition: background var(--transition-smooth);
+}
+.search-suggestions li:hover,
+.search-suggestions li[aria-selected="true"] {
+  background: rgba(59, 130, 246, 0.12);
+}
+.search-suggestions li .suggestion-main {
+  display: block;
+  font-weight: 500;
+}
+.search-suggestions li .suggestion-sub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-suggestions li + li {
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
 
 .filter-wrapper {
   display: flex;

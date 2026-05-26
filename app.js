@@ -460,6 +460,116 @@ function handleGeolocation() {
 }
 
 // 7. Postcode and Location Search via Nominatim API
+
+// Autocomplete: fetch up to 5 Nominatim suggestions for the typed query.
+// Returns an array of { label, sublabel, lat, lon }.
+let _autocompleteTimer = null;
+let _lastQuery = '';
+
+function setupSearchAutocomplete() {
+  const input = document.getElementById('search-input');
+  const list  = document.getElementById('search-suggestions');
+  if (!input || !list) return;
+
+  let activeIndex = -1;
+
+  function closeSuggestions() {
+    list.classList.remove('is-open');
+    list.innerHTML = '';
+    activeIndex = -1;
+    input.setAttribute('aria-expanded', 'false');
+  }
+
+  function selectSuggestion(item) {
+    input.value = item.label;
+    closeSuggestions();
+    // Place a temporary search pin and pan the map
+    if (searchResultMarker) map.removeLayer(searchResultMarker);
+    searchResultMarker = L.marker([item.lat, item.lon], {
+      icon: L.divIcon({
+        html: `<div style="color:#ef4444;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))">${locationIconSvg}</div>`,
+        className: 'search-result-pin',
+        iconSize: [24, 24],
+        iconAnchor: [7, 14]
+      })
+    }).addTo(map);
+    map.setView([item.lat, item.lon], 16);
+  }
+
+  async function fetchSuggestions(query) {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query + ', London, UK')}&limit=5&addressdetails=1`;
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'BikeParkLondonApp/1.0' } });
+      if (!res.ok) return [];
+      const data = await res.json();
+      return data.map(r => {
+        const addr = r.address || {};
+        // Build a short human-readable main label
+        const main = addr.road || addr.pedestrian || addr.suburb || r.display_name.split(',')[0];
+        // Build a contextual sublabel (postcode + district)
+        const parts = [addr.postcode, addr.suburb || addr.city_district, addr.city || 'London'].filter(Boolean);
+        return { label: main, sublabel: parts.join(', '), lat: parseFloat(r.lat), lon: parseFloat(r.lon) };
+      });
+    } catch {
+      return [];
+    }
+  }
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim();
+    clearTimeout(_autocompleteTimer);
+    if (query.length < 2) { closeSuggestions(); return; }
+    if (query === _lastQuery) return;
+    _lastQuery = query;
+
+    _autocompleteTimer = setTimeout(async () => {
+      const suggestions = await fetchSuggestions(query);
+      if (input.value.trim() !== query) return; // stale result
+      closeSuggestions();
+      if (!suggestions.length) return;
+
+      suggestions.forEach((item, i) => {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.innerHTML = `<span class="suggestion-main">${item.label}</span><span class="suggestion-sub">${item.sublabel}</span>`;
+        li.addEventListener('mousedown', (e) => { e.preventDefault(); selectSuggestion(item); });
+        list.appendChild(li);
+      });
+      list.classList.add('is-open');
+      input.setAttribute('aria-expanded', 'true');
+      activeIndex = -1;
+    }, 280);
+  });
+
+  // Keyboard navigation
+  input.addEventListener('keydown', (e) => {
+    const items = list.querySelectorAll('li');
+    if (!list.classList.contains('is-open') || !items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, -1);
+    } else if (e.key === 'Escape') {
+      closeSuggestions();
+      return;
+    } else if (e.key === 'Enter' && activeIndex >= 0) {
+      e.preventDefault();
+      items[activeIndex].dispatchEvent(new MouseEvent('mousedown'));
+      return;
+    } else {
+      return;
+    }
+    items.forEach((li, i) => li.setAttribute('aria-selected', i === activeIndex));
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!input.contains(e.target) && !list.contains(e.target)) closeSuggestions();
+  });
+}
+
 async function handleSearch(e) {
   e.preventDefault();
   const input = document.getElementById('search-input');
@@ -805,6 +915,7 @@ function setupListeners() {
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   setupListeners();
+  setupSearchAutocomplete();
   populateDirectory();
   loadParkingData();
   centreOnUserLocation();
