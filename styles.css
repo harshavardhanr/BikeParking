@@ -313,7 +313,9 @@ search {
 }
 
 .search-clear-btn[hidden] {
-  display: none;
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .search-clear-btn:hover {

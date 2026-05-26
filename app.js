@@ -977,6 +977,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   setupListeners();
   setupSearchAutocomplete();
+  syncSearchClearButton();
   populateDirectory();
   loadParkingData();
   centreOnUserLocation();

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
   <!-- App Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260526">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
           <form id="search-form" autocomplete="off" action="#" method="dialog">
             <label for="search-input" class="sr-only">Search location or postcode</label>
             <div class="input-wrapper">
-              <input type="search" id="search-input" name="location" placeholder="Search postcode, street or place..." required
+              <input type="text" id="search-input" inputmode="search" enterkeyhint="search" role="searchbox" name="location" placeholder="Search postcode, street or place..." required
                      autocomplete="off" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
               <ul id="search-suggestions" class="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
               <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search" hidden>
@@ -174,6 +174,6 @@
   <script src="data/parking_data.js"></script>
 
   <!-- App Script -->
-  <script src="app.js"></script>
+  <script src="app.js?v=20260526"></script>
 </body>
 </html>
