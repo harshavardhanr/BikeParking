@@ -542,6 +542,15 @@ function showSearchLocation(lat, lon) {
   map.setView([lat, lon], 16);
 }
 
+function syncSearchClearButton() {
+  const input = document.getElementById('search-input');
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (!input || !clearBtn) return;
+  const hasValue = input.value.trim().length > 0;
+  clearBtn.hidden = !hasValue;
+  input.classList.toggle('has-value', hasValue);
+}
+
 // Autocomplete: fetch up to 5 Nominatim suggestions for the typed query.
 // Returns an array of { label, sublabel, lat, lon }.
 let _autocompleteTimer = null;
@@ -563,6 +572,7 @@ function setupSearchAutocomplete() {
 
   function selectSuggestion(item) {
     input.value = item.label;
+    syncSearchClearButton();
     closeSuggestions();
     showSearchLocation(item.lat, item.lon);
   }
@@ -629,14 +639,12 @@ function setupSearchAutocomplete() {
   // Clear button: show when input has content, hide when empty
   const clearBtn = document.getElementById('search-clear-btn');
   if (clearBtn) {
-    const updateClearBtn = () => {
-      clearBtn.hidden = input.value.trim().length === 0;
-    };
-    input.addEventListener('input', updateClearBtn);
+    input.addEventListener('input', syncSearchClearButton);
+    syncSearchClearButton();
     clearBtn.addEventListener('click', () => {
       input.value = '';
       closeSuggestions();
-      clearBtn.hidden = true;
+      syncSearchClearButton();
       input.focus();
       // Remove the search pin if one was placed
       if (searchResultMarker) {
@@ -663,6 +671,7 @@ async function handleSearch(e) {
     if (results.length > 0) {
       const place = results[0];
       input.value = place.label;
+      syncSearchClearButton();
       showSearchLocation(place.lat, place.lon);
     } else {
       alert(`No results found for "${query}" in London. Try a postcode, street name, or place.`);

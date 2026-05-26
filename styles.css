@@ -298,7 +298,6 @@ search {
   right: 44px; /* sits to the left of the submit button */
   width: 44px;
   height: 44px;
-  display: flex;
   align-items: center;
   justify-content: center;
   background: none;
@@ -308,12 +307,22 @@ search {
   border-radius: 50%;
   transition: color var(--transition-smooth), background-color var(--transition-smooth);
 }
+
+.search-clear-btn:not([hidden]) {
+  display: flex;
+}
+
+.search-clear-btn[hidden] {
+  display: none;
+}
+
 .search-clear-btn:hover {
   color: var(--text-primary);
   background-color: rgba(255, 255, 255, 0.08);
 }
+
 /* Reserve space in the input so text doesn't slide under the buttons */
-#search-input:not(:placeholder-shown) {
+#search-input.has-value {
   padding-right: 88px; /* room for clear (44px) + submit (44px) */
 }
 
