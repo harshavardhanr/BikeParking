@@ -71,25 +71,26 @@ main {
   width: 100%;
   height: 100%;
   z-index: 1; /* Keep Leaflet map at the bottom of layer stack */
-  background-color: #111;
+  background-color: #e5e3df; /* Voyager tile placeholder colour */
 }
 
 /* Leaflet Customizations for Dark Theme integration */
 .leaflet-container {
-  background: #111;
+  background: #e5e3df; /* Voyager tile placeholder colour */
 }
 .leaflet-bar {
   border: none !important;
   box-shadow: var(--shadow-lg) !important;
 }
 .leaflet-bar a {
-  background-color: rgba(15, 23, 42, 0.9) !important;
-  color: var(--text-primary) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: #1e293b !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
   transition: background var(--transition-smooth);
 }
 .leaflet-bar a:hover {
-  background-color: var(--brand-primary-hover) !important;
+  background-color: var(--brand-primary) !important;
+  color: #ffffff !important;
 }
 /* Move Leaflet zoom control slightly down to avoid search bar */
 .leaflet-top.leaflet-left {
@@ -105,8 +106,8 @@ main {
 }
 
 .pin-inner {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
@@ -285,12 +286,44 @@ search {
 }
 
 /* Style the search clear/cancel button built in browsers */
+/* Hide the native browser search-cancel button so we can use our own */
 #search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
-  height: 10px;
-  width: 10px;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>") no-repeat center;
+  display: none;
+}
+
+/* Custom clear button — 44×44 touch target, visually a centred 16px icon */
+.search-clear-btn {
+  position: absolute;
+  right: 44px; /* sits to the left of the submit button */
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
   cursor: pointer;
+  border-radius: 50%;
+  transition: color var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.search-clear-btn:not([hidden]) {
+  display: flex;
+}
+
+.search-clear-btn[hidden] {
+  display: none;
+}
+
+.search-clear-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Reserve space in the input so text doesn't slide under the buttons */
+#search-input.has-value {
+  padding-right: 88px; /* room for clear (44px) + submit (44px) */
 }
 
 .search-submit-btn {
@@ -309,6 +342,55 @@ search {
 .search-submit-btn:hover {
   color: var(--brand-primary);
 }
+/* Search autocomplete suggestions dropdown */
+.search-suggestions {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: rgb(var(--bg-panel-rgb));
+  border: 1px solid var(--border-panel);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+  z-index: 200;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.search-suggestions.is-open {
+  display: block;
+}
+.search-suggestions li {
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  line-height: 1.35;
+  transition: background var(--transition-smooth);
+}
+.search-suggestions li:hover,
+.search-suggestions li[aria-selected="true"] {
+  background: rgba(59, 130, 246, 0.12);
+}
+.search-suggestions li .suggestion-main {
+  display: block;
+  font-weight: 500;
+}
+.search-suggestions li .suggestion-sub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-suggestions li + li {
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
 
 .filter-wrapper {
   display: flex;
@@ -317,23 +399,41 @@ search {
 }
 
 #borough-filter {
-  background: rgba(15, 23, 42, 0.6);
+  /* Strip every browser's native select chrome */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Match the search input height and font exactly */
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 36px 0 14px; /* right pad leaves room for the custom arrow */
+
+  background-color: rgba(15, 23, 42, 0.6);
+  /* Custom chevron arrow — same stroke colour as var(--text-secondary) */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--text-primary);
   outline: none;
   cursor: pointer;
   transition: border-color var(--transition-smooth);
+  /* Prevent text from overflowing behind the arrow */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #borough-filter:focus {
   border-color: var(--brand-primary);
 }
 
-/* Custom styling for drop-down options */
 #borough-filter option {
   background-color: #0F172A;
   color: var(--text-primary);
@@ -343,7 +443,9 @@ search {
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--text-secondary);
@@ -530,6 +632,30 @@ search {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+/* Address + copy button row, sits under the parking bay title */
+.address-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-secondary);
+  transition: color var(--transition-smooth);
+}
+.address-copy-btn:hover {
+  color: var(--text-primary);
+}
+.address-copy-btn.copied {
+  color: var(--color-free);
+}
+#details-address {
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .panel-header h2 {
@@ -939,12 +1065,21 @@ details::details-content {
    * from wrapping to two lines on narrow phones.
    */
   #search-input,
-  #borough-filter,
   .filter-toggle-btn {
     font-size: 1rem;
     height: 44px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  /* Borough select: same height but keep horizontal padding so the
+     custom arrow background stays visible on the right side. */
+  #borough-filter {
+    font-size: 1rem;
+    height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 14px;
+    padding-right: 36px;
   }
 
   /* Borough dropdown fills the row; toggle stays compact and one-line */

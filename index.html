@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>London Motorbike Parking Map | Solo Motorcycle Bays Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikeParkLondon | Solo Motorcycle Bays Finder</title>
   <meta name="description" content="Find public motorbike parking in London. Search by postcode or borough, view rules and pricing, and get instant Google Maps directions.">
 
   <!-- Google Fonts -->
@@ -23,10 +23,6 @@
 </head>
 <body>
 
-  <!-- Backdrop overlay shared by both panels. Sits above the map but
-       below the panels. Tapping it closes whichever panel is open. -->
-  <div id="panel-backdrop" class="panel-backdrop" aria-hidden="true"></div>
-
   <main>
     <!-- Map Container -->
     <div id="map"></div>
@@ -34,12 +30,7 @@
     <!-- Top Floating Search & Filter Bar -->
     <header class="glass-panel search-container">
       <div class="brand">
-        <svg class="brand-logo" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <path d="M12 2v20"></path>
-          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-        </svg>
-        <h1>MotoPark<span>London</span></h1>
+        <h1>BikePark<span>London</span></h1>
       </div>
 
       <div class="search-controls">
@@ -47,7 +38,15 @@
           <form id="search-form" autocomplete="off" action="#" method="dialog">
             <label for="search-input" class="sr-only">Search location or postcode</label>
             <div class="input-wrapper">
-              <input type="search" id="search-input" name="location" placeholder="Search postcode or street (e.g., SW1A 1AA)..." required>
+              <input type="search" id="search-input" name="location" placeholder="Search postcode, street or place..." required
+                     autocomplete="off" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
+              <ul id="search-suggestions" class="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
+              <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search" hidden>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
               <button type="submit" class="search-submit-btn" aria-label="Search">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -89,11 +88,18 @@
     </div>
 
     <!-- Details Overlay Panel (Top Layer via Popover API) -->
-    <article id="details-panel" class="glass-panel details-panel" role="dialog" aria-modal="true" aria-hidden="true">
+    <article id="details-panel" class="glass-panel details-panel" popover="manual">
       <header class="panel-header">
         <div class="panel-title-wrapper">
           <span class="badge" id="details-badge">Paid</span>
           <h2 id="details-street">Solo Motorcycle Parking Bay</h2>
+          <button id="details-address-copy" class="address-copy-btn" aria-label="Copy address" title="Copy address">
+            <span id="details-address">Locating address…</span>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
         </div>
         <button id="details-close-btn" class="close-btn" aria-label="Close details">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -139,7 +145,7 @@
     </article>
 
     <!-- Borough Rules Directory Panel (Top Layer via Popover API) -->
-    <article id="directory-panel" class="glass-panel directory-panel" role="dialog" aria-modal="true" aria-hidden="true">
+    <article id="directory-panel" class="glass-panel directory-panel" popover="manual">
       <header class="panel-header">
         <h2>Borough Rules Directory</h2>
         <button id="directory-close-btn" class="close-btn" aria-label="Close directory">

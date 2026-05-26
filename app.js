@@ -256,7 +256,7 @@ function createMotorcycleMarkerIcon(feeStatus) {
     html: `
       <div class="pin-inner">
         <img src="Bike.png" alt="" draggable="false"
-             style="width:18px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
+             style="width:20px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
       </div>
     `,
     className: `custom-pin ${colorClass}`,
@@ -264,8 +264,8 @@ function createMotorcycleMarkerIcon(feeStatus) {
     // visible pin (.pin-inner) is kept at 24x24 via flex-centering. This
     // makes markers reliably tappable on phones — a 24px target leaves
     // too much room to miss with a finger.
-    iconSize: [44, 44],
-    iconAnchor: [22, 22]
+    iconSize: [55, 55],
+    iconAnchor: [27, 27]
   });
 }
 
@@ -278,8 +278,9 @@ function initMap() {
     minZoom: 10
   }).setView([51.5074, -0.1278], 13);
 
-  // CartoDB Dark Matter Tiles (Sleek dark mode)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  // CartoDB Voyager — full-colour road map with clear road names and
+  // hierarchy. Much more legible than Dark Matter for finding streets.
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 20
@@ -458,57 +459,246 @@ function handleGeolocation() {
   );
 }
 
-// 7. Postcode and Location Search via Nominatim API
+// 7. Postcode, Place and Location Search via Nominatim API
+const NOMINATIM_HEADERS = {
+  'User-Agent': 'BikeParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
+};
+const LONDON_VIEWBOX = '-0.510,51.691,0.334,51.286';
+const LONDON_BOUNDS = { latMin: 51.28, latMax: 51.70, lonMin: -0.55, lonMax: 0.35 };
+
+function isInLondon(lat, lon) {
+  return lat >= LONDON_BOUNDS.latMin && lat <= LONDON_BOUNDS.latMax
+    && lon >= LONDON_BOUNDS.lonMin && lon <= LONDON_BOUNDS.lonMax;
+}
+
+function formatNominatimResult(result) {
+  const addr = result.address || {};
+  const label = result.name || result.display_name.split(',')[0].trim();
+
+  const subParts = [
+    addr.house_number,
+    addr.road,
+    addr.suburb || addr.neighbourhood || addr.city_district,
+    addr.postcode
+  ].filter(Boolean);
+
+  const sublabel = subParts.length
+    ? subParts.join(', ')
+    : result.display_name.split(',').slice(1, 3).join(',').trim();
+
+  return {
+    label,
+    sublabel,
+    lat: parseFloat(result.lat),
+    lon: parseFloat(result.lon)
+  };
+}
+
+async function nominatimSearch(query, limit = 5) {
+  const params = new URLSearchParams({
+    format: 'json',
+    q: query,
+    limit: String(limit),
+    addressdetails: '1',
+    countrycodes: 'gb',
+    viewbox: LONDON_VIEWBOX
+  });
+
+  const response = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
+    headers: NOMINATIM_HEADERS
+  });
+
+  if (!response.ok) throw new Error('Search failed');
+
+  const results = await response.json();
+  return results
+    .map(formatNominatimResult)
+    .filter(item => isInLondon(item.lat, item.lon));
+}
+
+async function fetchLocationSuggestions(query, limit = 5) {
+  let results = await nominatimSearch(query, limit);
+
+  // Retry with London appended when place/POI queries return nothing
+  if (!results.length && !/\blondon\b/i.test(query)) {
+    results = await nominatimSearch(`${query}, London`, limit);
+  }
+
+  return results;
+}
+
+function showSearchLocation(lat, lon) {
+  if (searchResultMarker) map.removeLayer(searchResultMarker);
+
+  searchResultMarker = L.marker([lat, lon], {
+    icon: L.divIcon({
+      html: `<div style="color:#ef4444;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))">${locationIconSvg}</div>`,
+      className: 'search-result-pin',
+      iconSize: [24, 24],
+      iconAnchor: [7, 14]
+    })
+  }).addTo(map);
+
+  map.setView([lat, lon], 16);
+}
+
+function syncSearchClearButton() {
+  const input = document.getElementById('search-input');
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (!input || !clearBtn) return;
+  const hasValue = input.value.trim().length > 0;
+  clearBtn.hidden = !hasValue;
+  input.classList.toggle('has-value', hasValue);
+}
+
+// Autocomplete: fetch up to 5 Nominatim suggestions for the typed query.
+// Returns an array of { label, sublabel, lat, lon }.
+let _autocompleteTimer = null;
+let _lastQuery = '';
+
+function setupSearchAutocomplete() {
+  const input = document.getElementById('search-input');
+  const list  = document.getElementById('search-suggestions');
+  if (!input || !list) return;
+
+  let activeIndex = -1;
+
+  function closeSuggestions() {
+    list.classList.remove('is-open');
+    list.innerHTML = '';
+    activeIndex = -1;
+    input.setAttribute('aria-expanded', 'false');
+  }
+
+  function selectSuggestion(item) {
+    input.value = item.label;
+    syncSearchClearButton();
+    closeSuggestions();
+    showSearchLocation(item.lat, item.lon);
+  }
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim();
+    clearTimeout(_autocompleteTimer);
+    if (query.length < 2) { closeSuggestions(); return; }
+    if (query === _lastQuery) return;
+    _lastQuery = query;
+
+    _autocompleteTimer = setTimeout(async () => {
+      let suggestions = [];
+      try {
+        suggestions = await fetchLocationSuggestions(query);
+      } catch (error) {
+        console.error('Autocomplete search failed:', error);
+      }
+      if (input.value.trim() !== query) return; // stale result
+      closeSuggestions();
+      if (!suggestions.length) return;
+
+      suggestions.forEach((item, i) => {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.innerHTML = `<span class="suggestion-main">${item.label}</span><span class="suggestion-sub">${item.sublabel}</span>`;
+        li.addEventListener('mousedown', (e) => { e.preventDefault(); selectSuggestion(item); });
+        list.appendChild(li);
+      });
+      list.classList.add('is-open');
+      input.setAttribute('aria-expanded', 'true');
+      activeIndex = -1;
+    }, 280);
+  });
+
+  // Keyboard navigation
+  input.addEventListener('keydown', (e) => {
+    const items = list.querySelectorAll('li');
+    if (!list.classList.contains('is-open') || !items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, -1);
+    } else if (e.key === 'Escape') {
+      closeSuggestions();
+      return;
+    } else if (e.key === 'Enter' && activeIndex >= 0) {
+      e.preventDefault();
+      items[activeIndex].dispatchEvent(new MouseEvent('mousedown'));
+      return;
+    } else {
+      return;
+    }
+    items.forEach((li, i) => li.setAttribute('aria-selected', i === activeIndex));
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!input.contains(e.target) && !list.contains(e.target)) closeSuggestions();
+  });
+
+  // Clear button: show when input has content, hide when empty
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (clearBtn) {
+    input.addEventListener('input', syncSearchClearButton);
+    syncSearchClearButton();
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      closeSuggestions();
+      syncSearchClearButton();
+      input.focus();
+      // Remove the search pin if one was placed
+      if (searchResultMarker) {
+        map.removeLayer(searchResultMarker);
+        searchResultMarker = null;
+      }
+    });
+  }
+}
+
 async function handleSearch(e) {
   e.preventDefault();
   const input = document.getElementById('search-input');
   const query = input.value.trim();
-  
+
   if (!query) return;
-  
+
   const submitBtn = document.querySelector('.search-submit-btn');
   submitBtn.style.opacity = 0.5;
-  
-  // Search Nominatim, restricting results to London UK
-  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}, London, UK&limit=1`;
-  
+
   try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'MotoParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
-      }
-    });
-    
-    if (!response.ok) throw new Error('Search failed');
-    
-    const results = await response.json();
-    
-    if (results && results.length > 0) {
+    const results = await fetchLocationSuggestions(query, 1);
+
+    if (results.length > 0) {
       const place = results[0];
-      const lat = parseFloat(place.lat);
-      const lon = parseFloat(place.lon);
-      
-      // Add/update temporary search pin
-      if (searchResultMarker) map.removeLayer(searchResultMarker);
-      
-      searchResultMarker = L.marker([lat, lon], {
-        icon: L.divIcon({
-          html: `<div style="color: #ef4444; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">${locationIconSvg}</div>`,
-          className: 'search-result-pin',
-          iconSize: [24, 24],
-          iconAnchor: [7, 14]
-        })
-      }).addTo(map);
-      
-      map.setView([lat, lon], 16);
+      input.value = place.label;
+      syncSearchClearButton();
+      showSearchLocation(place.lat, place.lon);
     } else {
-      alert(`No results found for "${query}" in London. Try checking the postcode format.`);
+      alert(`No results found for "${query}" in London. Try a postcode, street name, or place.`);
     }
   } catch (error) {
     console.error('Error during search geocoding:', error);
     alert('Search service is currently unavailable. Please try again.');
   } finally {
     submitBtn.style.opacity = 1;
+  }
+}
+
+// Reverse-geocode lat/lng using Nominatim and return a formatted
+// "Road, Postcode" string, or null if unavailable.
+async function reverseGeocode(lat, lng) {
+  try {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=17&addressdetails=1`;
+    const res = await fetch(url, { headers: { 'User-Agent': 'BikeParkLondonApp/1.0' } });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const addr = data.address || {};
+    const road = addr.road || addr.pedestrian || addr.path || addr.footway || '';
+    const postcode = addr.postcode || '';
+    if (!road && !postcode) return null;
+    return [road, postcode].filter(Boolean).join(', ');
+  } catch {
+    return null;
   }
 }
 
@@ -596,6 +786,41 @@ function showSpotDetails(spot) {
   if (backdrop) {
     backdrop.classList.add('is-open');
     backdrop.setAttribute('aria-hidden', 'false');
+  }
+
+  // Populate the address subheading via reverse geocoding.
+  // Show coordinates immediately so there's always something to copy.
+  const addressEl = document.getElementById('details-address');
+  const copyBtn   = document.getElementById('details-address-copy');
+  if (addressEl && copyBtn && typeof lat === 'number' && typeof lng === 'number') {
+    const coordStr = `${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+    addressEl.textContent = 'Locating address…';
+    copyBtn.classList.remove('copied');
+
+    // Copy-to-clipboard handler
+    copyBtn.onclick = () => {
+      const text = addressEl.textContent;
+      if (!text || text === 'Locating address…') return;
+      navigator.clipboard.writeText(text).then(() => {
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+      }).catch(() => {
+        // Fallback for browsers without clipboard API
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+      });
+    };
+
+    reverseGeocode(lat, lng).then(result => {
+      addressEl.textContent = result || coordStr;
+    });
   }
 }
 
@@ -751,6 +976,46 @@ function setupListeners() {
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   setupListeners();
+  setupSearchAutocomplete();
   populateDirectory();
   loadParkingData();
+  centreOnUserLocation();
 });
+
+// On startup, silently request the user's location and pan the map there.
+// If geolocation is unavailable or the user denies permission the map
+// simply stays on the default London view — no alert, no error shown.
+function centreOnUserLocation() {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const { latitude, longitude, accuracy } = position.coords;
+      const latlng = [latitude, longitude];
+
+      // Show the pulsing user-location dot
+      if (userLocationMarker) map.removeLayer(userLocationMarker);
+      if (userAccuracyCircle) map.removeLayer(userAccuracyCircle);
+
+      userAccuracyCircle = L.circle(latlng, {
+        radius: accuracy,
+        color: '#3b82f6',
+        fillColor: '#3b82f6',
+        fillOpacity: 0.15,
+        weight: 1
+      }).addTo(map);
+
+      const userIcon = L.divIcon({
+        html: '<div class="user-location-inner"></div>',
+        className: 'user-location-pin',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
+      userLocationMarker = L.marker(latlng, { icon: userIcon }).addTo(map);
+
+      // Zoom in on the user. Cap at 15 so they still see nearby markers.
+      map.setView(latlng, 15);
+    },
+    () => { /* permission denied or unavailable — stay on default view */ },
+    { enableHighAccuracy: true, timeout: 8000, maximumAge: 60000 }
+  );
+}
