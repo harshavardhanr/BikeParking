@@ -251,6 +251,94 @@ let filteredParkingSpots = [];
 let userLocationMarker = null;
 let userAccuracyCircle = null;
 let searchResultMarker = null;
+let anchoredDetailSpot = null;
+
+const MOBILE_LAYOUT_MQ = window.matchMedia('(max-width: 576px)');
+const MOBILE_PANEL_MARKER_GAP_PX = 20;
+const MOBILE_MARKER_ICON_RADIUS_PX = 27;
+const MOBILE_PANEL_MIN_HEIGHT_PX = 168;
+
+function isMobileLayout() {
+  return MOBILE_LAYOUT_MQ.matches;
+}
+
+function resetMobileDetailsPanelLayout() {
+  const panel = document.getElementById('details-panel');
+  if (!panel) return;
+  panel.classList.remove('is-anchored', 'is-anchored-pending');
+  panel.style.removeProperty('--details-panel-top');
+  anchoredDetailSpot = null;
+}
+
+function layoutMobileDetailsPanel(spot, done) {
+  if (!map || !spot || typeof spot.lat !== 'number' || typeof spot.lng !== 'number') {
+    if (done) done();
+    return;
+  }
+  const panel = document.getElementById('details-panel');
+  if (!panel) {
+    if (done) done();
+    return;
+  }
+
+  const latlng = L.latLng(spot.lat, spot.lng);
+
+  const applyLayout = () => {
+    const mapHeight = map.getSize().y;
+    const searchEl = document.querySelector('.search-container');
+    const searchBottom = searchEl ? searchEl.getBoundingClientRect().bottom : 0;
+    const minPanelTop = searchBottom + 8;
+    const maxPanelTop = Math.max(minPanelTop + 40, mapHeight - MOBILE_PANEL_MIN_HEIGHT_PX);
+
+    const point = map.latLngToContainerPoint(latlng);
+    const markerBottom = point.y + MOBILE_MARKER_ICON_RADIUS_PX;
+    let panelTop = markerBottom + MOBILE_PANEL_MARKER_GAP_PX;
+    panelTop = Math.max(panelTop, minPanelTop);
+
+    return { panelTop, maxPanelTop, minPanelTop, markerBottom };
+  };
+
+  const commitLayout = () => {
+    const { panelTop } = applyLayout();
+    panel.classList.add('is-anchored');
+    panel.style.setProperty('--details-panel-top', `${Math.round(panelTop)}px`);
+    anchoredDetailSpot = spot;
+    if (done) done();
+  };
+
+  let { panelTop, maxPanelTop, minPanelTop } = applyLayout();
+  let panY = 0;
+
+  if (panelTop > maxPanelTop) {
+    panY += panelTop - maxPanelTop;
+  }
+  if (panelTop < minPanelTop) {
+    panY -= minPanelTop - panelTop;
+  }
+
+  if (panY !== 0) {
+    map.once('moveend', commitLayout);
+    map.panBy([0, panY]);
+    return;
+  }
+
+  commitLayout();
+}
+
+function focusMapOnSpot(spot, onComplete) {
+  if (!map || !spot || typeof spot.lat !== 'number' || typeof spot.lng !== 'number') {
+    if (onComplete) onComplete();
+    return;
+  }
+  const targetZoom = Math.max(map.getZoom(), 16);
+  const onMoveEnd = () => {
+    map.off('moveend', onMoveEnd);
+    if (onComplete) onComplete();
+  };
+  map.on('moveend', onMoveEnd);
+  map.setView([spot.lat, spot.lng], targetZoom);
+}
+
 
 
 
@@ -367,13 +455,6 @@ function renderParkingMarkers() {
         e.originalEvent.stopPropagation();
       }
       showSpotDetails(spot);
-      // Defer the zoom/pan so the panel transition starts cleanly first.
-      // Clamp the zoom to max(current, 16) so tapping a marker doesn't
-      // yank a zoomed-out user too aggressively.
-      setTimeout(() => {
-        const targetZoom = Math.max(map.getZoom(), 16);
-        map.setView([spot.lat, spot.lng], targetZoom);
-      }, 50);
     });
 
     markerCluster.addLayer(marker);
@@ -815,9 +896,24 @@ function showSpotDetails(spot) {
   // Show the panel via .is-open class. Make sure other panels are hidden.
   closeDirectoryPanel();
   closeInfoPanel();
-  panel.classList.add('is-open');
   panel.setAttribute('aria-hidden', 'false');
-  updatePanelBackdrop();
+  resetMobileDetailsPanelLayout();
+
+  if (isMobileLayout()) {
+    // Anchor the sheet below the selected bay once the map finishes centering.
+    panel.classList.add('is-anchored-pending');
+    focusMapOnSpot(spot, () => {
+      layoutMobileDetailsPanel(spot, () => {
+        panel.classList.remove('is-anchored-pending');
+        panel.classList.add('is-open');
+        updatePanelBackdrop();
+      });
+    });
+  } else {
+    panel.classList.add('is-open');
+    updatePanelBackdrop();
+    setTimeout(() => focusMapOnSpot(spot), 50);
+  }
 
   // Populate the address subheading via reverse geocoding.
   // Show coordinates immediately so there's always something to copy.
@@ -901,6 +997,7 @@ function closeDetailsPanel() {
   if (!panel) return;
   panel.classList.remove('is-open');
   panel.setAttribute('aria-hidden', 'true');
+  resetMobileDetailsPanelLayout();
   updatePanelBackdrop();
 }
 
@@ -995,6 +1092,14 @@ function setupListeners() {
       closeDetailsPanel();
       closeDirectoryPanel();
       closeInfoPanel();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (!anchoredDetailSpot || !isMobileLayout()) return;
+    const panel = document.getElementById('details-panel');
+    if (panel && panel.classList.contains('is-open')) {
+      layoutMobileDetailsPanel(anchoredDetailSpot);
     }
   });
 

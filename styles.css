@@ -1312,6 +1312,23 @@ details::details-content {
     transform: translateY(0);
   }
 
+  .details-panel.is-anchored-pending {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .details-panel.is-anchored {
+    top: var(--details-panel-top);
+    bottom: 0;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .details-panel.is-anchored .panel-content {
+    min-height: 0;
+  }
+
   /* --- Directory panel: full-width bottom sheet on mobile --- */
   /* Override the tablet rule that translate-X centers a narrow card */
   .directory-panel {
