@@ -561,7 +561,8 @@ search {
    play. visibility transition is delayed by the same duration on close so
    the panel stays interactable until the slide-out finishes. */
 .details-panel,
-.directory-panel {
+.directory-panel,
+.info-panel {
   position: fixed;
   z-index: 100;
   border-radius: var(--radius-lg);
@@ -585,7 +586,8 @@ search {
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
 }
 .details-panel.is-open,
-.directory-panel.is-open {
+.directory-panel.is-open,
+.info-panel.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -859,6 +861,65 @@ search {
   display: none;
 }
 
+/* Info Panel Content */
+.info-content {
+  padding: 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.info-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section h3 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.info-section p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.info-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-list li + li {
+  margin-top: 8px;
+}
+
+.info-list a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.info-disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-style: italic;
+}
+
 /* Directory Panel Content & Accordions */
 .directory-content {
   padding: 24px;
@@ -987,11 +1048,13 @@ details::details-content {
 @media (prefers-reduced-motion: reduce) {
   .details-panel,
   .directory-panel,
+  .info-panel,
   .panel-backdrop {
     transition-duration: 0.05s !important;
   }
   .details-panel:not(.is-open),
-  .directory-panel:not(.is-open) {
+  .directory-panel:not(.is-open),
+  .info-panel:not(.is-open) {
     transform: none !important;
   }
   .pin-inner, .floating-btn, .cta-button, summary::after {
@@ -1049,6 +1112,21 @@ details::details-content {
     transform: translateX(50%) translateY(20px);
   }
   .directory-panel.is-open {
+    transform: translateX(50%) translateY(0);
+  }
+
+  .info-panel {
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    max-width: 480px;
+    height: auto;
+    max-height: 70vh;
+    top: auto;
+    bottom: 20px;
+  }
+
+  .info-panel.is-open {
     transform: translateX(50%) translateY(0);
   }
 }
@@ -1142,7 +1220,8 @@ details::details-content {
   /* --- Drag-handle indicator on bottom-sheet panels --- */
   /* The panels are flex columns, so ::before becomes the topmost flex child */
   .details-panel::before,
-  .directory-panel::before {
+  .directory-panel::before,
+  .info-panel::before {
     content: '';
     display: block;
     width: 36px;
@@ -1189,6 +1268,25 @@ details::details-content {
     border-bottom: none;
   }
   .directory-panel.is-open {
+    transform: translateY(0);
+  }
+
+  /* --- Info panel: full-width bottom sheet on mobile --- */
+  .info-panel {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    max-width: none;
+    max-height: 72dvh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    transform: translateY(100%);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .info-panel.is-open {
     transform: translateY(0);
   }
 

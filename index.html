@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
   <!-- App Styles -->
-  <link rel="stylesheet" href="styles.css?v=20260527">
+  <link rel="stylesheet" href="styles.css?v=20260528">
 </head>
 <body>
 
@@ -85,6 +85,13 @@
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+      </button>
+      <button id="info-toggle-btn" class="floating-btn" aria-label="About this site">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
         </svg>
       </button>
     </div>
@@ -171,6 +178,48 @@
         </div>
       </section>
     </article>
+
+    <article id="info-panel" class="glass-panel info-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="info-panel-title">
+      <header class="panel-header">
+        <h2 id="info-panel-title">About BikeParkLondon</h2>
+        <button id="info-close-btn" class="close-btn" aria-label="Close information">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+      <section class="info-content">
+        <p class="info-intro">BikeParkLondon helps you find solo motorcycle parking bays across London. Please read the notes below before relying on this map.</p>
+
+        <div class="info-section">
+          <h3>Experimental site</h3>
+          <p>This is an experimental project provided for information only. Coverage, pricing, and bay availability may be wrong or out of date. Always check on-street signage and official council guidance before parking.</p>
+        </div>
+
+        <div class="info-section">
+          <h3>Parking bay data</h3>
+          <p>Bays shown on the map come from <strong>OpenStreetMap</strong>, queried via the Overpass API. This is crowdsourced data and may be incomplete — some boroughs have few or no mapped motorcycle bays.</p>
+        </div>
+
+        <div class="info-section">
+          <h3>Borough rules</h3>
+          <p>Policy summaries in the details panel and borough directory are compiled from publicly available council parking guidance. They are general summaries, not legal advice, and may not reflect recent tariff or emissions-based changes.</p>
+        </div>
+
+        <div class="info-section">
+          <h3>Map &amp; search</h3>
+          <ul class="info-list">
+            <li><strong>Base map:</strong> CartoDB Voyager tiles (<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> contributors, <a href="https://carto.com/attributions" target="_blank" rel="noopener">© CARTO</a>)</li>
+            <li><strong>Search &amp; addresses:</strong> Nominatim / OpenStreetMap geocoding</li>
+            <li><strong>Directions:</strong> Google Maps (external link)</li>
+          </ul>
+        </div>
+
+        <p class="info-disclaimer">No warranty is given as to the accuracy or completeness of this information. You use this site at your own risk.</p>
+      </section>
+    </article>
+
   </main>
 
   <!-- Leaflet Scripts -->
@@ -183,6 +232,6 @@
   <script src="data/parking_data.js"></script>
 
   <!-- App Script -->
-  <script src="app.js?v=20260527"></script>
+  <script src="app.js?v=20260528"></script>
 </body>
 </html>

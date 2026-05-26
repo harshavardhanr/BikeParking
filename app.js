@@ -797,13 +797,10 @@ function showSpotDetails(spot) {
   
   // Show the panel via .is-open class. Make sure other panels are hidden.
   closeDirectoryPanel();
+  closeInfoPanel();
   panel.classList.add('is-open');
   panel.setAttribute('aria-hidden', 'false');
-  const backdrop = document.getElementById('panel-backdrop');
-  if (backdrop) {
-    backdrop.classList.add('is-open');
-    backdrop.setAttribute('aria-hidden', 'false');
-  }
+  updatePanelBackdrop();
 
   // Populate the address subheading via reverse geocoding.
   // Show coordinates immediately so there's always something to copy.
@@ -841,18 +838,47 @@ function showSpotDetails(spot) {
   }
 }
 
+
+function updatePanelBackdrop() {
+  const backdrop = document.getElementById('panel-backdrop');
+  if (!backdrop) return;
+  const anyOpen = ['details-panel', 'directory-panel', 'info-panel'].some(id => {
+    const el = document.getElementById(id);
+    return el && el.classList.contains('is-open');
+  });
+  backdrop.classList.toggle('is-open', anyOpen);
+  backdrop.setAttribute('aria-hidden', anyOpen ? 'false' : 'true');
+}
+
+function closeInfoPanel() {
+  const panel = document.getElementById('info-panel');
+  if (!panel) return;
+  panel.classList.remove('is-open');
+  panel.setAttribute('aria-hidden', 'true');
+  updatePanelBackdrop();
+}
+
+function toggleInfoPanel(e) {
+  if (e) L.DomEvent.stopPropagation(e);
+  const panel = document.getElementById('info-panel');
+  if (!panel) return;
+  if (panel.classList.contains('is-open')) {
+    closeInfoPanel();
+  } else {
+    closeDetailsPanel();
+    closeDirectoryPanel();
+    panel.classList.add('is-open');
+    panel.setAttribute('aria-hidden', 'false');
+    updatePanelBackdrop();
+  }
+}
+
 function closeDetailsPanel() {
   const panel = document.getElementById('details-panel');
   if (!panel) return;
   panel.classList.remove('is-open');
   panel.setAttribute('aria-hidden', 'true');
-  // Hide the backdrop only if the directory panel is also closed.
-  const directory = document.getElementById('directory-panel');
-  const backdrop = document.getElementById('panel-backdrop');
-  if (backdrop && (!directory || !directory.classList.contains('is-open'))) {
-    backdrop.classList.remove('is-open');
-    backdrop.setAttribute('aria-hidden', 'true');
-  }
+  updatePanelBackdrop();
 }
 
 // 9. Directory Panel (Borough List) Logic
@@ -896,13 +922,10 @@ function toggleDirectoryPanel(e) {
     closeDirectoryPanel();
   } else {
     closeDetailsPanel();
+    closeInfoPanel();
     panel.classList.add('is-open');
     panel.setAttribute('aria-hidden', 'false');
-    const backdrop = document.getElementById('panel-backdrop');
-    if (backdrop) {
-      backdrop.classList.add('is-open');
-      backdrop.setAttribute('aria-hidden', 'false');
-    }
+    updatePanelBackdrop();
   }
 }
 
@@ -911,12 +934,7 @@ function closeDirectoryPanel() {
   if (!panel) return;
   panel.classList.remove('is-open');
   panel.setAttribute('aria-hidden', 'true');
-  const details = document.getElementById('details-panel');
-  const backdrop = document.getElementById('panel-backdrop');
-  if (backdrop && (!details || !details.classList.contains('is-open'))) {
-    backdrop.classList.remove('is-open');
-    backdrop.setAttribute('aria-hidden', 'true');
-  }
+  updatePanelBackdrop();
 }
 
 // 10. Wire Up DOM Listeners
@@ -941,16 +959,19 @@ function setupListeners() {
   
   // Directory Toggle Button
   document.getElementById('directory-toggle-btn').addEventListener('click', toggleDirectoryPanel);
+  document.getElementById('info-toggle-btn').addEventListener('click', toggleInfoPanel);
   
   // Panel Close Buttons
   document.getElementById('details-close-btn').addEventListener('click', closeDetailsPanel);
   document.getElementById('directory-close-btn').addEventListener('click', closeDirectoryPanel);
+  document.getElementById('info-close-btn').addEventListener('click', closeInfoPanel);
   
   // Catch escape key for panels
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeDetailsPanel();
       closeDirectoryPanel();
+      closeInfoPanel();
     }
   });
 
@@ -966,7 +987,8 @@ function setupListeners() {
   document.addEventListener('click', (ev) => {
     const detailsOpen = document.querySelector('.details-panel.is-open');
     const directoryOpen = document.querySelector('.directory-panel.is-open');
-    if (!detailsOpen && !directoryOpen) return;
+    const infoOpen = document.querySelector('.info-panel.is-open');
+    if (!detailsOpen && !directoryOpen && !infoOpen) return;
 
     const target = ev.target;
     if (!target || typeof target.closest !== 'function') return;
@@ -977,7 +999,7 @@ function setupListeners() {
     //   - on the search bar or floating controls
     //   - on any Leaflet UI element (zoom buttons, popups, etc.)
     if (target.closest(
-      '.details-panel, .directory-panel, ' +
+      '.details-panel, .directory-panel, .info-panel, ' +
       '.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, ' +
       '.leaflet-control, .search-container, .floating-controls'
     )) {
@@ -986,6 +1008,7 @@ function setupListeners() {
 
     closeDetailsPanel();
     closeDirectoryPanel();
+    closeInfoPanel();
   });
 }
 
