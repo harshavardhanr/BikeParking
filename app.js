@@ -235,6 +235,14 @@ const BOROUGH_POLICIES = {
   }
 };
 
+// RingGo app entry — opens the app on mobile when installed, otherwise web locator
+const RINGGO_OPEN_URL = 'https://www.myringgo.co.uk/parkinglocator';
+
+function boroughUsesRingGo(boroughName) {
+  const policy = BOROUGH_POLICIES[boroughName];
+  return policy && /ringgo/i.test(policy.paymentApp);
+}
+
 // 2. Application Variables
 let map;
 let markerCluster;
@@ -777,6 +785,15 @@ function showSpotDetails(spot) {
   const lat = (typeof spot.lat === 'number') ? spot.lat : '';
   const lng = (typeof spot.lng === 'number') ? spot.lng : '';
   directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+
+  const ringgoBtn = document.getElementById('ringgo-btn');
+  if (ringgoBtn) {
+    const showRingGo = spot.fee === 'yes' && boroughUsesRingGo(borough);
+    ringgoBtn.hidden = !showRingGo;
+    if (showRingGo) {
+      ringgoBtn.href = RINGGO_OPEN_URL;
+    }
+  }
   
   // Show the panel via .is-open class. Make sure other panels are hidden.
   closeDirectoryPanel();
