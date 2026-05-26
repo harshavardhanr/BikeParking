@@ -92,9 +92,9 @@ main {
   background-color: var(--brand-primary) !important;
   color: #ffffff !important;
 }
-/* Move Leaflet zoom control slightly down to avoid search bar */
+/* Move Leaflet zoom control below search bar — ~3px gap (50% more than prior ~2px) */
 .leaflet-top.leaflet-left {
-  top: 90px;
+  top: 91px;
   left: 20px;
 }
 
@@ -1123,7 +1123,7 @@ details::details-content {
   }
   
   .leaflet-top.leaflet-left {
-    top: 155px;
+    top: 199px; /* stacked search bar ends ~196px; ~3px gap below */
   }
 
   /* Directory panel: centered bottom overlay on tablet */
@@ -1250,12 +1250,19 @@ details::details-content {
 
   /* --- Leaflet zoom control --- */
   /*
-   * Search bar height ≈ brand row (~20px) + 8 + 44 + 8 + 44 + padding (~22px)
-   * ≈ 146px, plus 12px top inset. Leave a small gap below the bar.
+   * Keep ~5px gap below the search bar (50% more than the prior ~3px clearance).
+   * Narrow screens (≤430px) need a larger offset when the bar wraps taller.
    */
   .leaflet-top.leaflet-left {
-    top: 162px;
+    top: 164px; /* search bottom ~159px + ~5px gap (50% more than prior ~3px) */
     left: 12px;
+  }
+
+  /* Wrapped brand/filter layout is taller below ~430px */
+  @media (max-width: 430px) {
+    .leaflet-top.leaflet-left {
+      top: 176px; /* search bottom ~171px + ~5px gap */
+    }
   }
 
   /* --- Floating action buttons --- */
