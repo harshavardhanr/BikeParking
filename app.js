@@ -994,11 +994,30 @@ function toggleInfoPanel(e) {
 
 function closeDetailsPanel() {
   const panel = document.getElementById('details-panel');
-  if (!panel) return;
+  if (!panel || !panel.classList.contains('is-open')) return;
+
+  const keepAnchorUntilClosed = panel.classList.contains('is-anchored') && isMobileLayout();
   panel.classList.remove('is-open');
   panel.setAttribute('aria-hidden', 'true');
-  resetMobileDetailsPanelLayout();
   updatePanelBackdrop();
+
+  if (keepAnchorUntilClosed) {
+    let cleaned = false;
+    const cleanup = () => {
+      if (cleaned) return;
+      cleaned = true;
+      panel.removeEventListener('transitionend', onTransitionEnd);
+      resetMobileDetailsPanelLayout();
+    };
+    const onTransitionEnd = (e) => {
+      if (e.target !== panel || e.propertyName !== 'transform') return;
+      cleanup();
+    };
+    panel.addEventListener('transitionend', onTransitionEnd);
+    setTimeout(cleanup, 400);
+  } else {
+    resetMobileDetailsPanelLayout();
+  }
 }
 
 // 9. Directory Panel (Borough List) Logic

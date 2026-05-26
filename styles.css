@@ -1325,6 +1325,14 @@ details::details-content {
     overflow: hidden;
   }
 
+  .details-panel.is-anchored.is-open {
+    transform: translateY(0);
+  }
+
+  .details-panel.is-anchored:not(.is-open) {
+    transform: translateY(100%);
+  }
+
   .details-panel.is-anchored .panel-content {
     min-height: 0;
   }
