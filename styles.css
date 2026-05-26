@@ -390,23 +390,41 @@ search {
 }
 
 #borough-filter {
-  background: rgba(15, 23, 42, 0.6);
+  /* Strip every browser's native select chrome */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Match the search input height and font exactly */
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 36px 0 14px; /* right pad leaves room for the custom arrow */
+
+  background-color: rgba(15, 23, 42, 0.6);
+  /* Custom chevron arrow — same stroke colour as var(--text-secondary) */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--text-primary);
   outline: none;
   cursor: pointer;
   transition: border-color var(--transition-smooth);
+  /* Prevent text from overflowing behind the arrow */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #borough-filter:focus {
   border-color: var(--brand-primary);
 }
 
-/* Custom styling for drop-down options */
 #borough-filter option {
   background-color: #0F172A;
   color: var(--text-primary);
@@ -416,7 +434,9 @@ search {
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--text-secondary);
@@ -1036,12 +1056,21 @@ details::details-content {
    * from wrapping to two lines on narrow phones.
    */
   #search-input,
-  #borough-filter,
   .filter-toggle-btn {
     font-size: 1rem;
     height: 44px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  /* Borough select: same height but keep horizontal padding so the
+     custom arrow background stays visible on the right side. */
+  #borough-filter {
+    font-size: 1rem;
+    height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 14px;
+    padding-right: 36px;
   }
 
   /* Borough dropdown fills the row; toggle stays compact and one-line */
