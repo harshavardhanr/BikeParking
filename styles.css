@@ -106,8 +106,8 @@ main {
 }
 
 .pin-inner {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
@@ -531,6 +531,30 @@ search {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+/* Address + copy button row, sits under the parking bay title */
+.address-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-secondary);
+  transition: color var(--transition-smooth);
+}
+.address-copy-btn:hover {
+  color: var(--text-primary);
+}
+.address-copy-btn.copied {
+  color: var(--color-free);
+}
+#details-address {
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .panel-header h2 {

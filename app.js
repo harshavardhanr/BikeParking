@@ -256,7 +256,7 @@ function createMotorcycleMarkerIcon(feeStatus) {
     html: `
       <div class="pin-inner">
         <img src="Bike.png" alt="" draggable="false"
-             style="width:16.2px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
+             style="width:20px;height:auto;display:block;pointer-events:none;-webkit-user-drag:none;" />
       </div>
     `,
     className: `custom-pin ${colorClass}`,
@@ -264,8 +264,8 @@ function createMotorcycleMarkerIcon(feeStatus) {
     // visible pin (.pin-inner) is kept at 24x24 via flex-centering. This
     // makes markers reliably tappable on phones — a 24px target leaves
     // too much room to miss with a finger.
-    iconSize: [44, 44],
-    iconAnchor: [22, 22]
+    iconSize: [55, 55],
+    iconAnchor: [27, 27]
   });
 }
 
@@ -513,6 +513,24 @@ async function handleSearch(e) {
   }
 }
 
+// Reverse-geocode lat/lng using Nominatim and return a formatted
+// "Road, Postcode" string, or null if unavailable.
+async function reverseGeocode(lat, lng) {
+  try {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=17&addressdetails=1`;
+    const res = await fetch(url, { headers: { 'User-Agent': 'BikeParkLondonApp/1.0' } });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const addr = data.address || {};
+    const road = addr.road || addr.pedestrian || addr.path || addr.footway || '';
+    const postcode = addr.postcode || '';
+    if (!road && !postcode) return null;
+    return [road, postcode].filter(Boolean).join(', ');
+  } catch {
+    return null;
+  }
+}
+
 // 8. Details Panel Drawer Control
 function showSpotDetails(spot) {
   // Defensive: bail out if spot is missing or malformed. Better to keep the
@@ -597,6 +615,41 @@ function showSpotDetails(spot) {
   if (backdrop) {
     backdrop.classList.add('is-open');
     backdrop.setAttribute('aria-hidden', 'false');
+  }
+
+  // Populate the address subheading via reverse geocoding.
+  // Show coordinates immediately so there's always something to copy.
+  const addressEl = document.getElementById('details-address');
+  const copyBtn   = document.getElementById('details-address-copy');
+  if (addressEl && copyBtn && typeof lat === 'number' && typeof lng === 'number') {
+    const coordStr = `${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+    addressEl.textContent = 'Locating address…';
+    copyBtn.classList.remove('copied');
+
+    // Copy-to-clipboard handler
+    copyBtn.onclick = () => {
+      const text = addressEl.textContent;
+      if (!text || text === 'Locating address…') return;
+      navigator.clipboard.writeText(text).then(() => {
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+      }).catch(() => {
+        // Fallback for browsers without clipboard API
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+      });
+    };
+
+    reverseGeocode(lat, lng).then(result => {
+      addressEl.textContent = result || coordStr;
+    });
   }
 }
 
