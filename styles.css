@@ -233,6 +233,23 @@ main {
   flex-shrink: 0;
 }
 
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-tagline {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
 .brand-logo {
   color: var(--brand-primary);
   filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
