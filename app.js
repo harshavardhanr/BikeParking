@@ -455,6 +455,12 @@ function renderParkingMarkers() {
         e.originalEvent.stopPropagation();
       }
       showSpotDetails(spot);
+      if (typeof trackEvent === 'function') {
+        trackEvent('bay_clicked', {
+          borough: spot.borough || 'unknown',
+          fee: spot.fee === 'yes' ? 'yes' : spot.fee === 'no' ? 'no' : 'unknown',
+        });
+      }
     });
 
     markerCluster.addLayer(marker);
@@ -535,9 +541,13 @@ function handleGeolocation() {
       // Center and Zoom
       map.setView(latlng, 16);
       btn.classList.remove('active');
+      if (typeof trackEvent === 'function') trackEvent('geolocate', { result: 'success' });
     },
     (error) => {
       btn.classList.remove('active');
+      if (typeof trackEvent === 'function') {
+        trackEvent('geolocate', { result: error.code === error.PERMISSION_DENIED ? 'denied' : 'error' });
+      }
       let msg = 'Failed to retrieve your location.';
       if (error.code === error.PERMISSION_DENIED) {
         msg = 'Location permission denied by user.';
@@ -762,7 +772,9 @@ async function handleSearch(e) {
       input.value = place.label;
       syncSearchClearButton();
       showSearchLocation(place.lat, place.lon);
+      if (typeof trackEvent === 'function') trackEvent('search', { result: 'success' });
     } else {
+      if (typeof trackEvent === 'function') trackEvent('search', { result: 'no_results' });
       alert(`No results found for "${query}" in London. Try a postcode, street name, or place.`);
     }
   } catch (error) {
@@ -989,6 +1001,7 @@ function toggleInfoPanel(e) {
     panel.classList.add('is-open');
     panel.setAttribute('aria-hidden', 'false');
     updatePanelBackdrop();
+    if (typeof trackEvent === 'function') trackEvent('info_open');
   }
 }
 
@@ -1065,6 +1078,7 @@ function toggleDirectoryPanel(e) {
     panel.classList.add('is-open');
     panel.setAttribute('aria-hidden', 'false');
     updatePanelBackdrop();
+    if (typeof trackEvent === 'function') trackEvent('directory_open');
   }
 }
 
@@ -1083,13 +1097,19 @@ function setupListeners() {
   
   // Filters
   // Borough dropdown: navigate the map to the chosen borough (re-fit bounds).
-  document.getElementById('borough-filter').addEventListener('change', () => applyFilters({ fitView: true }));
+  document.getElementById('borough-filter').addEventListener('change', (e) => {
+    if (typeof trackEvent === 'function') {
+      trackEvent('borough_filter', { borough: e.target.value || 'all' });
+    }
+    applyFilters({ fitView: true });
+  });
 
   // Free Only toggle: just filter visible markers, keep the current view.
   const freeToggle = document.getElementById('free-toggle-btn');
   freeToggle.addEventListener('click', () => {
     const pressed = freeToggle.getAttribute('aria-pressed') === 'true';
     freeToggle.setAttribute('aria-pressed', !pressed);
+    if (typeof trackEvent === 'function') trackEvent('free_toggle', { enabled: !pressed });
     applyFilters({ fitView: false });
   });
   
@@ -1104,6 +1124,28 @@ function setupListeners() {
   document.getElementById('details-close-btn').addEventListener('click', closeDetailsPanel);
   document.getElementById('directory-close-btn').addEventListener('click', closeDirectoryPanel);
   document.getElementById('info-close-btn').addEventListener('click', closeInfoPanel);
+
+  const directionsBtn = document.getElementById('directions-btn');
+  if (directionsBtn) {
+    directionsBtn.addEventListener('click', () => {
+      if (typeof trackEvent !== 'function') return;
+      const boroughEl = document.getElementById('details-borough');
+      const badgeEl = document.getElementById('details-badge');
+      trackEvent('directions', {
+        borough: boroughEl ? boroughEl.textContent : 'unknown',
+        fee: badgeEl && badgeEl.classList.contains('paid') ? 'yes' : 'no',
+      });
+    });
+  }
+
+  const ringgoBtn = document.getElementById('ringgo-btn');
+  if (ringgoBtn) {
+    ringgoBtn.addEventListener('click', () => {
+      if (typeof trackEvent !== 'function') return;
+      const boroughEl = document.getElementById('details-borough');
+      trackEvent('ringgo', { borough: boroughEl ? boroughEl.textContent : 'unknown' });
+    });
+  }
   
   // Catch escape key for panels
   document.addEventListener('keydown', (e) => {
@@ -1168,6 +1210,7 @@ document.addEventListener('DOMContentLoaded', () => {
   populateDirectory();
   loadParkingData();
   centreOnUserLocation();
+  if (typeof trackEvent === 'function') trackEvent('app_loaded');
 });
 
 // On startup, silently request the user's location and pan the map there.

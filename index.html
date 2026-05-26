@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
   <!-- App Styles -->
-  <link rel="stylesheet" href="styles.css?v=20260541">
+  <link rel="stylesheet" href="styles.css?v=20260542">
 </head>
 <body>
 
@@ -216,6 +216,7 @@
             <li><strong>Base map:</strong> CartoDB Voyager tiles (<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> contributors, <a href="https://carto.com/attributions" target="_blank" rel="noopener">© CARTO</a>)</li>
             <li><strong>Search &amp; addresses:</strong> Nominatim / OpenStreetMap geocoding</li>
             <li><strong>Directions:</strong> Google Maps (external link)</li>
+            <li><strong>Analytics:</strong> Privacy-friendly usage stats via Cloudflare (page views and coarse interaction counts — no postcodes or exact locations).</li>
           </ul>
         </div>
 
@@ -234,7 +235,16 @@
   <!-- Static Data -->
   <script src="data/parking_data.js"></script>
 
+  <!-- Cloudflare Web Analytics — set token in BIKEPARK_ANALYTICS (see docs/ANALYTICS.md) -->
+  <script>
+    window.BIKEPARK_ANALYTICS = {
+      webAnalyticsToken: '',
+      eventsWorkerUrl: ''
+    };
+  </script>
+  <script src="analytics.js?v=20260542"></script>
+
   <!-- App Script -->
-  <script src="app.js?v=20260541"></script>
+  <script src="app.js?v=20260542"></script>
 </body>
 </html>
