@@ -647,6 +647,19 @@ search {
   transform: translateX(0);
 }
 
+/* Info panel (desktop): right-side card, same slot as directory */
+.info-panel {
+  top: 100px;
+  right: 30px;
+  width: 420px;
+  max-height: 70vh;
+  height: auto;
+  transform: translateX(20px);
+}
+.info-panel.is-open {
+  transform: translateX(0);
+}
+
 /* Panel Internals & Layouts */
 .panel-header {
   padding: 20px 24px;
