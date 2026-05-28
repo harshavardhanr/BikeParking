@@ -347,7 +347,7 @@ function createSearchResultIcon() {
   return L.divIcon({
     html: `
       <div class="search-result-pin-inner" aria-hidden="true">
-        <svg viewBox="0 0 32 44" width="32" height="44" aria-hidden="true">
+        <svg viewBox="0 0 32 44" width="26" height="35" aria-hidden="true">
           <path d="M16 1.5C10.2 1.5 5.5 6.2 5.5 12c0 8.8 10.5 28.5 10.5 28.5S26.5 20.8 26.5 12C26.5 6.2 21.8 1.5 16 1.5z"
                 fill="#ef4444" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
           <circle cx="16" cy="12" r="4.5" fill="#ffffff"/>
@@ -355,8 +355,8 @@ function createSearchResultIcon() {
       </div>
     `,
     className: 'search-result-pin',
-    iconSize: [32, 44],
-    iconAnchor: [16, 44]
+    iconSize: [26, 35],
+    iconAnchor: [13, 35]
   });
 }
 
