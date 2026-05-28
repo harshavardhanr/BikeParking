@@ -908,12 +908,19 @@ function showSpotDetails(spot) {
   directionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 
   const ringgoBtn = document.getElementById('ringgo-btn');
+  const panelActions = document.getElementById('details-panel-actions');
   if (ringgoBtn) {
     const showRingGo = spot.fee === 'yes' && boroughUsesRingGo(borough);
     ringgoBtn.hidden = !showRingGo;
     if (showRingGo) {
       ringgoBtn.href = RINGGO_OPEN_URL;
     }
+  }
+  if (panelActions) {
+    panelActions.classList.toggle(
+      'panel-actions--dual',
+      spot.fee === 'yes' && ringgoBtn && !ringgoBtn.hidden
+    );
   }
   
   // Show the panel via .is-open class. Make sure other panels are hidden.

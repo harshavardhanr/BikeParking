@@ -864,6 +864,31 @@ search {
   gap: 10px;
 }
 
+.panel-actions--dual {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.panel-actions--dual .cta-button {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 10px;
+  font-size: 0.875rem;
+  gap: 8px;
+}
+
+.cta-label-short {
+  display: none;
+}
+
+.panel-actions--dual .cta-label-full {
+  display: none;
+}
+
+.panel-actions--dual .cta-label-short {
+  display: inline;
+}
+
 .cta-button {
   width: 100%;
   background: var(--brand-primary);
@@ -1415,5 +1440,10 @@ details::details-content {
   .cta-button {
     padding: 15px 20px;
     font-size: 1rem;
+  }
+
+  .panel-actions--dual .cta-button {
+    padding: 14px 8px;
+    font-size: 0.8125rem;
   }
 }
