@@ -342,8 +342,23 @@ function focusMapOnSpot(spot, onComplete) {
 
 
 
-// Icons Definitions
-const locationIconSvg = `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.82 2.82c-.41-.41-1.07-.41-1.48 0L9.5 10.66 4.66 5.82c-.41-.41-1.07-.41-1.48 0-.41.41-.41 1.07 0 1.48l5.59 5.59c.41.41 1.07.41 1.48 0l8.59-8.59c.41-.41.41-1.07 0-1.48z"/></svg>`;
+// Search result location pointer — triangular pin, smaller than bay markers
+function createSearchResultIcon() {
+  return L.divIcon({
+    html: `
+      <div class="search-result-pin-inner" aria-hidden="true">
+        <svg viewBox="0 0 32 44" width="32" height="44" aria-hidden="true">
+          <path d="M16 1.5C10.2 1.5 5.5 6.2 5.5 12c0 8.8 10.5 28.5 10.5 28.5S26.5 20.8 26.5 12C26.5 6.2 21.8 1.5 16 1.5z"
+                fill="#ef4444" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="16" cy="12" r="4.5" fill="#ffffff"/>
+        </svg>
+      </div>
+    `,
+    className: 'search-result-pin',
+    iconSize: [32, 44],
+    iconAnchor: [16, 44]
+  });
+}
 
 // Custom SVG Motorcycle Marker Function
 function createMotorcycleMarkerIcon(feeStatus) {
@@ -630,12 +645,8 @@ function showSearchLocation(lat, lon) {
   if (searchResultMarker) map.removeLayer(searchResultMarker);
 
   searchResultMarker = L.marker([lat, lon], {
-    icon: L.divIcon({
-      html: `<div style="color:#ef4444;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))">${locationIconSvg}</div>`,
-      className: 'search-result-pin',
-      iconSize: [24, 24],
-      iconAnchor: [7, 14]
-    })
+    icon: createSearchResultIcon(),
+    zIndexOffset: 500
   }).addTo(map);
 
   map.setView([lat, lon], 16);

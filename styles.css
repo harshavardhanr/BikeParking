@@ -168,6 +168,18 @@ main {
   font-family: var(--font-heading);
 }
 
+/* Search result location pointer */
+.search-result-pin {
+  background: transparent;
+  border: none;
+}
+
+.search-result-pin-inner {
+  display: block;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.45));
+  pointer-events: none;
+}
+
 /* Custom User Location Marker */
 .user-location-inner {
   width: 16px;
