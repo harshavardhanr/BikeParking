@@ -873,7 +873,7 @@ search {
   flex: 1;
   min-width: 0;
   padding: 14px 10px;
-  font-size: 0.875rem;
+  font-size: calc(0.875rem + 1pt);
   gap: 8px;
 }
 
@@ -1444,6 +1444,6 @@ details::details-content {
 
   .panel-actions--dual .cta-button {
     padding: 14px 8px;
-    font-size: 0.8125rem;
+    font-size: calc(0.8125rem + 1pt);
   }
 }
