@@ -251,7 +251,16 @@ let filteredParkingSpots = [];
 let userLocationMarker = null;
 let userAccuracyCircle = null;
 let searchResultMarker = null;
+let infoPanelScrollTop = 0;
 let anchoredDetailSpot = null;
+
+const FEELING_LABELS = {
+  love: 'Love it — very useful',
+  like: 'Like it — mostly works well',
+  okay: "It's okay — needs polish",
+  improve: 'Needs improvement',
+  frustrated: 'Frustrated — hard to use'
+};
 
 const MOBILE_LAYOUT_MQ = window.matchMedia('(max-width: 576px)');
 const MOBILE_PANEL_MARKER_GAP_PX = 20;
@@ -991,7 +1000,7 @@ function showSpotDetails(spot) {
 function updatePanelBackdrop() {
   const backdrop = document.getElementById('panel-backdrop');
   if (!backdrop) return;
-  const anyOpen = ['details-panel', 'directory-panel', 'info-panel'].some(id => {
+  const anyOpen = ['details-panel', 'directory-panel', 'info-panel', 'feedback-panel'].some(id => {
     const el = document.getElementById(id);
     return el && el.classList.contains('is-open');
   });
@@ -999,7 +1008,134 @@ function updatePanelBackdrop() {
   backdrop.setAttribute('aria-hidden', anyOpen ? 'false' : 'true');
 }
 
+function getFeedbackConfig() {
+  return window.BIKEPARK_FEEDBACK || {};
+}
+
+function openFeedbackPanel() {
+  const infoPanel = document.getElementById('info-panel');
+  const infoContent = document.getElementById('info-content');
+  const feedbackPanel = document.getElementById('feedback-panel');
+  if (!infoPanel || !feedbackPanel) return;
+
+  if (!infoPanel.classList.contains('is-open')) {
+    closeDetailsPanel();
+    closeDirectoryPanel();
+    infoPanel.classList.add('is-open');
+    infoPanel.setAttribute('aria-hidden', 'false');
+  }
+
+  if (infoContent) {
+    infoPanelScrollTop = infoContent.scrollTop;
+  }
+
+  setFeedbackStatus('');
+  feedbackPanel.classList.add('is-open');
+  feedbackPanel.setAttribute('aria-hidden', 'false');
+  updatePanelBackdrop();
+
+  const firstField = document.getElementById('feedback-name');
+  if (firstField) {
+    window.setTimeout(() => firstField.focus(), 300);
+  }
+
+  if (typeof trackEvent === 'function') trackEvent('feedback_open');
+}
+
+function closeFeedbackPanel(restoreScroll = true) {
+  const feedbackPanel = document.getElementById('feedback-panel');
+  const infoContent = document.getElementById('info-content');
+  if (!feedbackPanel || !feedbackPanel.classList.contains('is-open')) return;
+
+  feedbackPanel.classList.remove('is-open');
+  feedbackPanel.setAttribute('aria-hidden', 'true');
+  updatePanelBackdrop();
+
+  if (restoreScroll && infoContent) {
+    requestAnimationFrame(() => {
+      infoContent.scrollTop = infoPanelScrollTop;
+    });
+  }
+}
+
+function setFeedbackStatus(message, isError = false) {
+  const status = document.getElementById('feedback-status');
+  if (!status) return;
+  status.textContent = message;
+  status.hidden = !message;
+  status.classList.toggle('is-error', isError);
+}
+
+async function handleFeedbackSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+  const feeling = form.feeling.value;
+  const feelingLabel = FEELING_LABELS[feeling] || feeling;
+  const config = getFeedbackConfig();
+  const endpoint = (config.formEndpoint || '').trim();
+  const mailto = (config.mailto || '').trim();
+
+  setFeedbackStatus('Sending…');
+
+  try {
+    if (endpoint) {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          feeling,
+          feelingLabel,
+          _subject: 'BikeParkLondon feedback'
+        })
+      });
+      if (!response.ok) throw new Error('Submit failed');
+    } else if (mailto) {
+      const subject = encodeURIComponent('BikeParkLondon feedback');
+      const body = encodeURIComponent(
+        `Name: ${name || '(not provided)'}\n` +
+        `Email: ${email}\n` +
+        `Feeling: ${feelingLabel}\n\n` +
+        `Feedback:\n${message}`
+      );
+      window.location.href = `mailto:${mailto}?subject=${subject}&body=${body}`;
+    } else {
+      console.info('Feedback captured locally (configure BIKEPARK_FEEDBACK to deliver):', {
+        name, email, message, feeling
+      });
+    }
+
+    if (typeof trackEvent === 'function') {
+      trackEvent('feedback_submit', { result: 'success', source: feeling });
+    }
+
+    form.reset();
+    setFeedbackStatus('');
+    closeFeedbackPanel(true);
+  } catch (err) {
+    console.error('Feedback submit failed:', err);
+    setFeedbackStatus('Could not send feedback. Please try again.', true);
+    if (typeof trackEvent === 'function') {
+      trackEvent('feedback_submit', { result: 'error' });
+    }
+  }
+}
+
 function closeInfoPanel() {
+  closeFeedbackPanel(false);
   const panel = document.getElementById('info-panel');
   if (!panel) return;
   panel.classList.remove('is-open');
@@ -1143,6 +1279,21 @@ function setupListeners() {
   document.getElementById('directory-close-btn').addEventListener('click', closeDirectoryPanel);
   document.getElementById('info-close-btn').addEventListener('click', closeInfoPanel);
 
+  const feedbackOpenBtn = document.getElementById('feedback-open-btn');
+  if (feedbackOpenBtn) {
+    feedbackOpenBtn.addEventListener('click', openFeedbackPanel);
+  }
+
+  const feedbackCloseBtn = document.getElementById('feedback-close-btn');
+  if (feedbackCloseBtn) {
+    feedbackCloseBtn.addEventListener('click', () => closeFeedbackPanel(true));
+  }
+
+  const feedbackForm = document.getElementById('feedback-form');
+  if (feedbackForm) {
+    feedbackForm.addEventListener('submit', handleFeedbackSubmit);
+  }
+
   const directionsBtn = document.getElementById('directions-btn');
   if (directionsBtn) {
     directionsBtn.addEventListener('click', () => {
@@ -1168,6 +1319,11 @@ function setupListeners() {
   // Catch escape key for panels
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      const feedbackPanel = document.getElementById('feedback-panel');
+      if (feedbackPanel && feedbackPanel.classList.contains('is-open')) {
+        closeFeedbackPanel(true);
+        return;
+      }
       closeDetailsPanel();
       closeDirectoryPanel();
       closeInfoPanel();
@@ -1195,7 +1351,8 @@ function setupListeners() {
     const detailsOpen = document.querySelector('.details-panel.is-open');
     const directoryOpen = document.querySelector('.directory-panel.is-open');
     const infoOpen = document.querySelector('.info-panel.is-open');
-    if (!detailsOpen && !directoryOpen && !infoOpen) return;
+    const feedbackOpen = document.querySelector('.feedback-panel.is-open');
+    if (!detailsOpen && !directoryOpen && !infoOpen && !feedbackOpen) return;
 
     const target = ev.target;
     if (!target || typeof target.closest !== 'function') return;
@@ -1206,10 +1363,15 @@ function setupListeners() {
     //   - on the search bar or floating controls
     //   - on any Leaflet UI element (zoom buttons, popups, etc.)
     if (target.closest(
-      '.details-panel, .directory-panel, .info-panel, ' +
+      '.details-panel, .directory-panel, .info-panel, .feedback-panel, ' +
       '.custom-pin, .marker-cluster, .leaflet-marker-icon, .leaflet-popup, ' +
       '.leaflet-control, .search-container, .floating-controls'
     )) {
+      return;
+    }
+
+    if (feedbackOpen) {
+      closeFeedbackPanel(true);
       return;
     }
 

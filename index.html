@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
   <!-- App Styles -->
-  <link rel="stylesheet" href="styles.css?v=20260550">
+  <link rel="stylesheet" href="styles.css?v=20260551">
 </head>
 <body>
 
@@ -194,8 +194,9 @@
           </svg>
         </button>
       </header>
-      <section class="info-content">
+      <section class="info-content" id="info-content">
         <p class="info-intro">BikeParkLondon helps you find solo motorcycle parking bays across London. Please read the notes below before relying on this map.</p>
+        <button type="button" id="feedback-open-btn" class="info-feedback-btn">Send feedback</button>
 
         <div class="info-section">
           <h3>Experimental site</h3>
@@ -226,6 +227,48 @@
       </section>
     </article>
 
+    <article id="feedback-panel" class="glass-panel feedback-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="feedback-panel-title">
+      <header class="panel-header">
+        <h2 id="feedback-panel-title">Send feedback</h2>
+        <button id="feedback-close-btn" class="close-btn" aria-label="Close feedback form">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+      <section class="feedback-content">
+        <p class="feedback-intro">Tell us what you think. Your feedback helps improve BikeParkLondon.</p>
+        <form id="feedback-form" class="feedback-form" novalidate>
+          <div class="feedback-field">
+            <label for="feedback-name">Name</label>
+            <input type="text" id="feedback-name" name="name" autocomplete="name" maxlength="120" placeholder="Your name">
+          </div>
+          <div class="feedback-field">
+            <label for="feedback-email">Email <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="email" id="feedback-email" name="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+          </div>
+          <div class="feedback-field">
+            <label for="feedback-message">Specific feedback <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="feedback-message" name="message" rows="5" maxlength="2000" placeholder="What worked well, what could be better, or anything we missed?" required></textarea>
+          </div>
+          <div class="feedback-field">
+            <label for="feedback-feeling">How do you feel about this site? <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="feedback-feeling" name="feeling" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="love">Love it — very useful</option>
+              <option value="like">Like it — mostly works well</option>
+              <option value="okay">It's okay — needs polish</option>
+              <option value="improve">Needs improvement</option>
+              <option value="frustrated">Frustrated — hard to use</option>
+            </select>
+          </div>
+          <p id="feedback-status" class="feedback-status" role="status" aria-live="polite" hidden></p>
+          <button type="submit" class="cta-button feedback-submit-btn">Send feedback</button>
+        </form>
+      </section>
+    </article>
+
   </main>
 
   <!-- Leaflet Scripts -->
@@ -243,10 +286,16 @@
       webAnalyticsToken: 'autumn-boat-a7bb',
       eventsWorkerUrl: ''
     };
+    window.BIKEPARK_FEEDBACK = {
+      // Optional Formspree (or similar) endpoint — POST JSON when set.
+      formEndpoint: '',
+      // Fallback when formEndpoint is empty — opens the user's email client.
+      mailto: 'harshavardhanr@google.com'
+    };
   </script>
   <script src="analytics.js?v=20260544"></script>
 
   <!-- App Script -->
-  <script src="app.js?v=20260547"></script>
+  <script src="app.js?v=20260551"></script>
 </body>
 </html>

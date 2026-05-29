@@ -608,7 +608,8 @@ search {
    the panel stays interactable until the slide-out finishes. */
 .details-panel,
 .directory-panel,
-.info-panel {
+.info-panel,
+.feedback-panel {
   position: fixed;
   z-index: 100;
   border-radius: var(--radius-lg);
@@ -633,7 +634,8 @@ search {
 }
 .details-panel.is-open,
 .directory-panel.is-open,
-.info-panel.is-open {
+.info-panel.is-open,
+.feedback-panel.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -956,7 +958,35 @@ search {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.info-feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: var(--radius-md);
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.info-feedback-btn:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.55);
+  transform: translateY(-1px);
+}
+
+.info-feedback-btn:active {
+  transform: translateY(0);
 }
 
 .info-section {
@@ -1002,6 +1032,119 @@ search {
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-style: italic;
+}
+
+/* Feedback panel — overlays info panel, same footprint */
+.feedback-panel {
+  top: 100px;
+  right: 30px;
+  width: 420px;
+  max-height: 70vh;
+  height: auto;
+  z-index: 110;
+  transform: translateX(20px);
+}
+
+.feedback-panel.is-open {
+  transform: translateX(0);
+}
+
+.feedback-content {
+  padding: 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.feedback-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feedback-field label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.required-mark {
+  color: var(--color-paid);
+}
+
+.feedback-field input,
+.feedback-field textarea,
+.feedback-field select {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 11px 14px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.feedback-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback-field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 36px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.feedback-field input:focus,
+.feedback-field textarea:focus,
+.feedback-field select:focus {
+  border-color: var(--brand-primary);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.feedback-field input:invalid:not(:placeholder-shown),
+.feedback-field textarea:invalid:not(:placeholder-shown),
+.feedback-field select:invalid {
+  border-color: rgba(239, 68, 68, 0.55);
+}
+
+.feedback-status {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--color-free);
+}
+
+.feedback-status.is-error {
+  color: #f87171;
+}
+
+.feedback-submit-btn {
+  width: 100%;
+  margin-top: 4px;
 }
 
 /* Directory Panel Content & Accordions */
@@ -1133,12 +1276,14 @@ details::details-content {
   .details-panel,
   .directory-panel,
   .info-panel,
+  .feedback-panel,
   .panel-backdrop {
     transition-duration: 0.05s !important;
   }
   .details-panel:not(.is-open),
   .directory-panel:not(.is-open),
-  .info-panel:not(.is-open) {
+  .info-panel:not(.is-open),
+  .feedback-panel:not(.is-open) {
     transform: none !important;
   }
   .pin-inner, .floating-btn, .cta-button, summary::after {
@@ -1420,6 +1565,25 @@ details::details-content {
     transform: translateY(0);
   }
 
+  .feedback-panel {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    max-width: none;
+    max-height: 72dvh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    transform: translateY(100%);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .feedback-panel.is-open {
+    transform: translateY(0);
+  }
+
   /* --- Panel internals --- */
   .panel-header {
     padding: 16px 20px 16px;
@@ -1432,6 +1596,16 @@ details::details-content {
 
   .directory-content {
     padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .feedback-content {
+    padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .feedback-field input,
+  .feedback-field textarea,
+  .feedback-field select {
+    font-size: 1rem;
   }
 
   .parking-meta {
