@@ -95,7 +95,7 @@ main {
 }
 /* Move Leaflet zoom control below search bar — ~3px gap (50% more than prior ~2px) */
 .leaflet-top.leaflet-left {
-  top: 162px;
+  top: 91px;
   left: 20px;
 }
 
@@ -283,8 +283,8 @@ main {
 .search-controls {
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
-  align-items: stretch;
+  flex-direction: row;
+  align-items: center;
   gap: 24px;
 }
 
