@@ -1,0 +1,42 @@
+name: Refresh OSM parking data
+
+on:
+  schedule:
+    # Every Tuesday at 23:00 Europe/London (11pm UK local — BST/GMT aware)
+    - cron: '0 23 * * 2'
+      timezone: Europe/London
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-osm-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch parking data from OpenStreetMap
+        run: node scripts/fetch_parking.js
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/parking_data.js
+          if git diff --staged --quiet; then
+            echo "No changes to parking data."
+            exit 0
+          fi
+          git commit -m "chore: refresh OSM parking data [automated]"
+          git push

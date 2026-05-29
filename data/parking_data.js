@@ -1,3 +1,4 @@
+// Compiled London motorcycle parking bays
 const PARKING_DATA = [
   {
     "id": "node/1570980421",
@@ -3516,6 +3517,27 @@ const PARKING_DATA = [
     "fee": "yes"
   },
   {
+    "id": "node/13894839341",
+    "lat": 51.5372906,
+    "lng": -0.1246411,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13894839342",
+    "lat": 51.5390012,
+    "lng": -0.1264284,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
     "id": "way/235066381",
     "lat": 51.5367218,
     "lng": -0.1316588,
@@ -6645,7 +6667,7 @@ const PARKING_DATA = [
     "borough": "Kensington and Chelsea",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -10710,7 +10732,7 @@ const PARKING_DATA = [
     "id": "node/1252609836",
     "lat": 51.5028158,
     "lng": -0.2190798,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 60,
     "fee": "no"
@@ -10719,7 +10741,7 @@ const PARKING_DATA = [
     "id": "node/3751163244",
     "lat": 51.4933847,
     "lng": -0.2172796,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
@@ -10728,7 +10750,7 @@ const PARKING_DATA = [
     "id": "node/3751163245",
     "lat": 51.4944776,
     "lng": -0.2158651,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no",
@@ -10740,7 +10762,7 @@ const PARKING_DATA = [
     "id": "node/6239939713",
     "lat": 51.4680894,
     "lng": -0.190732,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 5,
     "fee": "no"
@@ -10749,7 +10771,7 @@ const PARKING_DATA = [
     "id": "node/6743830123",
     "lat": 51.4802258,
     "lng": -0.1894267,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 20,
     "fee": "no"
@@ -10758,7 +10780,7 @@ const PARKING_DATA = [
     "id": "node/6743830124",
     "lat": 51.4795484,
     "lng": -0.19603,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 20,
     "fee": "no"
@@ -10767,7 +10789,7 @@ const PARKING_DATA = [
     "id": "node/7736051785",
     "lat": 51.5161862,
     "lng": -0.2359492,
-    "borough": "Hammersmith and Fulham",
+    "borough": "LBHF",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
     "fee": "no",
