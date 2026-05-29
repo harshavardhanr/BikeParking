@@ -28,6 +28,7 @@
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --radius-lg: 16px;
   --radius-md: 10px;
+  --search-control-height: 44px;
 }
 
 /* Global resets & scrollbar styling */
@@ -94,7 +95,7 @@ main {
 }
 /* Move Leaflet zoom control below search bar — ~3px gap (50% more than prior ~2px) */
 .leaflet-top.leaflet-left {
-  top: 91px;
+  top: 162px;
   left: 20px;
 }
 
@@ -282,8 +283,9 @@ main {
 .search-controls {
   display: flex;
   flex-grow: 1;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
 }
 
 search {
@@ -294,14 +296,17 @@ search {
   position: relative;
   display: flex;
   align-items: center;
+  height: var(--search-control-height);
 }
 
 #search-input {
   width: 100%;
+  height: var(--search-control-height);
+  box-sizing: border-box;
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 10px 40px 10px 14px;
+  padding: 0 40px 0 14px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--text-primary);
@@ -325,6 +330,8 @@ search {
 .search-clear-btn {
   position: absolute;
   right: 44px; /* sits to the left of the submit button */
+  top: 50%;
+  transform: translateY(-50%);
   width: 44px;
   height: 44px;
   align-items: center;
@@ -360,6 +367,8 @@ search {
 .search-submit-btn {
   position: absolute;
   right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   color: var(--text-secondary);
@@ -437,7 +446,7 @@ search {
   appearance: none;
 
   /* Match the search input height and font exactly */
-  height: 42px;
+  height: var(--search-control-height);
   box-sizing: border-box;
   padding: 0 36px 0 14px; /* right pad leaves room for the custom arrow */
 
@@ -475,7 +484,7 @@ search {
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  height: 42px;
+  height: var(--search-control-height);
   box-sizing: border-box;
   padding: 0 14px;
   font-family: var(--font-body);
@@ -1161,6 +1170,7 @@ details::details-content {
   .search-controls {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
   
   .filter-wrapper {
@@ -1270,7 +1280,7 @@ details::details-content {
   #search-input,
   .filter-toggle-btn {
     font-size: 1rem;
-    height: 44px;
+    height: var(--search-control-height);
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1278,7 +1288,7 @@ details::details-content {
      custom arrow background stays visible on the right side. */
   #borough-filter {
     font-size: 1rem;
-    height: 44px;
+    height: var(--search-control-height);
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 14px;
