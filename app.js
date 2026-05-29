@@ -1081,42 +1081,32 @@ async function handleFeedbackSubmit(e) {
   const feelingLabel = FEELING_LABELS[feeling] || feeling;
   const config = getFeedbackConfig();
   const endpoint = (config.formEndpoint || '').trim();
-  const mailto = (config.mailto || '').trim();
+
+  if (!endpoint) {
+    setFeedbackStatus('Feedback is not set up yet. Please try again later.', true);
+    return;
+  }
 
   setFeedbackStatus('Sending…');
 
   try {
-    if (endpoint) {
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-          feeling,
-          feelingLabel,
-          _subject: 'BikeParkLondon feedback'
-        })
-      });
-      if (!response.ok) throw new Error('Submit failed');
-    } else if (mailto) {
-      const subject = encodeURIComponent('BikeParkLondon feedback');
-      const body = encodeURIComponent(
-        `Name: ${name || '(not provided)'}\n` +
-        `Email: ${email}\n` +
-        `Feeling: ${feelingLabel}\n\n` +
-        `Feedback:\n${message}`
-      );
-      window.location.href = `mailto:${mailto}?subject=${subject}&body=${body}`;
-    } else {
-      console.info('Feedback captured locally (configure BIKEPARK_FEEDBACK to deliver):', {
-        name, email, message, feeling
-      });
-    }
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify({
+        name: name || '(not provided)',
+        email,
+        _replyto: email,
+        message,
+        feeling,
+        feelingLabel,
+        _subject: 'BikeParkLondon feedback'
+      })
+    });
+    if (!response.ok) throw new Error('Submit failed');
 
     if (typeof trackEvent === 'function') {
       trackEvent('feedback_submit', { result: 'success', source: feeling });
