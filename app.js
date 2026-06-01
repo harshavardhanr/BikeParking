@@ -440,15 +440,12 @@ function loadParkingData() {
   renderParkingMarkers();
 }
 
-// Populate Borough Dropdown Filter
+// Populate Borough Dropdown Filter (London boroughs only — map shows UK-wide OSM data)
 function populateBoroughFilter() {
   const select = document.getElementById('borough-filter');
-  
-  // Extract unique boroughs from data
-  const uniqueBoroughs = [...new Set(allParkingSpots.map(spot => spot.borough))];
-  uniqueBoroughs.sort();
-  
-  uniqueBoroughs.forEach(boroughName => {
+  const londonBoroughs = Object.keys(BOROUGH_POLICIES).sort();
+
+  londonBoroughs.forEach(boroughName => {
     const option = document.createElement('option');
     option.value = boroughName;
     option.textContent = boroughName;
