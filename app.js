@@ -395,7 +395,7 @@ function initMap() {
   map = L.map('map', {
     zoomControl: true,
     maxZoom: 19,
-    minZoom: 10
+    minZoom: 6
   }).setView([51.5074, -0.1278], 13);
 
   // CartoDB Voyager — full-colour road map with clear road names and
