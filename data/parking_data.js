@@ -30582,5 +30582,2168 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "node/13737273641",
+    "lat": 51.55666,
+    "lng": -0.160147,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273642",
+    "lat": 51.54207,
+    "lng": -0.134157,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737273643",
+    "lat": 51.548005,
+    "lng": -0.154007,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273644",
+    "lat": 51.550671,
+    "lng": -0.151101,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273645",
+    "lat": 51.57033,
+    "lng": -0.146434,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273646",
+    "lat": 51.5518,
+    "lng": -0.157411,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273647",
+    "lat": 51.549373,
+    "lng": -0.179169,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273648",
+    "lat": 51.527147,
+    "lng": -0.140043,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273649",
+    "lat": 51.51614,
+    "lng": -0.121146,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273650",
+    "lat": 51.554777,
+    "lng": -0.162707,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273651",
+    "lat": 51.555706,
+    "lng": -0.156562,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273652",
+    "lat": 51.527433,
+    "lng": -0.117442,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273653",
+    "lat": 51.553407,
+    "lng": -0.202452,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273654",
+    "lat": 51.557184,
+    "lng": -0.146827,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273655",
+    "lat": 51.54843,
+    "lng": -0.162106,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273656",
+    "lat": 51.53354,
+    "lng": -0.138825,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273657",
+    "lat": 51.543529,
+    "lng": -0.193059,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273658",
+    "lat": 51.553815,
+    "lng": -0.200576,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273659",
+    "lat": 51.553927,
+    "lng": -0.138085,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273660",
+    "lat": 51.529371,
+    "lng": -0.131031,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273661",
+    "lat": 51.546262,
+    "lng": -0.185403,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273662",
+    "lat": 51.55125,
+    "lng": -0.180503,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273663",
+    "lat": 51.545683,
+    "lng": -0.165495,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273664",
+    "lat": 51.541623,
+    "lng": -0.1954,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273665",
+    "lat": 51.538575,
+    "lng": -0.137559,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273666",
+    "lat": 51.546876,
+    "lng": -0.143297,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273667",
+    "lat": 51.545939,
+    "lng": -0.149768,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273668",
+    "lat": 51.521632,
+    "lng": -0.138046,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273669",
+    "lat": 51.550498,
+    "lng": -0.193941,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737273670",
+    "lat": 51.542252,
+    "lng": -0.19678,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296843",
+    "lat": 51.542301,
+    "lng": -0.198198,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296844",
+    "lat": 51.555527,
+    "lng": -0.154356,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296845",
+    "lat": 51.53433,
+    "lng": -0.13965,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296846",
+    "lat": 51.552508,
+    "lng": -0.189554,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296847",
+    "lat": 51.547074,
+    "lng": -0.190748,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296848",
+    "lat": 51.544528,
+    "lng": -0.176967,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737296849",
+    "lat": 51.526879,
+    "lng": -0.135707,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296850",
+    "lat": 51.531376,
+    "lng": -0.133508,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296851",
+    "lat": 51.551127,
+    "lng": -0.138002,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296852",
+    "lat": 51.524477,
+    "lng": -0.131774,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296853",
+    "lat": 51.541102,
+    "lng": -0.142954,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296854",
+    "lat": 51.529521,
+    "lng": -0.117753,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296855",
+    "lat": 51.554322,
+    "lng": -0.136958,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296856",
+    "lat": 51.551731,
+    "lng": -0.201231,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296857",
+    "lat": 51.549428,
+    "lng": -0.19187,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296858",
+    "lat": 51.550815,
+    "lng": -0.191615,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296859",
+    "lat": 51.546444,
+    "lng": -0.166371,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296860",
+    "lat": 51.558805,
+    "lng": -0.143843,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296861",
+    "lat": 51.542623,
+    "lng": -0.195074,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296862",
+    "lat": 51.546058,
+    "lng": -0.143795,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296863",
+    "lat": 51.513037,
+    "lng": -0.127474,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296864",
+    "lat": 51.522295,
+    "lng": -0.109477,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296865",
+    "lat": 51.542484,
+    "lng": -0.155168,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296866",
+    "lat": 51.555559,
+    "lng": -0.155514,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296867",
+    "lat": 51.552471,
+    "lng": -0.19596,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296868",
+    "lat": 51.556762,
+    "lng": -0.1772,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296869",
+    "lat": 51.554302,
+    "lng": -0.210998,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296870",
+    "lat": 51.555593,
+    "lng": -0.176266,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296871",
+    "lat": 51.547318,
+    "lng": -0.199213,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737296872",
+    "lat": 51.551849,
+    "lng": -0.200521,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313846",
+    "lat": 51.54564,
+    "lng": -0.158572,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313847",
+    "lat": 51.549687,
+    "lng": -0.134805,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313848",
+    "lat": 51.541366,
+    "lng": -0.153431,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313849",
+    "lat": 51.547647,
+    "lng": -0.200995,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313850",
+    "lat": 51.551393,
+    "lng": -0.187039,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313851",
+    "lat": 51.549665,
+    "lng": -0.19279,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313852",
+    "lat": 51.52377,
+    "lng": -0.113809,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313853",
+    "lat": 51.546078,
+    "lng": -0.191545,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313854",
+    "lat": 51.549968,
+    "lng": -0.168629,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313855",
+    "lat": 51.525605,
+    "lng": -0.129467,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313856",
+    "lat": 51.544264,
+    "lng": -0.132257,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313857",
+    "lat": 51.528142,
+    "lng": -0.116816,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313858",
+    "lat": 51.543529,
+    "lng": -0.153541,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313859",
+    "lat": 51.553652,
+    "lng": -0.203268,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313860",
+    "lat": 51.549065,
+    "lng": -0.146496,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313861",
+    "lat": 51.551329,
+    "lng": -0.206474,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313862",
+    "lat": 51.54452,
+    "lng": -0.195379,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313863",
+    "lat": 51.551038,
+    "lng": -0.138013,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313864",
+    "lat": 51.538316,
+    "lng": -0.1914,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313865",
+    "lat": 51.54922,
+    "lng": -0.20046,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737313866",
+    "lat": 51.555222,
+    "lng": -0.196776,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313867",
+    "lat": 51.550605,
+    "lng": -0.156671,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313868",
+    "lat": 51.553834,
+    "lng": -0.136669,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313869",
+    "lat": 51.543807,
+    "lng": -0.169727,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313870",
+    "lat": 51.555504,
+    "lng": -0.178588,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313871",
+    "lat": 51.557493,
+    "lng": -0.148121,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313872",
+    "lat": 51.538879,
+    "lng": -0.141651,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313873",
+    "lat": 51.549418,
+    "lng": -0.177681,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313874",
+    "lat": 51.555732,
+    "lng": -0.171877,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737313875",
+    "lat": 51.549636,
+    "lng": -0.155865,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315542",
+    "lat": 51.537254,
+    "lng": -0.142736,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315543",
+    "lat": 51.531502,
+    "lng": -0.131303,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737315544",
+    "lat": 51.549392,
+    "lng": -0.19317,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315545",
+    "lat": 51.547161,
+    "lng": -0.169114,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315546",
+    "lat": 51.550568,
+    "lng": -0.197511,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315547",
+    "lat": 51.525634,
+    "lng": -0.133878,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315548",
+    "lat": 51.54515,
+    "lng": -0.160119,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315549",
+    "lat": 51.522698,
+    "lng": -0.110351,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315550",
+    "lat": 51.533405,
+    "lng": -0.137141,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315551",
+    "lat": 51.546615,
+    "lng": -0.151281,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315552",
+    "lat": 51.556548,
+    "lng": -0.160845,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315553",
+    "lat": 51.553296,
+    "lng": -0.210758,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315554",
+    "lat": 51.551165,
+    "lng": -0.201354,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315555",
+    "lat": 51.552168,
+    "lng": -0.161655,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315556",
+    "lat": 51.552506,
+    "lng": -0.210036,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315557",
+    "lat": 51.546166,
+    "lng": -0.173894,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315558",
+    "lat": 51.550019,
+    "lng": -0.193603,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315559",
+    "lat": 51.521804,
+    "lng": -0.136988,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315560",
+    "lat": 51.561809,
+    "lng": -0.15004,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315561",
+    "lat": 51.524,
+    "lng": -0.129917,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315562",
+    "lat": 51.543437,
+    "lng": -0.171393,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315563",
+    "lat": 51.514345,
+    "lng": -0.1284,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315564",
+    "lat": 51.547315,
+    "lng": -0.198227,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315565",
+    "lat": 51.543991,
+    "lng": -0.167149,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315566",
+    "lat": 51.555796,
+    "lng": -0.155308,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315567",
+    "lat": 51.548669,
+    "lng": -0.151428,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315568",
+    "lat": 51.525658,
+    "lng": -0.143299,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315569",
+    "lat": 51.545603,
+    "lng": -0.145413,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315570",
+    "lat": 51.556844,
+    "lng": -0.163118,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737315571",
+    "lat": 51.526386,
+    "lng": -0.131209,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737319300",
+    "lat": 51.554327,
+    "lng": -0.144055,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323205",
+    "lat": 51.522818,
+    "lng": -0.109372,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323206",
+    "lat": 51.549913,
+    "lng": -0.1741,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323207",
+    "lat": 51.550963,
+    "lng": -0.200784,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323208",
+    "lat": 51.558209,
+    "lng": -0.164219,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323209",
+    "lat": 51.548933,
+    "lng": -0.171082,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes",
+    "tags": {
+      "note": "Was bike parking for"
+    }
+  },
+  {
+    "id": "node/13737323210",
+    "lat": 51.548682,
+    "lng": -0.167952,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323211",
+    "lat": 51.552287,
+    "lng": -0.188069,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323212",
+    "lat": 51.55142,
+    "lng": -0.200722,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323213",
+    "lat": 51.548791,
+    "lng": -0.138583,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323214",
+    "lat": 51.523647,
+    "lng": -0.118894,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323215",
+    "lat": 51.548001,
+    "lng": -0.199759,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323216",
+    "lat": 51.559519,
+    "lng": -0.187704,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323217",
+    "lat": 51.548855,
+    "lng": -0.192667,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323218",
+    "lat": 51.542391,
+    "lng": -0.171592,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323219",
+    "lat": 51.54017,
+    "lng": -0.154432,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323220",
+    "lat": 51.520992,
+    "lng": -0.136506,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323221",
+    "lat": 51.515599,
+    "lng": -0.126165,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323222",
+    "lat": 51.517562,
+    "lng": -0.133276,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323223",
+    "lat": 51.545514,
+    "lng": -0.163116,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323224",
+    "lat": 51.544971,
+    "lng": -0.197033,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323225",
+    "lat": 51.522909,
+    "lng": -0.134576,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323226",
+    "lat": 51.550176,
+    "lng": -0.191215,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323227",
+    "lat": 51.552626,
+    "lng": -0.197093,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323228",
+    "lat": 51.543739,
+    "lng": -0.151293,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323229",
+    "lat": 51.544497,
+    "lng": -0.166802,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323230",
+    "lat": 51.544653,
+    "lng": -0.15856,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323231",
+    "lat": 51.54655,
+    "lng": -0.140222,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323232",
+    "lat": 51.548473,
+    "lng": -0.1429,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737323233",
+    "lat": 51.541897,
+    "lng": -0.128724,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737323234",
+    "lat": 51.526385,
+    "lng": -0.140923,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330465",
+    "lat": 51.554246,
+    "lng": -0.164412,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330466",
+    "lat": 51.570466,
+    "lng": -0.148548,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330467",
+    "lat": 51.547239,
+    "lng": -0.196086,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330468",
+    "lat": 51.546315,
+    "lng": -0.135713,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330469",
+    "lat": 51.545265,
+    "lng": -0.196164,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330470",
+    "lat": 51.535054,
+    "lng": -0.133203,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330471",
+    "lat": 51.562215,
+    "lng": -0.176485,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330472",
+    "lat": 51.526042,
+    "lng": -0.132196,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330473",
+    "lat": 51.554106,
+    "lng": -0.195841,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330474",
+    "lat": 51.546677,
+    "lng": -0.161066,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330475",
+    "lat": 51.545816,
+    "lng": -0.167774,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330476",
+    "lat": 51.553013,
+    "lng": -0.209022,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330477",
+    "lat": 51.539439,
+    "lng": -0.191827,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330478",
+    "lat": 51.55396,
+    "lng": -0.211634,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330479",
+    "lat": 51.555076,
+    "lng": -0.212878,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330480",
+    "lat": 51.542522,
+    "lng": -0.144821,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330481",
+    "lat": 51.554923,
+    "lng": -0.164176,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737330482",
+    "lat": 51.5499,
+    "lng": -0.196146,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330483",
+    "lat": 51.519694,
+    "lng": -0.123626,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330484",
+    "lat": 51.543464,
+    "lng": -0.136195,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330485",
+    "lat": 51.540278,
+    "lng": -0.142981,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330486",
+    "lat": 51.553154,
+    "lng": -0.142995,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330487",
+    "lat": 51.55148,
+    "lng": -0.182241,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330488",
+    "lat": 51.540656,
+    "lng": -0.191016,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330489",
+    "lat": 51.529867,
+    "lng": -0.129017,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737330490",
+    "lat": 51.540099,
+    "lng": -0.146245,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330491",
+    "lat": 51.513511,
+    "lng": -0.125932,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330492",
+    "lat": 51.544647,
+    "lng": -0.16203,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330493",
+    "lat": 51.529791,
+    "lng": -0.132535,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737330494",
+    "lat": 51.555239,
+    "lng": -0.174353,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331947",
+    "lat": 51.537847,
+    "lng": -0.13505,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331948",
+    "lat": 51.551118,
+    "lng": -0.203037,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331949",
+    "lat": 51.544422,
+    "lng": -0.194076,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331950",
+    "lat": 51.556112,
+    "lng": -0.185505,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331951",
+    "lat": 51.522324,
+    "lng": -0.13112,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331952",
+    "lat": 51.552211,
+    "lng": -0.176176,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331953",
+    "lat": 51.544138,
+    "lng": -0.182415,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331954",
+    "lat": 51.541783,
+    "lng": -0.156505,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331955",
+    "lat": 51.534289,
+    "lng": -0.143961,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331956",
+    "lat": 51.551285,
+    "lng": -0.208315,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331957",
+    "lat": 51.552132,
+    "lng": -0.140803,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331958",
+    "lat": 51.535708,
+    "lng": -0.140232,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331959",
+    "lat": 51.520994,
+    "lng": -0.111486,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331960",
+    "lat": 51.551102,
+    "lng": -0.194738,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331961",
+    "lat": 51.529809,
+    "lng": -0.131978,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331962",
+    "lat": 51.52354,
+    "lng": -0.13995,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331963",
+    "lat": 51.552465,
+    "lng": -0.152005,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331964",
+    "lat": 51.548122,
+    "lng": -0.166117,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331965",
+    "lat": 51.555897,
+    "lng": -0.165247,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331966",
+    "lat": 51.538951,
+    "lng": -0.144382,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331967",
+    "lat": 51.54665,
+    "lng": -0.181058,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331968",
+    "lat": 51.549127,
+    "lng": -0.183505,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331969",
+    "lat": 51.552045,
+    "lng": -0.19064,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331970",
+    "lat": 51.517174,
+    "lng": -0.119695,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331971",
+    "lat": 51.545602,
+    "lng": -0.195957,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331972",
+    "lat": 51.545387,
+    "lng": -0.157721,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331973",
+    "lat": 51.554109,
+    "lng": -0.196934,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331974",
+    "lat": 51.545717,
+    "lng": -0.174681,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331975",
+    "lat": 51.521924,
+    "lng": -0.133512,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737331976",
+    "lat": 51.541516,
+    "lng": -0.195305,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333201",
+    "lat": 51.54292,
+    "lng": -0.198421,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333202",
+    "lat": 51.548003,
+    "lng": -0.142399,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333203",
+    "lat": 51.544296,
+    "lng": -0.173488,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333204",
+    "lat": 51.549262,
+    "lng": -0.190715,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333205",
+    "lat": 51.545068,
+    "lng": -0.193121,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333206",
+    "lat": 51.52783,
+    "lng": -0.119263,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333207",
+    "lat": 51.521021,
+    "lng": -0.13198,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333208",
+    "lat": 51.545214,
+    "lng": -0.141915,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333209",
+    "lat": 51.554875,
+    "lng": -0.156117,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333210",
+    "lat": 51.549061,
+    "lng": -0.163854,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333211",
+    "lat": 51.535168,
+    "lng": -0.137419,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333212",
+    "lat": 51.552184,
+    "lng": -0.191952,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333213",
+    "lat": 51.522767,
+    "lng": -0.135883,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333214",
+    "lat": 51.555479,
+    "lng": -0.157446,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333215",
+    "lat": 51.548956,
+    "lng": -0.194279,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333216",
+    "lat": 51.519072,
+    "lng": -0.123745,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333217",
+    "lat": 51.558872,
+    "lng": -0.163684,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333218",
+    "lat": 51.531849,
+    "lng": -0.136701,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737333219",
+    "lat": 51.514611,
+    "lng": -0.12812,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333220",
+    "lat": 51.541779,
+    "lng": -0.156276,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333221",
+    "lat": 51.548249,
+    "lng": -0.201901,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333222",
+    "lat": 51.541895,
+    "lng": -0.128724,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737333223",
+    "lat": 51.542747,
+    "lng": -0.195529,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333224",
+    "lat": 51.551774,
+    "lng": -0.163784,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13737333225",
+    "lat": 51.549007,
+    "lng": -0.171868,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333226",
+    "lat": 51.557853,
+    "lng": -0.143399,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333227",
+    "lat": 51.547861,
+    "lng": -0.19644,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333228",
+    "lat": 51.550107,
+    "lng": -0.192405,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13737333229",
+    "lat": 51.541227,
+    "lng": -0.164895,
+    "borough": "Camden",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
   }
 ];
