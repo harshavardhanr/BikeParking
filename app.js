@@ -583,13 +583,6 @@ function handleGeolocation() {
 const NOMINATIM_HEADERS = {
   'User-Agent': 'BikeParkLondonApp/1.0 (contact: harshavardhanr@google.com)'
 };
-const LONDON_VIEWBOX = '-0.510,51.691,0.334,51.286';
-const LONDON_BOUNDS = { latMin: 51.28, latMax: 51.70, lonMin: -0.55, lonMax: 0.35 };
-
-function isInLondon(lat, lon) {
-  return lat >= LONDON_BOUNDS.latMin && lat <= LONDON_BOUNDS.latMax
-    && lon >= LONDON_BOUNDS.lonMin && lon <= LONDON_BOUNDS.lonMax;
-}
 
 function formatNominatimResult(result) {
   const addr = result.address || {};
@@ -599,12 +592,14 @@ function formatNominatimResult(result) {
     addr.house_number,
     addr.road,
     addr.suburb || addr.neighbourhood || addr.city_district,
+    addr.city || addr.town || addr.village,
+    addr.county,
     addr.postcode
   ].filter(Boolean);
 
   const sublabel = subParts.length
     ? subParts.join(', ')
-    : result.display_name.split(',').slice(1, 3).join(',').trim();
+    : result.display_name.split(',').slice(1, 4).join(',').trim();
 
   return {
     label,
@@ -620,8 +615,7 @@ async function nominatimSearch(query, limit = 5) {
     q: query,
     limit: String(limit),
     addressdetails: '1',
-    countrycodes: 'gb',
-    viewbox: LONDON_VIEWBOX
+    countrycodes: 'gb'
   });
 
   const response = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
@@ -631,20 +625,11 @@ async function nominatimSearch(query, limit = 5) {
   if (!response.ok) throw new Error('Search failed');
 
   const results = await response.json();
-  return results
-    .map(formatNominatimResult)
-    .filter(item => isInLondon(item.lat, item.lon));
+  return results.map(formatNominatimResult);
 }
 
 async function fetchLocationSuggestions(query, limit = 5) {
-  let results = await nominatimSearch(query, limit);
-
-  // Retry with London appended when place/POI queries return nothing
-  if (!results.length && !/\blondon\b/i.test(query)) {
-    results = await nominatimSearch(`${query}, London`, limit);
-  }
-
-  return results;
+  return nominatimSearch(query, limit);
 }
 
 function showSearchLocation(lat, lon) {
@@ -792,7 +777,7 @@ async function handleSearch(e) {
       if (typeof trackEvent === 'function') trackEvent('search', { result: 'success' });
     } else {
       if (typeof trackEvent === 'function') trackEvent('search', { result: 'no_results' });
-      alert(`No results found for "${query}" in London. Try a postcode, street name, or place.`);
+      alert(`No results found for "${query}". Try a UK postcode, street name, or place.`);
     }
   } catch (error) {
     console.error('Error during search geocoding:', error);
