@@ -18410,16 +18410,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2774850821",
-    "lat": 55.8696515,
-    "lng": -4.2797468,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/2774850823",
@@ -18428,7 +18422,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -18461,15 +18455,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/2774850830",
-    "lat": 55.8724058,
-    "lng": -4.280295,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
     "id": "node/2774850831",
     "lat": 55.8724323,
     "lng": -4.2597275,
@@ -18491,15 +18476,6 @@ const PARKING_DATA = [
     "id": "node/2774850833",
     "lat": 55.8726254,
     "lng": -4.2730337,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2779294577",
-    "lat": 55.8720043,
-    "lng": -4.2806402,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -30054,6 +30030,18 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "way/1020626943",
+    "lat": 53.1334398,
+    "lng": -3.0814957,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1024283188",
