@@ -5766,8 +5766,11 @@ const PARKING_DATA = [
     "lng": -0.1910651,
     "borough": "Kensington and Chelsea",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13846930774",
@@ -11545,7 +11548,7 @@ const PARKING_DATA = [
     "lng": -0.1806958,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 7,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -11557,7 +11560,7 @@ const PARKING_DATA = [
     "lng": -0.1802518,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 7,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -11569,7 +11572,7 @@ const PARKING_DATA = [
     "lng": -0.1823927,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 4,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -19662,8 +19665,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/4853971567",
-    "lat": 55.9472654,
-    "lng": -3.1841724,
+    "lat": 55.9471563,
+    "lng": -3.1839783,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
@@ -29077,7 +29080,7 @@ const PARKING_DATA = [
     "lng": -1.9853715,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 15,
     "fee": "no",
     "tags": {
       "covered": "no"
