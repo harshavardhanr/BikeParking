@@ -1,6 +1,15 @@
 // Compiled UK motorcycle parking bays (OpenStreetMap amenity=motorcycle_parking)
 const PARKING_DATA = [
   {
+    "id": "node/13977425001",
+    "lat": 51.4559741,
+    "lng": 0.1441612,
+    "borough": "Bexley",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
     "id": "node/1570980421",
     "lat": 51.5405481,
     "lng": -0.2088258,
@@ -28820,6 +28829,27 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "node/13962062341",
+    "lat": 50.3939445,
+    "lng": -4.082864,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13969287658",
+    "lat": 54.3070876,
+    "lng": -2.7335657,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
   },
   {
     "id": "way/42056455",
