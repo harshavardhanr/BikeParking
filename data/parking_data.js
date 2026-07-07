@@ -1549,15 +1549,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/1767293905",
-    "lat": 51.5248742,
-    "lng": -0.0794175,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
     "id": "node/1774445808",
     "lat": 51.5260174,
     "lng": -0.0820341,
@@ -6820,7 +6811,10 @@ const PARKING_DATA = [
     "borough": "Lambeth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13807247849",
@@ -6838,7 +6832,10 @@ const PARKING_DATA = [
     "borough": "Lambeth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 1,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13807247852",
@@ -10394,7 +10391,10 @@ const PARKING_DATA = [
     "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13753626700",
@@ -14073,6 +14073,15 @@ const PARKING_DATA = [
     "lat": 51.5126964,
     "lng": -0.1551262,
     "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/1767293905",
+    "lat": 51.5248742,
+    "lng": -0.0794175,
+    "borough": "Hackney",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "yes"
@@ -19242,8 +19251,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/4853957375",
-    "lat": 55.9377023,
-    "lng": -3.2005298,
+    "lat": 55.9376993,
+    "lng": -3.2005932,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
@@ -27016,18 +27025,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/11013004405",
-    "lat": 50.8331142,
-    "lng": -0.1289878,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/11013060149",
     "lat": 50.8354228,
     "lng": -0.1261808,
@@ -28837,7 +28834,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13969287658",
@@ -28849,6 +28849,44 @@ const PARKING_DATA = [
     "fee": "no",
     "tags": {
       "covered": "yes"
+    }
+  },
+  {
+    "id": "node/13983706072",
+    "lat": 50.6898934,
+    "lng": -4.6909726,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13993835206",
+    "lat": 52.4843445,
+    "lng": -1.8994123,
+    "borough": "United Kingdom",
+    "street": "Three Snowhill Underground Motorcycle Parking",
+    "capacity": 9,
+    "fee": "no",
+    "tags": {
+      "covered": "yes",
+      "note": "this is the correct spelling NOT Snow Hill as the station"
+    }
+  },
+  {
+    "id": "node/13993835242",
+    "lat": 52.4840457,
+    "lng": -1.8991207,
+    "borough": "United Kingdom",
+    "street": "Two Snowhill Underground Motorcycle Parking",
+    "capacity": 7,
+    "fee": "no",
+    "tags": {
+      "covered": "yes",
+      "note": "this is the correct spelling NOT Snow Hill as the station"
     }
   },
   {
@@ -32799,5 +32837,17 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "way/1534669444",
+    "lat": 50.8331141,
+    "lng": -0.1289871,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   }
 ];
