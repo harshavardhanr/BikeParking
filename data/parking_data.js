@@ -1176,7 +1176,7 @@ const PARKING_DATA = [
     "borough": "Camden",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 20,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -1188,7 +1188,7 @@ const PARKING_DATA = [
     "borough": "Camden",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 10,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -7429,7 +7429,10 @@ const PARKING_DATA = [
     "borough": "Lambeth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13807258743",
@@ -17015,8 +17018,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/1458124761",
-    "lat": 52.4825026,
-    "lng": -1.8990892,
+    "lat": 52.4824907,
+    "lng": -1.8990711,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -18570,18 +18573,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
     "fee": "no"
-  },
-  {
-    "id": "node/3041275683",
-    "lat": 54.2839973,
-    "lng": -0.3884102,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
   },
   {
     "id": "node/3046177342",
@@ -26149,7 +26140,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Milnthorpe Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537624",
@@ -26167,7 +26161,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Bolsover Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537626",
@@ -26185,7 +26182,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Scott Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537628",
@@ -28887,6 +28887,36 @@ const PARKING_DATA = [
     "tags": {
       "covered": "yes",
       "note": "this is the correct spelling NOT Snow Hill as the station"
+    }
+  },
+  {
+    "id": "node/13999956704",
+    "lat": 53.2273995,
+    "lng": -4.1603754,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14002832385",
+    "lat": 51.8911271,
+    "lng": -0.5203469,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14008404942",
+    "lat": 53.5429329,
+    "lng": -1.5259373,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
     }
   },
   {
@@ -32849,5 +32879,50 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
+  },
+  {
+    "id": "way/1536948835",
+    "lat": 54.2842323,
+    "lng": -0.3861605,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1536948836",
+    "lat": 54.2845045,
+    "lng": -0.3861648,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1537239731",
+    "lat": 54.2840099,
+    "lng": -0.3884664,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1537438064",
+    "lat": 52.9062897,
+    "lng": -3.6059181,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
   }
 ];
