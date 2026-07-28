@@ -1414,6 +1414,15 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "way/1294874276",
+    "lat": 51.3671391,
+    "lng": -0.0971974,
+    "borough": "Croydon",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
     "id": "node/10988910792",
     "lat": 51.5343264,
     "lng": -0.3187663,
@@ -7348,15 +7357,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/13807258734",
-    "lat": 51.4937607,
-    "lng": -0.105996,
-    "borough": "Lambeth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 1,
-    "fee": "no"
-  },
-  {
     "id": "node/13807258736",
     "lat": 51.484296,
     "lng": -0.1198303,
@@ -9395,18 +9395,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/9370489902",
-    "lat": 51.4619537,
-    "lng": -0.3044616,
-    "borough": "Richmond-upon-Thames",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/287453629",
     "lat": 51.4982563,
     "lng": -0.0861183,
@@ -9593,7 +9581,7 @@ const PARKING_DATA = [
     "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -14069,6 +14057,27 @@ const PARKING_DATA = [
     "fee": "yes"
   },
   {
+    "id": "node/13807258734",
+    "lat": 51.4937607,
+    "lng": -0.105996,
+    "borough": "Lambeth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "no"
+  },
+  {
+    "id": "node/9370489902",
+    "lat": 51.4619537,
+    "lng": -0.3044616,
+    "borough": "Richmond-upon-Thames",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
     "id": "node/6524691492",
     "lat": 51.5206335,
     "lng": -0.1292342,
@@ -14079,15 +14088,6 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
-  },
-  {
-    "id": "way/1294874276",
-    "lat": 51.3671391,
-    "lng": -0.0971974,
-    "borough": "Croydon",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
   },
   {
     "id": "node/1767293905",
@@ -25367,8 +25367,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498252131",
-    "lat": 50.825828,
-    "lng": -0.123089,
+    "lat": 50.8258276,
+    "lng": -0.1230582,
     "borough": "United Kingdom",
     "street": "East Drive (Zone C)",
     "capacity": 4,
@@ -26421,8 +26421,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9964286883",
-    "lat": 51.8653676,
-    "lng": -2.2434966,
+    "lat": 51.8653421,
+    "lng": -2.2435517,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 16,
@@ -27293,8 +27293,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/11363152380",
-    "lat": 51.8657628,
-    "lng": -2.2428883,
+    "lat": 51.8657788,
+    "lng": -2.2428846,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 14,
@@ -28939,8 +28939,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/115618464",
-    "lat": 51.7580925,
-    "lng": -1.2598248,
+    "lat": 51.7580978,
+    "lng": -1.2598051,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -32944,6 +32944,27 @@ const PARKING_DATA = [
     "id": "way/1540368122",
     "lat": 52.4815962,
     "lng": -1.9021571,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1544955728",
+    "lat": 55.0103103,
+    "lng": -1.6081453,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1545523110",
+    "lat": 53.5530146,
+    "lng": -1.4825911,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
