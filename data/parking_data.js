@@ -1886,8 +1886,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/584448094",
-    "lat": 51.5278603,
-    "lng": -0.107958,
+    "lat": 51.5278217,
+    "lng": -0.1079567,
     "borough": "Islington",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -2705,3489 +2705,6 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
-  },
-  {
-    "id": "node/994448459",
-    "lat": 51.5081871,
-    "lng": -0.1955564,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/1930373219",
-    "lat": 51.4860233,
-    "lng": -0.1803388,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no"
-  },
-  {
-    "id": "node/1931058163",
-    "lat": 51.4990241,
-    "lng": -0.1851393,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3731762426",
-    "lat": 51.5087528,
-    "lng": -0.1970595,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3740867195",
-    "lat": 51.522119,
-    "lng": -0.2077107,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740867196",
-    "lat": 51.522467,
-    "lng": -0.2071296,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877647",
-    "lat": 51.5170395,
-    "lng": -0.2192766,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877649",
-    "lat": 51.5188701,
-    "lng": -0.2076574,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 9,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3740877650",
-    "lat": 51.519837,
-    "lng": -0.2234103,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3740877651",
-    "lat": 51.5215629,
-    "lng": -0.2273459,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3740877652",
-    "lat": 51.522832,
-    "lng": -0.2150972,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877653",
-    "lat": 51.5220454,
-    "lng": -0.2125247,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3740877654",
-    "lat": 51.5246932,
-    "lng": -0.211398,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877655",
-    "lat": 51.5257838,
-    "lng": -0.2079258,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877656",
-    "lat": 51.5259756,
-    "lng": -0.2088936,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3740877657",
-    "lat": 51.5261258,
-    "lng": -0.2098892,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3750117038",
-    "lat": 51.5137711,
-    "lng": -0.196828,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3750117040",
-    "lat": 51.5140438,
-    "lng": -0.1964069,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751099418",
-    "lat": 51.5086005,
-    "lng": -0.2038544,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751099419",
-    "lat": 51.5109103,
-    "lng": -0.2088193,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751099420",
-    "lat": 51.5134305,
-    "lng": -0.2117015,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751099421",
-    "lat": 51.5155748,
-    "lng": -0.2095903,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 11,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751099422",
-    "lat": 51.5158627,
-    "lng": -0.2094703,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "node/3751099424",
-    "lat": 51.5164869,
-    "lng": -0.2220066,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100625",
-    "lat": 51.5171432,
-    "lng": -0.2211867,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100626",
-    "lat": 51.5175018,
-    "lng": -0.2065059,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100627",
-    "lat": 51.518017,
-    "lng": -0.2037216,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100628",
-    "lat": 51.5180254,
-    "lng": -0.2040549,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100629",
-    "lat": 51.518299,
-    "lng": -0.2194018,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100630",
-    "lat": 51.5185484,
-    "lng": -0.2231698,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100631",
-    "lat": 51.5189389,
-    "lng": -0.204551,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100632",
-    "lat": 51.5192723,
-    "lng": -0.2192009,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100633",
-    "lat": 51.5198883,
-    "lng": -0.2264414,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100634",
-    "lat": 51.5200049,
-    "lng": -0.2131303,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100635",
-    "lat": 51.5210971,
-    "lng": -0.2089211,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100636",
-    "lat": 51.5211052,
-    "lng": -0.2120098,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751100637",
-    "lat": 51.5227019,
-    "lng": -0.221847,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751100638",
-    "lat": 51.5240073,
-    "lng": -0.2161752,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751101132",
-    "lat": 51.5077535,
-    "lng": -0.2071753,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751101133",
-    "lat": 51.508166,
-    "lng": -0.2060889,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751118636",
-    "lat": 51.5097223,
-    "lng": -0.19422,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118638",
-    "lat": 51.5098384,
-    "lng": -0.1930668,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118639",
-    "lat": 51.5098374,
-    "lng": -0.1983697,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118640",
-    "lat": 51.5100866,
-    "lng": -0.1943109,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751118641",
-    "lat": 51.5105436,
-    "lng": -0.1955164,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118642",
-    "lat": 51.510828,
-    "lng": -0.1994002,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118643",
-    "lat": 51.5114644,
-    "lng": -0.1970768,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 13,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751118644",
-    "lat": 51.51159,
-    "lng": -0.2021471,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751118645",
-    "lat": 51.5116041,
-    "lng": -0.2040735,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751142276",
-    "lat": 51.5058383,
-    "lng": -0.2118419,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751142277",
-    "lat": 51.5062769,
-    "lng": -0.214426,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751142278",
-    "lat": 51.5066404,
-    "lng": -0.2081622,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751142279",
-    "lat": 51.5080728,
-    "lng": -0.2132796,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751142280",
-    "lat": 51.5085678,
-    "lng": -0.2101705,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751142281",
-    "lat": 51.5101139,
-    "lng": -0.2113768,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751142282",
-    "lat": 51.5113223,
-    "lng": -0.2110935,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3751142283",
-    "lat": 51.5117234,
-    "lng": -0.218243,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751142284",
-    "lat": 51.5124676,
-    "lng": -0.2144048,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751142285",
-    "lat": 51.5130083,
-    "lng": -0.2176822,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751163246",
-    "lat": 51.4963525,
-    "lng": -0.2070454,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751163247",
-    "lat": 51.4988632,
-    "lng": -0.2101176,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751163248",
-    "lat": 51.4998468,
-    "lng": -0.2118193,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751163249",
-    "lat": 51.5015483,
-    "lng": -0.213266,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751188829",
-    "lat": 51.4972735,
-    "lng": -0.2067231,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751188830",
-    "lat": 51.4999686,
-    "lng": -0.2062121,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751188831",
-    "lat": 51.5032773,
-    "lng": -0.2125306,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751188832",
-    "lat": 51.5042452,
-    "lng": -0.2134852,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3751188833",
-    "lat": 51.504974,
-    "lng": -0.2113452,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3907059746",
-    "lat": 51.5029112,
-    "lng": -0.1906881,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3907059747",
-    "lat": 51.5050262,
-    "lng": -0.1928445,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3907059748",
-    "lat": 51.5050455,
-    "lng": -0.192755,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3907059749",
-    "lat": 51.506564,
-    "lng": -0.1943301,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3927334476",
-    "lat": 51.4925605,
-    "lng": -0.1599274,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 14,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3927334477",
-    "lat": 51.492552,
-    "lng": -0.1601107,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3927334478",
-    "lat": 51.4925434,
-    "lng": -0.1590714,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3959117778",
-    "lat": 51.4976165,
-    "lng": -0.1833184,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/4941641469",
-    "lat": 51.4932593,
-    "lng": -0.16664,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5123948803",
-    "lat": 51.4953322,
-    "lng": -0.1750565,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5576027941",
-    "lat": 51.4936977,
-    "lng": -0.170712,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5684851856",
-    "lat": 51.4926764,
-    "lng": -0.168273,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5858911573",
-    "lat": 51.4838185,
-    "lng": -0.177282,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/6553962911",
-    "lat": 51.493372,
-    "lng": -0.1672949,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6562662448",
-    "lat": 51.4952388,
-    "lng": -0.1692753,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6635841571",
-    "lat": 51.494206,
-    "lng": -0.1773622,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6767156008",
-    "lat": 51.5011383,
-    "lng": -0.1839589,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6767200898",
-    "lat": 51.4953334,
-    "lng": -0.1809382,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6772668586",
-    "lat": 51.4977766,
-    "lng": -0.1667261,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6780844294",
-    "lat": 51.4907989,
-    "lng": -0.1624417,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6783252487",
-    "lat": 51.4953713,
-    "lng": -0.1851396,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6795156485",
-    "lat": 51.4922707,
-    "lng": -0.1630162,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6816967485",
-    "lat": 51.4943485,
-    "lng": -0.1633561,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6816967685",
-    "lat": 51.4948834,
-    "lng": -0.1627315,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6824817747",
-    "lat": 51.4907515,
-    "lng": -0.1570184,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6831654085",
-    "lat": 51.488769,
-    "lng": -0.1570298,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6851173985",
-    "lat": 51.4890374,
-    "lng": -0.1764636,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/6875919088",
-    "lat": 51.4974735,
-    "lng": -0.1671715,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6877543091",
-    "lat": 51.4933403,
-    "lng": -0.15593,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6900092300",
-    "lat": 51.4934403,
-    "lng": -0.1652744,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6918697385",
-    "lat": 51.4941945,
-    "lng": -0.1716556,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6920508390",
-    "lat": 51.4950477,
-    "lng": -0.1653289,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6945039893",
-    "lat": 51.502093,
-    "lng": -0.1869707,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6957400334",
-    "lat": 51.4970076,
-    "lng": -0.1680011,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6958514685",
-    "lat": 51.4978208,
-    "lng": -0.1776746,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/6964262286",
-    "lat": 51.486025,
-    "lng": -0.165779,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6964262287",
-    "lat": 51.4838741,
-    "lng": -0.1651723,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/6983253987",
-    "lat": 51.4819736,
-    "lng": -0.180981,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7041818686",
-    "lat": 51.4905178,
-    "lng": -0.1718146,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7049554485",
-    "lat": 51.4935941,
-    "lng": -0.1786254,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 16,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7051865591",
-    "lat": 51.5145282,
-    "lng": -0.2069601,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7051877989",
-    "lat": 51.5136153,
-    "lng": -0.2045798,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7056638685",
-    "lat": 51.5144417,
-    "lng": -0.2100684,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7089341490",
-    "lat": 51.4956417,
-    "lng": -0.1611939,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7089375188",
-    "lat": 51.5012977,
-    "lng": -0.1587853,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 15,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7093405487",
-    "lat": 51.4899041,
-    "lng": -0.1752077,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7093405490",
-    "lat": 51.4911955,
-    "lng": -0.183334,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7093405492",
-    "lat": 51.4945388,
-    "lng": -0.1871954,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7093419385",
-    "lat": 51.4878704,
-    "lng": -0.1782568,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7093419585",
-    "lat": 51.4859296,
-    "lng": -0.1813578,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7101764585",
-    "lat": 51.5004509,
-    "lng": -0.1892681,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7102260187",
-    "lat": 51.4932715,
-    "lng": -0.1947172,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 17,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7104894994",
-    "lat": 51.4869691,
-    "lng": -0.1620388,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7104898085",
-    "lat": 51.4892803,
-    "lng": -0.1638985,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7108046087",
-    "lat": 51.4875653,
-    "lng": -0.1627416,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7114991590",
-    "lat": 51.4925336,
-    "lng": -0.1938658,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7115016789",
-    "lat": 51.4900056,
-    "lng": -0.1909126,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7115016986",
-    "lat": 51.491496,
-    "lng": -0.1925713,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7117566192",
-    "lat": 51.4896366,
-    "lng": -0.1734337,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7117566287",
-    "lat": 51.4902785,
-    "lng": -0.1706653,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7117566393",
-    "lat": 51.486451,
-    "lng": -0.1766115,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7117566394",
-    "lat": 51.4883605,
-    "lng": -0.1748174,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7123018886",
-    "lat": 51.4964606,
-    "lng": -0.1671892,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7128221692",
-    "lat": 51.495918,
-    "lng": -0.1833808,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7128222085",
-    "lat": 51.4859452,
-    "lng": -0.161144,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7128222185",
-    "lat": 51.4951074,
-    "lng": -0.1683857,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7133836589",
-    "lat": 51.4963484,
-    "lng": -0.1690655,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7133842986",
-    "lat": 51.4966932,
-    "lng": -0.1682846,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 2,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7136299487",
-    "lat": 51.4934151,
-    "lng": -0.1812002,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7136310085",
-    "lat": 51.4908855,
-    "lng": -0.1910909,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7136310086",
-    "lat": 51.4918749,
-    "lng": -0.1885612,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7136310285",
-    "lat": 51.4928685,
-    "lng": -0.1851653,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7141361588",
-    "lat": 51.4972229,
-    "lng": -0.1583301,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 16,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7143435505",
-    "lat": 51.4978288,
-    "lng": -0.1708138,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7178638786",
-    "lat": 51.4852332,
-    "lng": -0.1622174,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7178638787",
-    "lat": 51.4851107,
-    "lng": -0.1686014,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7178638788",
-    "lat": 51.4865247,
-    "lng": -0.1696509,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7195296285",
-    "lat": 51.4954953,
-    "lng": -0.1956872,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7195564686",
-    "lat": 51.4973815,
-    "lng": -0.203364,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7204247886",
-    "lat": 51.4951411,
-    "lng": -0.1610806,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7214357685",
-    "lat": 51.4941024,
-    "lng": -0.1830243,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7285393385",
-    "lat": 51.4977315,
-    "lng": -0.1628666,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 16,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7285393485",
-    "lat": 51.4966029,
-    "lng": -0.1631199,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 13,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7285393585",
-    "lat": 51.4931131,
-    "lng": -0.1623342,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7292418785",
-    "lat": 51.4920591,
-    "lng": -0.163642,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7542107786",
-    "lat": 51.4845795,
-    "lng": -0.1586716,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7553833288",
-    "lat": 51.5018592,
-    "lng": -0.1924595,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7573056690",
-    "lat": 51.5176622,
-    "lng": -0.201521,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7603438986",
-    "lat": 51.4949437,
-    "lng": -0.1901556,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7603439085",
-    "lat": 51.495719,
-    "lng": -0.1921752,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7617920286",
-    "lat": 51.4929926,
-    "lng": -0.1876425,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7634042385",
-    "lat": 51.4909387,
-    "lng": -0.1776857,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 15,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7650206185",
-    "lat": 51.4978248,
-    "lng": -0.1805713,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7653422385",
-    "lat": 51.497135,
-    "lng": -0.166607,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7658106287",
-    "lat": 51.4979025,
-    "lng": -0.1926217,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7710312785",
-    "lat": 51.496547,
-    "lng": -0.1923673,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7721937885",
-    "lat": 51.4835821,
-    "lng": -0.1846986,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7775671486",
-    "lat": 51.4921319,
-    "lng": -0.1565806,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7796563287",
-    "lat": 51.496626,
-    "lng": -0.1846606,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/7796563290",
-    "lat": 51.4970706,
-    "lng": -0.1797854,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7849533585",
-    "lat": 51.5014684,
-    "lng": -0.1935037,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7862963485",
-    "lat": 51.4956773,
-    "lng": -0.1716316,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7897746187",
-    "lat": 51.4862817,
-    "lng": -0.1714938,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7939368577",
-    "lat": 51.4896391,
-    "lng": -0.1941969,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/10973392943",
-    "lat": 51.4882909,
-    "lng": -0.1787934,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no"
-  },
-  {
-    "id": "node/11047966894",
-    "lat": 51.4849547,
-    "lng": -0.1857538,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/13739971872",
-    "lat": 51.4825436,
-    "lng": -0.1861954,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/13846900672",
-    "lat": 51.4827768,
-    "lng": -0.1779892,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900673",
-    "lat": 51.4814468,
-    "lng": -0.1774661,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900674",
-    "lat": 51.4791358,
-    "lng": -0.1797904,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900675",
-    "lat": 51.4786806,
-    "lng": -0.1805862,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900676",
-    "lat": 51.4875904,
-    "lng": -0.1666199,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900677",
-    "lat": 51.4885551,
-    "lng": -0.1881874,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900678",
-    "lat": 51.4842086,
-    "lng": -0.1868186,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900679",
-    "lat": 51.4865369,
-    "lng": -0.1850266,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900680",
-    "lat": 51.4881874,
-    "lng": -0.1830166,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900681",
-    "lat": 51.4868127,
-    "lng": -0.1859951,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900682",
-    "lat": 51.4853831,
-    "lng": -0.1715335,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900683",
-    "lat": 51.4868037,
-    "lng": -0.1709437,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900684",
-    "lat": 51.4873303,
-    "lng": -0.1712683,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900685",
-    "lat": 51.4918761,
-    "lng": -0.1686808,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900686",
-    "lat": 51.4983275,
-    "lng": -0.158582,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900687",
-    "lat": 51.4874131,
-    "lng": -0.1899324,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900688",
-    "lat": 51.492137,
-    "lng": -0.1977114,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900689",
-    "lat": 51.4916182,
-    "lng": -0.1967235,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900690",
-    "lat": 51.4937412,
-    "lng": -0.1967694,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900691",
-    "lat": 51.4918898,
-    "lng": -0.1962518,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846900692",
-    "lat": 51.4987597,
-    "lng": -0.1637801,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919710",
-    "lat": 51.4970282,
-    "lng": -0.1865837,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919711",
-    "lat": 51.5131897,
-    "lng": -0.2130796,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919712",
-    "lat": 51.4851373,
-    "lng": -0.1887262,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919713",
-    "lat": 51.489803,
-    "lng": -0.171832,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919714",
-    "lat": 51.5130086,
-    "lng": -0.2177273,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919715",
-    "lat": 51.502312,
-    "lng": -0.2144705,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846919716",
-    "lat": 51.4938287,
-    "lng": -0.1989556,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919717",
-    "lat": 51.5123159,
-    "lng": -0.2188928,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919718",
-    "lat": 51.484521,
-    "lng": -0.1681545,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919719",
-    "lat": 51.4806277,
-    "lng": -0.1837923,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919720",
-    "lat": 51.5113162,
-    "lng": -0.2111065,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919721",
-    "lat": 51.4911878,
-    "lng": -0.1557438,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919722",
-    "lat": 51.4940638,
-    "lng": -0.1856209,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846919723",
-    "lat": 51.4806314,
-    "lng": -0.1828704,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919724",
-    "lat": 51.5162284,
-    "lng": -0.2130327,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919725",
-    "lat": 51.4982974,
-    "lng": -0.2000905,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919726",
-    "lat": 51.5150457,
-    "lng": -0.2050657,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846919727",
-    "lat": 51.4879011,
-    "lng": -0.188343,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846919728",
-    "lat": 51.4778738,
-    "lng": -0.1824904,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919729",
-    "lat": 51.4906638,
-    "lng": -0.1995701,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846919730",
-    "lat": 51.521085,
-    "lng": -0.2089507,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919731",
-    "lat": 51.4874201,
-    "lng": -0.18515,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919732",
-    "lat": 51.4917271,
-    "lng": -0.1828038,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919733",
-    "lat": 51.5011307,
-    "lng": -0.1814788,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919734",
-    "lat": 51.4910481,
-    "lng": -0.1807709,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919735",
-    "lat": 51.5044387,
-    "lng": -0.195958,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919736",
-    "lat": 51.5020166,
-    "lng": -0.2139633,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919737",
-    "lat": 51.5134391,
-    "lng": -0.2117439,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919738",
-    "lat": 51.5192816,
-    "lng": -0.2192553,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846919739",
-    "lat": 51.523977,
-    "lng": -0.2163909,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923444",
-    "lat": 51.5058242,
-    "lng": -0.2118547,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923445",
-    "lat": 51.5242241,
-    "lng": -0.2078185,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923446",
-    "lat": 51.4994624,
-    "lng": -0.1604237,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923447",
-    "lat": 51.4957948,
-    "lng": -0.2040212,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923448",
-    "lat": 51.4998344,
-    "lng": -0.211801,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923449",
-    "lat": 51.4928208,
-    "lng": -0.1669863,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923450",
-    "lat": 51.5236875,
-    "lng": -0.2168635,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923451",
-    "lat": 51.4851302,
-    "lng": -0.1743522,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923452",
-    "lat": 51.4867335,
-    "lng": -0.1658764,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923453",
-    "lat": 51.4988259,
-    "lng": -0.1801442,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923454",
-    "lat": 51.5067352,
-    "lng": -0.2143984,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923455",
-    "lat": 51.4960534,
-    "lng": -0.1962603,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923456",
-    "lat": 51.4876779,
-    "lng": -0.192529,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923457",
-    "lat": 51.4933569,
-    "lng": -0.1823644,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923458",
-    "lat": 51.4948087,
-    "lng": -0.1803042,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923459",
-    "lat": 51.484199,
-    "lng": -0.172301,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923460",
-    "lat": 51.4999411,
-    "lng": -0.1976196,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923461",
-    "lat": 51.5221388,
-    "lng": -0.2191006,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923462",
-    "lat": 51.4887561,
-    "lng": -0.179681,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923463",
-    "lat": 51.4920489,
-    "lng": -0.1995875,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923464",
-    "lat": 51.4988698,
-    "lng": -0.1656486,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923465",
-    "lat": 51.5219959,
-    "lng": -0.2108898,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923466",
-    "lat": 51.5065627,
-    "lng": -0.1990011,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846923467",
-    "lat": 51.4918479,
-    "lng": -0.1559765,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923468",
-    "lat": 51.4899981,
-    "lng": -0.1948716,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923469",
-    "lat": 51.5180196,
-    "lng": -0.2243924,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923470",
-    "lat": 51.4995776,
-    "lng": -0.1845519,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923471",
-    "lat": 51.4799173,
-    "lng": -0.1797305,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923472",
-    "lat": 51.5181924,
-    "lng": -0.2138639,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846923473",
-    "lat": 51.4970003,
-    "lng": -0.1888466,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924448",
-    "lat": 51.5037124,
-    "lng": -0.1937533,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924449",
-    "lat": 51.4961023,
-    "lng": -0.1912593,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924450",
-    "lat": 51.4880633,
-    "lng": -0.1953657,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924451",
-    "lat": 51.4905734,
-    "lng": -0.1971968,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924452",
-    "lat": 51.4925995,
-    "lng": -0.1741258,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924453",
-    "lat": 51.483248,
-    "lng": -0.1701354,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924454",
-    "lat": 51.4859148,
-    "lng": -0.167004,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924455",
-    "lat": 51.4865529,
-    "lng": -0.1878059,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924456",
-    "lat": 51.4867843,
-    "lng": -0.1905622,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924457",
-    "lat": 51.4866569,
-    "lng": -0.1782666,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924458",
-    "lat": 51.4880738,
-    "lng": -0.1820704,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924459",
-    "lat": 51.4839596,
-    "lng": -0.1858347,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924460",
-    "lat": 51.4826979,
-    "lng": -0.1740749,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924461",
-    "lat": 51.482131,
-    "lng": -0.1833149,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924462",
-    "lat": 51.4838117,
-    "lng": -0.1797771,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924463",
-    "lat": 51.4879805,
-    "lng": -0.167987,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924464",
-    "lat": 51.4930669,
-    "lng": -0.1603066,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924465",
-    "lat": 51.4851064,
-    "lng": -0.1647607,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924466",
-    "lat": 51.4978506,
-    "lng": -0.1637302,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924467",
-    "lat": 51.4924385,
-    "lng": -0.1875149,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924468",
-    "lat": 51.4918003,
-    "lng": -0.1962841,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924469",
-    "lat": 51.4935224,
-    "lng": -0.1924851,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924470",
-    "lat": 51.4928304,
-    "lng": -0.1896025,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846924471",
-    "lat": 51.5211245,
-    "lng": -0.2032987,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924472",
-    "lat": 51.5168438,
-    "lng": -0.2197972,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924473",
-    "lat": 51.5247019,
-    "lng": -0.2114324,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924474",
-    "lat": 51.5198863,
-    "lng": -0.2235559,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924475",
-    "lat": 51.5221095,
-    "lng": -0.2077285,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924476",
-    "lat": 51.5261432,
-    "lng": -0.2098335,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846924477",
-    "lat": 51.5220568,
-    "lng": -0.2125307,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846926499",
-    "lat": 51.5227114,
-    "lng": -0.2218747,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846926500",
-    "lat": 51.5223189,
-    "lng": -0.2244559,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930762",
-    "lat": 51.5101161,
-    "lng": -0.2114273,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930763",
-    "lat": 51.5170337,
-    "lng": -0.2192709,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930764",
-    "lat": 51.5181465,
-    "lng": -0.2108533,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930765",
-    "lat": 51.5259856,
-    "lng": -0.2089314,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930766",
-    "lat": 51.5224424,
-    "lng": -0.2071533,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930767",
-    "lat": 51.5215904,
-    "lng": -0.2274247,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930768",
-    "lat": 51.5085501,
-    "lng": -0.2101629,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930769",
-    "lat": 51.5131634,
-    "lng": -0.1972563,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930770",
-    "lat": 51.5153412,
-    "lng": -0.2032236,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930771",
-    "lat": 51.4997777,
-    "lng": -0.1934335,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930772",
-    "lat": 51.5007878,
-    "lng": -0.1959581,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930773",
-    "lat": 51.5010092,
-    "lng": -0.1910651,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/13846930774",
-    "lat": 51.4973823,
-    "lng": -0.1973028,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930775",
-    "lat": 51.4978596,
-    "lng": -0.1683257,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930776",
-    "lat": 51.4993259,
-    "lng": -0.1932928,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930777",
-    "lat": 51.4998307,
-    "lng": -0.192783,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930778",
-    "lat": 51.5010688,
-    "lng": -0.1803863,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930779",
-    "lat": 51.5051503,
-    "lng": -0.2083508,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930780",
-    "lat": 51.4973513,
-    "lng": -0.1982116,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930781",
-    "lat": 51.5049895,
-    "lng": -0.2113687,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930782",
-    "lat": 51.4996725,
-    "lng": -0.1959445,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930783",
-    "lat": 51.5033333,
-    "lng": -0.2124421,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930784",
-    "lat": 51.4890738,
-    "lng": -0.17987,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930785",
-    "lat": 51.4917805,
-    "lng": -0.1792868,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930786",
-    "lat": 51.4948419,
-    "lng": -0.174915,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930787",
-    "lat": 51.4921735,
-    "lng": -0.1658454,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930788",
-    "lat": 51.4920257,
-    "lng": -0.1661682,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930789",
-    "lat": 51.4865314,
-    "lng": -0.1707818,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930790",
-    "lat": 51.4786052,
-    "lng": -0.1797827,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846930791",
-    "lat": 51.4858978,
-    "lng": -0.1670623,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846931101",
-    "lat": 51.5025901,
-    "lng": -0.1962039,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846931102",
-    "lat": 51.51681,
-    "lng": -0.201076,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846931103",
-    "lat": 51.48787,
-    "lng": -0.1915707,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846931104",
-    "lat": 51.5067348,
-    "lng": -0.1990808,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13846931105",
-    "lat": 51.508076,
-    "lng": -0.2132796,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931106",
-    "lat": 51.519913,
-    "lng": -0.2265097,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931107",
-    "lat": 51.5183208,
-    "lng": -0.2193504,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931108",
-    "lat": 51.5200072,
-    "lng": -0.2131587,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931109",
-    "lat": 51.5185593,
-    "lng": -0.2232184,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931110",
-    "lat": 51.5164731,
-    "lng": -0.2220312,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931111",
-    "lat": 51.5144129,
-    "lng": -0.2101492,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931112",
-    "lat": 51.5112301,
-    "lng": -0.2149,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931113",
-    "lat": 51.5124648,
-    "lng": -0.2144915,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931114",
-    "lat": 51.5134284,
-    "lng": -0.2069163,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931115",
-    "lat": 51.5211314,
-    "lng": -0.2119903,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931116",
-    "lat": 51.5092811,
-    "lng": -0.2015166,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931117",
-    "lat": 51.5204551,
-    "lng": -0.2106907,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931118",
-    "lat": 51.5148697,
-    "lng": -0.20121,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931119",
-    "lat": 51.5157143,
-    "lng": -0.2011624,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931120",
-    "lat": 51.5066582,
-    "lng": -0.2040552,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931121",
-    "lat": 51.4988646,
-    "lng": -0.2101245,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931122",
-    "lat": 51.5027502,
-    "lng": -0.2137185,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931123",
-    "lat": 51.5029742,
-    "lng": -0.1931197,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931124",
-    "lat": 51.4943621,
-    "lng": -0.2008938,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931125",
-    "lat": 51.4962999,
-    "lng": -0.1953286,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931126",
-    "lat": 51.5072248,
-    "lng": -0.1952716,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931127",
-    "lat": 51.5061333,
-    "lng": -0.2073612,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13846931128",
-    "lat": 51.5041882,
-    "lng": -0.2136623,
-    "borough": "Kensington and Chelsea",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
   },
   {
     "id": "node/7820270452",
@@ -7375,6 +3892,15 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
+    "id": "node/13807258734",
+    "lat": 51.4937607,
+    "lng": -0.105996,
+    "borough": "Lambeth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "no"
+  },
+  {
     "id": "node/13807258736",
     "lat": 51.484296,
     "lng": -0.1198303,
@@ -8288,8 +4814,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/13807268101",
-    "lat": 51.45353,
-    "lng": -0.1040153,
+    "lat": 51.453488,
+    "lng": -0.1040136,
     "borough": "Lambeth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -8646,74 +5172,51 @@ const PARKING_DATA = [
     "lng": 0.0070092,
     "borough": "Lewisham",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6520952095",
+    "lat": 51.5026588,
+    "lng": 0.0508399,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/8173350896",
+    "lat": 51.5443908,
+    "lng": -0.0098182,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "way/233131496",
+    "lat": 51.5453287,
+    "lng": -0.0054354,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 25,
     "fee": "yes",
     "tags": {
-      "covered": "no"
+      "covered": "yes",
+      "note": "16 covered, 9 uncovered"
     }
   },
   {
-    "id": "node/377498323",
-    "lat": 51.5152572,
-    "lng": -0.0765117,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/675734348",
-    "lat": 51.5113439,
-    "lng": -0.0776892,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2502516622",
-    "lat": 51.5174876,
-    "lng": -0.0951594,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 128,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "node/2502519440",
-    "lat": 51.5118466,
-    "lng": -0.0999938,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "node/2502532390",
-    "lat": 51.5088229,
-    "lng": -0.0801535,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 30,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "node/2502545041",
-    "lat": 51.5103034,
-    "lng": -0.0732217,
-    "borough": "City of London",
+    "id": "way/605890333",
+    "lat": 51.5415328,
+    "lng": -0.0081154,
+    "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 10,
     "fee": "no",
@@ -8722,196 +5225,43 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/2545230434",
-    "lat": 51.5168298,
-    "lng": -0.0819058,
-    "borough": "City of London",
+    "id": "way/605890334",
+    "lat": 51.5414212,
+    "lng": -0.0083018,
+    "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2642878643",
-    "lat": 51.5154683,
-    "lng": -0.0880355,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3706490528",
-    "lat": 51.5158836,
-    "lng": -0.0777791,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194486",
-    "lat": 51.5097626,
-    "lng": -0.084911,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194487",
-    "lat": 51.509794,
-    "lng": -0.0810605,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194488",
-    "lat": 51.5098757,
-    "lng": -0.0782069,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194489",
-    "lat": 51.5102739,
-    "lng": -0.0791882,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 20,
-    "fee": "no"
-  },
-  {
-    "id": "node/3784194490",
-    "lat": 51.5104502,
-    "lng": -0.0844451,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194491",
-    "lat": 51.5105594,
-    "lng": -0.0753826,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 26,
     "fee": "no",
     "tags": {
       "covered": "yes"
     }
   },
   {
-    "id": "node/3784194492",
-    "lat": 51.510654,
-    "lng": -0.0786077,
-    "borough": "City of London",
+    "id": "way/859414458",
+    "lat": 51.525222,
+    "lng": 0.0073388,
+    "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 5,
     "fee": "no"
   },
   {
-    "id": "node/3784194493",
-    "lat": 51.5110586,
-    "lng": -0.0814268,
-    "borough": "City of London",
+    "id": "way/964668017",
+    "lat": 51.5328396,
+    "lng": 0.0205437,
+    "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3784194494",
-    "lat": 51.5114812,
-    "lng": -0.0796524,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 20,
+    "capacity": 4,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/3784194495",
-    "lat": 51.5117553,
-    "lng": -0.0775442,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194497",
-    "lat": 51.5137021,
-    "lng": -0.0814339,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 20,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3784194498",
-    "lat": 51.5139305,
-    "lng": -0.078943,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3784250434",
-    "lat": 51.517566,
-    "lng": -0.0850216,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 15,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785507254",
-    "lat": 51.518097,
-    "lng": -0.0871828,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 20,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785509157",
-    "lat": 51.5221782,
-    "lng": -0.0946296,
-    "borough": "City of London",
+    "id": "way/1161611701",
+    "lat": 51.5489075,
+    "lng": -0.0088702,
+    "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
     "fee": "no",
@@ -8920,208 +5270,10 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3785509725",
-    "lat": 51.5187171,
-    "lng": -0.0905869,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785538137",
-    "lat": 51.5141542,
-    "lng": -0.0913954,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785538138",
-    "lat": 51.514616,
-    "lng": -0.0955293,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785538139",
-    "lat": 51.5147286,
-    "lng": -0.0906757,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785538140",
-    "lat": 51.5148753,
-    "lng": -0.0925431,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785538141",
-    "lat": 51.5153051,
-    "lng": -0.0953577,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785538142",
-    "lat": 51.5159191,
-    "lng": -0.0955848,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785538143",
-    "lat": 51.5162872,
-    "lng": -0.0942667,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785601098",
-    "lat": 51.5106317,
-    "lng": -0.0888634,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785601099",
-    "lat": 51.5110214,
-    "lng": -0.0918692,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 18,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3785601100",
-    "lat": 51.5110178,
-    "lng": -0.0968913,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785601102",
-    "lat": 51.5128233,
-    "lng": -0.0950139,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785601104",
-    "lat": 51.5154724,
-    "lng": -0.1047036,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3785601105",
-    "lat": 51.5168895,
-    "lng": -0.1048452,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3786986594",
-    "lat": 51.5174637,
-    "lng": -0.1036191,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3786986595",
-    "lat": 51.518524,
-    "lng": -0.1016898,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3786986596",
-    "lat": 51.5188683,
-    "lng": -0.0988365,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3787002107",
-    "lat": 51.5116534,
-    "lng": -0.1080324,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3787002108",
-    "lat": 51.512401,
-    "lng": -0.106827,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3787002109",
-    "lat": 51.512405,
-    "lng": -0.1062237,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3787002110",
-    "lat": 51.5125183,
-    "lng": -0.1083053,
-    "borough": "City of London",
+    "id": "node/9370489902",
+    "lat": 51.4619537,
+    "lng": -0.3044616,
+    "borough": "Richmond-upon-Thames",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
     "fee": "no",
@@ -9130,40 +5282,127 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3787002111",
-    "lat": 51.5125471,
-    "lng": -0.1065643,
-    "borough": "City of London",
+    "id": "node/287453629",
+    "lat": 51.4982563,
+    "lng": -0.0861183,
+    "borough": "Southwark",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3787002112",
-    "lat": 51.5128679,
-    "lng": -0.1058937,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 6,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/3830580700",
-    "lat": 51.5152922,
-    "lng": -0.1056667,
-    "borough": "City of London",
+    "id": "node/1263485928",
+    "lat": 51.4978099,
+    "lng": -0.1008556,
+    "borough": "Southwark",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
   },
   {
-    "id": "node/3830580701",
-    "lat": 51.5153039,
-    "lng": -0.1092592,
-    "borough": "City of London",
+    "id": "node/5102596077",
+    "lat": 51.5034712,
+    "lng": -0.106164,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5102596089",
+    "lat": 51.503355,
+    "lng": -0.1061809,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5137742679",
+    "lat": 51.5041707,
+    "lng": -0.0910573,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5398029321",
+    "lat": 51.5067777,
+    "lng": -0.1071588,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/8518700998",
+    "lat": 51.4968349,
+    "lng": -0.08234,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/9586144480",
+    "lat": 51.5028087,
+    "lng": -0.1004778,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 25,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/9759159298",
+    "lat": 51.5020923,
+    "lng": -0.0842341,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/10856883001",
+    "lat": 51.5032644,
+    "lng": -0.0981406,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11256889797",
+    "lat": 51.5040602,
+    "lng": -0.0949953,
+    "borough": "Southwark",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 9,
     "fee": "no",
@@ -9172,31 +5411,124 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3830580703",
-    "lat": 51.5165891,
-    "lng": -0.1075912,
-    "borough": "City of London",
+    "id": "node/12337601719",
+    "lat": 51.5041594,
+    "lng": -0.1028068,
+    "borough": "Southwark",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/675734354",
+    "lat": 51.5137276,
+    "lng": -0.0709944,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/3830580704",
-    "lat": 51.516877,
-    "lng": -0.1073332,
-    "borough": "City of London",
+    "id": "node/3742197866",
+    "lat": 51.5219263,
+    "lng": -0.0637035,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
   },
   {
-    "id": "node/3830580705",
-    "lat": 51.5170184,
-    "lng": -0.1110072,
-    "borough": "City of London",
+    "id": "node/3742197867",
+    "lat": 51.5220342,
+    "lng": -0.0646847,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742197868",
+    "lat": 51.5230476,
+    "lng": -0.0422895,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742197869",
+    "lat": 51.523862,
+    "lng": -0.0547855,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742197870",
+    "lat": 51.5260653,
+    "lng": -0.0635477,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742197871",
+    "lat": 51.5280009,
+    "lng": -0.0514494,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742197872",
+    "lat": 51.5306543,
+    "lng": -0.0572287,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742197873",
+    "lat": 51.5321535,
+    "lng": -0.0627259,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742197874",
+    "lat": 51.5336862,
+    "lng": -0.0573765,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742197875",
+    "lat": 51.5345253,
+    "lng": -0.0557998,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no",
@@ -9205,10 +5537,10 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3830580706",
-    "lat": 51.5171068,
-    "lng": -0.1124792,
-    "borough": "City of London",
+    "id": "node/3742218659",
+    "lat": 51.5169626,
+    "lng": -0.0726658,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no",
@@ -9217,10 +5549,97 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3830580707",
-    "lat": 51.5173175,
-    "lng": -0.109089,
-    "borough": "City of London",
+    "id": "node/3742218660",
+    "lat": 51.5215355,
+    "lng": -0.0717116,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742218661",
+    "lat": 51.5232929,
+    "lng": -0.0697906,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742218663",
+    "lat": 51.524716,
+    "lng": -0.0758012,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742218664",
+    "lat": 51.5281484,
+    "lng": -0.0741936,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742225841",
+    "lat": 51.5295079,
+    "lng": -0.0700294,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3742225842",
+    "lat": 51.5305284,
+    "lng": -0.0714844,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777197512",
+    "lat": 51.5122331,
+    "lng": -0.0681731,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777197513",
+    "lat": 51.5124043,
+    "lng": -0.046718,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777197514",
+    "lat": 51.5128269,
+    "lng": -0.0535885,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 10,
     "fee": "no",
@@ -9229,70 +5648,934 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/3830580708",
-    "lat": 51.517385,
-    "lng": -0.1118997,
-    "borough": "City of London",
+    "id": "node/3777197515",
+    "lat": 51.5149771,
+    "lng": -0.0530998,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/3830580709",
-    "lat": 51.517885,
-    "lng": -0.1094971,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 30,
+    "capacity": 4,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/5378437715",
-    "lat": 51.5172282,
-    "lng": -0.1128914,
-    "borough": "City of London",
+    "id": "node/3777197516",
+    "lat": 51.5151696,
+    "lng": -0.0651979,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777197517",
+    "lat": 51.515412,
+    "lng": -0.0586089,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
   },
   {
-    "id": "node/5424332085",
-    "lat": 51.5165255,
-    "lng": -0.0927346,
-    "borough": "City of London",
+    "id": "node/3777197518",
+    "lat": 51.5183541,
+    "lng": -0.0654116,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3777204656",
+    "lat": 51.5041214,
+    "lng": -0.0598632,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777208357",
+    "lat": 51.5069194,
+    "lng": -0.0525145,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3777208358",
+    "lat": 51.508723,
+    "lng": -0.0633747,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/3783852524",
+    "lat": 51.5034822,
+    "lng": -0.0617264,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3783852525",
+    "lat": 51.5050172,
+    "lng": -0.0690369,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3783943321",
+    "lat": 51.5149939,
+    "lng": -0.0727653,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3783943324",
+    "lat": 51.5203703,
+    "lng": -0.0784706,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785601097",
+    "lat": 51.4999416,
+    "lng": -0.0185247,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785633051",
+    "lat": 51.5246915,
+    "lng": -0.0336685,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785650121",
+    "lat": 51.5088848,
+    "lng": -0.0078039,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785650122",
+    "lat": 51.5089508,
+    "lng": -0.0171031,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785651297",
+    "lat": 51.5319147,
+    "lng": -0.0360959,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3785651313",
+    "lat": 51.5294831,
+    "lng": -0.0314202,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/6532446738",
+    "lat": 51.5087869,
+    "lng": -0.0138681,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6547635098",
+    "lat": 51.5093195,
+    "lng": -0.0016988,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/10075117055",
+    "lat": 51.5189018,
+    "lng": -0.0589125,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 18,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/10599562140",
+    "lat": 51.510368,
+    "lng": -0.0139288,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11090072530",
+    "lat": 51.5055174,
+    "lng": -0.0214355,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11893422928",
+    "lat": 51.5193569,
+    "lng": -0.0718046,
+    "borough": "Tower Hamlets",
+    "street": "Motorcycle parking",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/12061610189",
+    "lat": 51.514752,
+    "lng": -0.0555355,
+    "borough": "Tower Hamlets",
+    "street": "Motorcycle parking",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/12685335738",
+    "lat": 51.5231008,
+    "lng": -0.0430193,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611888",
+    "lat": 51.5140756,
+    "lng": -0.0361832,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611889",
+    "lat": 51.5264342,
+    "lng": -0.0367051,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611890",
+    "lat": 51.5238959,
+    "lng": -0.0300771,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611891",
+    "lat": 51.5283322,
+    "lng": -0.0236273,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611892",
+    "lat": 51.5289437,
+    "lng": -0.0383305,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611893",
+    "lat": 51.5340906,
+    "lng": -0.0373181,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611894",
+    "lat": 51.5305376,
+    "lng": -0.0308342,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611895",
+    "lat": 51.5324973,
+    "lng": -0.0237846,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611896",
+    "lat": 51.5324973,
+    "lng": -0.0237846,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611898",
+    "lat": 51.5398693,
+    "lng": -0.0284468,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611899",
+    "lat": 51.5289827,
+    "lng": -0.0200884,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611900",
+    "lat": 51.519524,
+    "lng": -0.0718037,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626676",
+    "lat": 51.5089529,
+    "lng": -0.0069093,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626677",
+    "lat": 51.4960637,
+    "lng": -0.0193831,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626678",
+    "lat": 51.4919155,
+    "lng": -0.0146706,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626679",
+    "lat": 51.5097865,
+    "lng": 0.0003822,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626680",
+    "lat": 51.5091734,
+    "lng": -0.0192835,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626681",
+    "lat": 51.5091734,
+    "lng": -0.0192835,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626682",
+    "lat": 51.5114684,
+    "lng": -0.0549473,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626683",
+    "lat": 51.5069768,
+    "lng": -0.0551062,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626684",
+    "lat": 51.5112793,
+    "lng": -0.0535646,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626685",
+    "lat": 51.511534,
+    "lng": -0.0502561,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626686",
+    "lat": 51.5087183,
+    "lng": -0.0295992,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626687",
+    "lat": 51.5172777,
+    "lng": -0.0561904,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626688",
+    "lat": 51.5191508,
+    "lng": -0.0529296,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626689",
+    "lat": 51.5195186,
+    "lng": -0.0561457,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626690",
+    "lat": 51.5167828,
+    "lng": -0.0492451,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626691",
+    "lat": 51.5145863,
+    "lng": -0.0395496,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626692",
+    "lat": 51.5132018,
+    "lng": -0.0390601,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626693",
+    "lat": 51.5199938,
+    "lng": -0.0457984,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626694",
+    "lat": 51.5043575,
+    "lng": -0.0660561,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626695",
+    "lat": 51.5042403,
+    "lng": -0.0588388,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626696",
+    "lat": 51.5082369,
+    "lng": -0.0738871,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626697",
+    "lat": 51.5139184,
+    "lng": -0.066646,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753626699",
+    "lat": 51.5133289,
+    "lng": -0.0702365,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13753626700",
+    "lat": 51.5137388,
+    "lng": -0.0712051,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753628899",
+    "lat": 51.5238113,
+    "lng": -0.059244,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753628900",
+    "lat": 51.5265021,
+    "lng": -0.0616141,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656702",
+    "lat": 51.540831,
+    "lng": -0.0220502,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656703",
+    "lat": 51.5159662,
+    "lng": -0.0252362,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656704",
+    "lat": 51.5143674,
+    "lng": -0.0327828,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656705",
+    "lat": 51.5179682,
+    "lng": -0.0338923,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656801",
+    "lat": 51.5172226,
+    "lng": -0.0756688,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 13,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656802",
+    "lat": 51.519524,
+    "lng": -0.0718037,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656803",
+    "lat": 51.516779,
+    "lng": -0.0749112,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656804",
+    "lat": 51.5220477,
+    "lng": -0.0721857,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656805",
+    "lat": 51.5208669,
+    "lng": -0.0774109,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656806",
+    "lat": 51.5167074,
+    "lng": -0.074233,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 14,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656807",
+    "lat": 51.519524,
+    "lng": -0.0718037,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 14,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656808",
+    "lat": 51.5249062,
+    "lng": -0.0740275,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656809",
+    "lat": 51.5272998,
+    "lng": -0.0572328,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656810",
+    "lat": 51.5244487,
+    "lng": -0.0746327,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656811",
+    "lat": 51.5255896,
+    "lng": -0.0730421,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656813",
+    "lat": 51.5230999,
+    "lng": -0.0530175,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656814",
+    "lat": 51.5223052,
+    "lng": -0.0536888,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656815",
+    "lat": 51.5346995,
+    "lng": -0.0549678,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656816",
+    "lat": 51.5256283,
+    "lng": -0.0480393,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656817",
+    "lat": 51.5291322,
+    "lng": -0.0519024,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656901",
+    "lat": 51.5214383,
+    "lng": -0.0558757,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656902",
+    "lat": 51.5272998,
+    "lng": -0.0572328,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656903",
+    "lat": 51.5272998,
+    "lng": -0.0572328,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656904",
+    "lat": 51.5308431,
+    "lng": -0.0681383,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656905",
+    "lat": 51.5295862,
+    "lng": -0.0699499,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656906",
+    "lat": 51.5301382,
+    "lng": -0.0712604,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656907",
+    "lat": 51.5288771,
+    "lng": -0.0701471,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "way/1370044709",
+    "lat": 51.5230745,
+    "lng": -0.0422141,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753611897",
+    "lat": 51.5359812,
+    "lng": -0.0266005,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656701",
+    "lat": 51.5379235,
+    "lng": -0.0212237,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/6019793707",
+    "lat": 51.4644025,
+    "lng": -0.160909,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/9135848932",
-    "lat": 51.5111318,
-    "lng": -0.0745861,
-    "borough": "City of London",
+    "id": "node/7433707157",
+    "lat": 51.4631518,
+    "lng": -0.1690428,
+    "borough": "Wandsworth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
   },
   {
-    "id": "way/814784267",
-    "lat": 51.512202,
-    "lng": -0.0990977,
-    "borough": "City of London",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "way/996743269",
-    "lat": 51.5180803,
-    "lng": -0.1033423,
-    "borough": "City of London",
+    "id": "node/9583998716",
+    "lat": 51.4617408,
+    "lng": -0.205251,
+    "borough": "Wandsworth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no",
@@ -9301,24 +6584,3363 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/6323052663",
-    "lat": 51.4093259,
-    "lng": -0.2324511,
-    "borough": "Merton",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/8880432579",
-    "lat": 51.4228298,
-    "lng": -0.1768858,
-    "borough": "Merton",
+    "id": "node/11053620255",
+    "lat": 51.4721511,
+    "lng": -0.1668431,
+    "borough": "Wandsworth",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
+  },
+  {
+    "id": "node/13807247870",
+    "lat": 51.4739102,
+    "lng": -0.1387878,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/385549573",
+    "lat": 51.5166209,
+    "lng": -0.1350032,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 16,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/577250901",
+    "lat": 51.5162857,
+    "lng": -0.143474,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 30,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/691084113",
+    "lat": 51.5161744,
+    "lng": -0.1407385,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 22,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/852122478",
+    "lat": 51.5171067,
+    "lng": -0.1532972,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1254235368",
+    "lat": 51.4974871,
+    "lng": -0.1293917,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1261891682",
+    "lat": 51.5111684,
+    "lng": -0.1271168,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1330788615",
+    "lat": 51.5134517,
+    "lng": -0.1358794,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 14,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1431889036",
+    "lat": 51.5125648,
+    "lng": -0.1347433,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1616149816",
+    "lat": 51.5147109,
+    "lng": -0.1218088,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 18,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1637831618",
+    "lat": 51.5099276,
+    "lng": -0.1311504,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1933870074",
+    "lat": 51.5191159,
+    "lng": -0.1425068,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 18,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/2069574545",
+    "lat": 51.5104642,
+    "lng": -0.1242247,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 14,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/2272518816",
+    "lat": 51.5136314,
+    "lng": -0.1499722,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/2272756863",
+    "lat": 51.5148858,
+    "lng": -0.1514702,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/2305462649",
+    "lat": 51.5157482,
+    "lng": -0.1568241,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/2305470395",
+    "lat": 51.5150121,
+    "lng": -0.15702,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/2784682640",
+    "lat": 51.5130507,
+    "lng": -0.1374412,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/2787909424",
+    "lat": 51.5138696,
+    "lng": -0.1346828,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/2877480494",
+    "lat": 51.5142184,
+    "lng": -0.1329484,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3192293277",
+    "lat": 51.5080333,
+    "lng": -0.1409566,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3454789695",
+    "lat": 51.5132602,
+    "lng": -0.1451151,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3516406605",
+    "lat": 51.518765,
+    "lng": -0.1442848,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3521406623",
+    "lat": 51.5189773,
+    "lng": -0.1419937,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3524025828",
+    "lat": 51.5178956,
+    "lng": -0.139,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3561275551",
+    "lat": 51.5127935,
+    "lng": -0.1550447,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3615938882",
+    "lat": 51.5166955,
+    "lng": -0.1756128,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3651115230",
+    "lat": 51.5253686,
+    "lng": -0.1782094,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740824137",
+    "lat": 51.5248911,
+    "lng": -0.1882251,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740829888",
+    "lat": 51.5241794,
+    "lng": -0.1822337,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740829889",
+    "lat": 51.5246151,
+    "lng": -0.1795946,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740831112",
+    "lat": 51.5205071,
+    "lng": -0.1758469,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740831114",
+    "lat": 51.5240605,
+    "lng": -0.1785206,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740831144",
+    "lat": 51.5271231,
+    "lng": -0.1826562,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740837347",
+    "lat": 51.5244915,
+    "lng": -0.1851444,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740838764",
+    "lat": 51.5245488,
+    "lng": -0.1904225,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740838765",
+    "lat": 51.5260634,
+    "lng": -0.1873647,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740838766",
+    "lat": 51.5276017,
+    "lng": -0.1901992,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740839724",
+    "lat": 51.5241718,
+    "lng": -0.1913995,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740841209",
+    "lat": 51.523607,
+    "lng": -0.1944709,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3740849622",
+    "lat": 51.5229282,
+    "lng": -0.2009683,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740849623",
+    "lat": 51.5247665,
+    "lng": -0.2044571,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740849624",
+    "lat": 51.525064,
+    "lng": -0.1962444,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3740849725",
+    "lat": 51.5252835,
+    "lng": -0.204204,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742117631",
+    "lat": 51.5309396,
+    "lng": -0.2144747,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742117633",
+    "lat": 51.5310766,
+    "lng": -0.2138836,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742144996",
+    "lat": 51.5266916,
+    "lng": -0.2078459,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742144997",
+    "lat": 51.526758,
+    "lng": -0.2071339,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742144998",
+    "lat": 51.5274203,
+    "lng": -0.2136625,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742144999",
+    "lat": 51.5277049,
+    "lng": -0.2078246,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145000",
+    "lat": 51.5279374,
+    "lng": -0.2101735,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145001",
+    "lat": 51.5281078,
+    "lng": -0.2063772,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145002",
+    "lat": 51.5300331,
+    "lng": -0.2111427,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145003",
+    "lat": 51.5304512,
+    "lng": -0.2115828,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145005",
+    "lat": 51.5321084,
+    "lng": -0.2099681,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742145006",
+    "lat": 51.5322208,
+    "lng": -0.2027194,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/3742145007",
+    "lat": 51.5324132,
+    "lng": -0.203743,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742149829",
+    "lat": 51.5290089,
+    "lng": -0.2042946,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742149830",
+    "lat": 51.5310011,
+    "lng": -0.2039638,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742149831",
+    "lat": 51.5320357,
+    "lng": -0.202265,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171855",
+    "lat": 51.5246798,
+    "lng": -0.201061,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171856",
+    "lat": 51.526281,
+    "lng": -0.200653,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171857",
+    "lat": 51.5264482,
+    "lng": -0.2014794,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171858",
+    "lat": 51.5272362,
+    "lng": -0.2038638,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171859",
+    "lat": 51.5278823,
+    "lng": -0.2026105,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171860",
+    "lat": 51.5279778,
+    "lng": -0.2014086,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171861",
+    "lat": 51.5287621,
+    "lng": -0.2022999,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742171862",
+    "lat": 51.52933,
+    "lng": -0.1987192,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171863",
+    "lat": 51.5303876,
+    "lng": -0.1987743,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742171864",
+    "lat": 51.5308472,
+    "lng": -0.1997973,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742178321",
+    "lat": 51.5258549,
+    "lng": -0.1977551,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742178322",
+    "lat": 51.5269737,
+    "lng": -0.1971334,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742178323",
+    "lat": 51.5278082,
+    "lng": -0.1945561,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742178324",
+    "lat": 51.5281496,
+    "lng": -0.1983191,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742178425",
+    "lat": 51.528359,
+    "lng": -0.1916032,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742178426",
+    "lat": 51.5313035,
+    "lng": -0.1864013,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3742182677",
+    "lat": 51.531803,
+    "lng": -0.182183,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785048",
+    "lat": 51.5111309,
+    "lng": -0.18606,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785049",
+    "lat": 51.5111353,
+    "lng": -0.1860199,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785050",
+    "lat": 51.5123188,
+    "lng": -0.1806958,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785051",
+    "lat": 51.5124014,
+    "lng": -0.1802518,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785052",
+    "lat": 51.5124131,
+    "lng": -0.1823927,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785053",
+    "lat": 51.5138846,
+    "lng": -0.185851,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785054",
+    "lat": 51.5138116,
+    "lng": -0.1711335,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785055",
+    "lat": 51.513904,
+    "lng": -0.163106,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785056",
+    "lat": 51.5141755,
+    "lng": -0.1829363,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785057",
+    "lat": 51.514185,
+    "lng": -0.180808,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785058",
+    "lat": 51.5145823,
+    "lng": -0.1743227,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 14,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785060",
+    "lat": 51.5156243,
+    "lng": -0.1828765,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785061",
+    "lat": 51.515415,
+    "lng": -0.1648955,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785062",
+    "lat": 51.5157419,
+    "lng": -0.1664524,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785063",
+    "lat": 51.5158388,
+    "lng": -0.1772205,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785065",
+    "lat": 51.516753,
+    "lng": -0.1657995,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785066",
+    "lat": 51.5173823,
+    "lng": -0.1862308,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785067",
+    "lat": 51.5177503,
+    "lng": -0.1739743,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785068",
+    "lat": 51.5179462,
+    "lng": -0.1929563,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785069",
+    "lat": 51.5181481,
+    "lng": -0.1918094,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785070",
+    "lat": 51.5185469,
+    "lng": -0.1944736,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3748785071",
+    "lat": 51.5188075,
+    "lng": -0.168927,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785072",
+    "lat": 51.5189059,
+    "lng": -0.1916104,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785073",
+    "lat": 51.5189278,
+    "lng": -0.1773769,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785074",
+    "lat": 51.5191459,
+    "lng": -0.1941081,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3748785075",
+    "lat": 51.519567,
+    "lng": -0.172069,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 16,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117034",
+    "lat": 51.5120217,
+    "lng": -0.1922375,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117035",
+    "lat": 51.5121751,
+    "lng": -0.1886548,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3750117036",
+    "lat": 51.5127787,
+    "lng": -0.1933973,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3750117037",
+    "lat": 51.5137063,
+    "lng": -0.1895901,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117039",
+    "lat": 51.5139669,
+    "lng": -0.1877251,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117041",
+    "lat": 51.5146344,
+    "lng": -0.194868,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3750117042",
+    "lat": 51.5147032,
+    "lng": -0.1907751,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117043",
+    "lat": 51.5147739,
+    "lng": -0.1937594,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117045",
+    "lat": 51.5157883,
+    "lng": -0.1894128,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3750117046",
+    "lat": 51.5169737,
+    "lng": -0.1907484,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787040019",
+    "lat": 51.506876,
+    "lng": -0.1242564,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787040020",
+    "lat": 51.5087109,
+    "lng": -0.1223403,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787040021",
+    "lat": 51.5090697,
+    "lng": -0.1215248,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/3787040022",
+    "lat": 51.5104022,
+    "lng": -0.1193648,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787040023",
+    "lat": 51.5111118,
+    "lng": -0.114619,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787040024",
+    "lat": 51.5113608,
+    "lng": -0.1132666,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787040026",
+    "lat": 51.5121451,
+    "lng": -0.1172474,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787040027",
+    "lat": 51.5122311,
+    "lng": -0.1141367,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787080565",
+    "lat": 51.499328,
+    "lng": -0.1333284,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787080566",
+    "lat": 51.4996834,
+    "lng": -0.1336381,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787080567",
+    "lat": 51.4997541,
+    "lng": -0.1318685,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787080568",
+    "lat": 51.4998231,
+    "lng": -0.1326371,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 16,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787080569",
+    "lat": 51.4998313,
+    "lng": -0.1306003,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787080570",
+    "lat": 51.5002502,
+    "lng": -0.1318954,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787098831",
+    "lat": 51.497098,
+    "lng": -0.1450183,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787098832",
+    "lat": 51.4973732,
+    "lng": -0.146631,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787098833",
+    "lat": 51.4980603,
+    "lng": -0.1397427,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787098834",
+    "lat": 51.4982516,
+    "lng": -0.1429836,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787098835",
+    "lat": 51.4983686,
+    "lng": -0.1401751,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3787098836",
+    "lat": 51.4985272,
+    "lng": -0.1409618,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787098837",
+    "lat": 51.4986057,
+    "lng": -0.1427582,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3787098838",
+    "lat": 51.4986983,
+    "lng": -0.1417392,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3831143366",
+    "lat": 51.5147434,
+    "lng": -0.114882,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3831143367",
+    "lat": 51.5148946,
+    "lng": -0.1153099,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3831143368",
+    "lat": 51.5149584,
+    "lng": -0.1153534,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3831143369",
+    "lat": 51.5149981,
+    "lng": -0.1122903,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3831143370",
+    "lat": 51.5151112,
+    "lng": -0.115272,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3860641085",
+    "lat": 51.5096858,
+    "lng": -0.1268247,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3860641466",
+    "lat": 51.5100464,
+    "lng": -0.1269695,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3876173724",
+    "lat": 51.5108414,
+    "lng": -0.1377686,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3876177714",
+    "lat": 51.5110865,
+    "lng": -0.1380665,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3876296557",
+    "lat": 51.5108585,
+    "lng": -0.136693,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3876316095",
+    "lat": 51.5148292,
+    "lng": -0.1514511,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3905021543",
+    "lat": 51.5324036,
+    "lng": -0.1812319,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3905037119",
+    "lat": 51.5316877,
+    "lng": -0.1791686,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3905133679",
+    "lat": 51.5279712,
+    "lng": -0.1766958,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3905165720",
+    "lat": 51.5286165,
+    "lng": -0.1695283,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3905165721",
+    "lat": 51.5308817,
+    "lng": -0.1718627,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3905232123",
+    "lat": 51.5205689,
+    "lng": -0.1676928,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3905232124",
+    "lat": 51.5210428,
+    "lng": -0.1692583,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3905232126",
+    "lat": 51.5233984,
+    "lng": -0.170021,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3905232127",
+    "lat": 51.5239431,
+    "lng": -0.1738109,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127287",
+    "lat": 51.5224313,
+    "lng": -0.1622538,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127288",
+    "lat": 51.5228901,
+    "lng": -0.1616856,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127289",
+    "lat": 51.5231223,
+    "lng": -0.1646595,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127291",
+    "lat": 51.5234912,
+    "lng": -0.1612487,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127292",
+    "lat": 51.5235124,
+    "lng": -0.161107,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906127293",
+    "lat": 51.5249818,
+    "lng": -0.1628026,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176887",
+    "lat": 51.5162069,
+    "lng": -0.1629024,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906176888",
+    "lat": 51.516736,
+    "lng": -0.1589309,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176889",
+    "lat": 51.5169362,
+    "lng": -0.1649197,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176890",
+    "lat": 51.5180238,
+    "lng": -0.1659176,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176891",
+    "lat": 51.5185868,
+    "lng": -0.1612151,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176892",
+    "lat": 51.5187383,
+    "lng": -0.1645092,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176893",
+    "lat": 51.5188456,
+    "lng": -0.15965,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906176894",
+    "lat": 51.5190652,
+    "lng": -0.1632341,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176895",
+    "lat": 51.5193018,
+    "lng": -0.165611,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176896",
+    "lat": 51.5196694,
+    "lng": -0.1635177,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176897",
+    "lat": 51.5197407,
+    "lng": -0.1599842,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906176898",
+    "lat": 51.5209862,
+    "lng": -0.160839,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906199405",
+    "lat": 51.5167109,
+    "lng": -0.1562911,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906199406",
+    "lat": 51.5190729,
+    "lng": -0.1575983,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906199407",
+    "lat": 51.5192426,
+    "lng": -0.1574404,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906199408",
+    "lat": 51.5200332,
+    "lng": -0.1571559,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906199409",
+    "lat": 51.5211692,
+    "lng": -0.1592695,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906218227",
+    "lat": 51.5212255,
+    "lng": -0.1538776,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906218228",
+    "lat": 51.521478,
+    "lng": -0.1570229,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906218229",
+    "lat": 51.5224198,
+    "lng": -0.1542395,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430130",
+    "lat": 51.5159051,
+    "lng": -0.1516296,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430131",
+    "lat": 51.5164098,
+    "lng": -0.1530003,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430132",
+    "lat": 51.5167126,
+    "lng": -0.1520888,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430133",
+    "lat": 51.5169734,
+    "lng": -0.153109,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430134",
+    "lat": 51.5170795,
+    "lng": -0.1524953,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906430135",
+    "lat": 51.5184742,
+    "lng": -0.1551734,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906430136",
+    "lat": 51.5194693,
+    "lng": -0.1559792,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430138",
+    "lat": 51.5197213,
+    "lng": -0.1545472,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906430139",
+    "lat": 51.5200488,
+    "lng": -0.1559608,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906494501",
+    "lat": 51.5212092,
+    "lng": -0.1505606,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906494502",
+    "lat": 51.5213957,
+    "lng": -0.1493437,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906494503",
+    "lat": 51.5224983,
+    "lng": -0.1460661,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906494504",
+    "lat": 51.5225083,
+    "lng": -0.1459372,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906494505",
+    "lat": 51.5227971,
+    "lng": -0.1494123,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906500806",
+    "lat": 51.5222605,
+    "lng": -0.1447034,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906862978",
+    "lat": 51.5190765,
+    "lng": -0.1489568,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906862979",
+    "lat": 51.5193907,
+    "lng": -0.1498872,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906862980",
+    "lat": 51.519562,
+    "lng": -0.1503602,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906862981",
+    "lat": 51.5195914,
+    "lng": -0.1471931,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906862983",
+    "lat": 51.5199561,
+    "lng": -0.1474762,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906862984",
+    "lat": 51.5200383,
+    "lng": -0.1502493,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3906862986",
+    "lat": 51.5213455,
+    "lng": -0.1439389,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906862987",
+    "lat": 51.5218001,
+    "lng": -0.1435574,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906990551",
+    "lat": 51.5179102,
+    "lng": -0.1499029,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906990553",
+    "lat": 51.5187715,
+    "lng": -0.1427456,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 16,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906990554",
+    "lat": 51.5188343,
+    "lng": -0.142735,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906990555",
+    "lat": 51.5189656,
+    "lng": -0.1445138,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906990556",
+    "lat": 51.519117,
+    "lng": -0.1428697,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3906992857",
+    "lat": 51.519535,
+    "lng": -0.1447807,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3907004616",
+    "lat": 51.5155076,
+    "lng": -0.1468175,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3907004617",
+    "lat": 51.5155119,
+    "lng": -0.1473,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3907004618",
+    "lat": 51.5155557,
+    "lng": -0.1470518,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3907004619",
+    "lat": 51.5161893,
+    "lng": -0.1486559,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3907004620",
+    "lat": 51.5167196,
+    "lng": -0.1456661,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3907004621",
+    "lat": 51.5167465,
+    "lng": -0.1443123,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3907040912",
+    "lat": 51.5138722,
+    "lng": -0.1699491,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3970401889",
+    "lat": 51.5073449,
+    "lng": -0.1433175,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3971293961",
+    "lat": 51.5075265,
+    "lng": -0.1424807,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/4153886664",
+    "lat": 51.5131113,
+    "lng": -0.148365,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/4307486646",
+    "lat": 51.519391,
+    "lng": -0.1396487,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/4427248747",
+    "lat": 51.5124819,
+    "lng": -0.1214371,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/4655387492",
+    "lat": 51.5120087,
+    "lng": -0.1193884,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/4841067224",
+    "lat": 51.5079681,
+    "lng": -0.1449927,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5138685169",
+    "lat": 51.4964225,
+    "lng": -0.1319948,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5138685198",
+    "lat": 51.497521,
+    "lng": -0.1327281,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5138687641",
+    "lat": 51.497538,
+    "lng": -0.13201,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5138691389",
+    "lat": 51.4963165,
+    "lng": -0.1369967,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 30,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5138691707",
+    "lat": 51.4967159,
+    "lng": -0.1383542,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5146908026",
+    "lat": 51.5064463,
+    "lng": -0.1501968,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/5146908027",
+    "lat": 51.5063703,
+    "lng": -0.1506658,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/5200394264",
+    "lat": 51.5059217,
+    "lng": -0.1492155,
+    "borough": "Westminster",
+    "street": "Motocycle parking",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/5254666397",
+    "lat": 51.5089392,
+    "lng": -0.1493185,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/5375732597",
+    "lat": 51.5201039,
+    "lng": -0.1434908,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5483125475",
+    "lat": 51.5098423,
+    "lng": -0.1253511,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/5649389688",
+    "lat": 51.5066702,
+    "lng": -0.1349716,
+    "borough": "Westminster",
+    "street": "Motorcycle parking",
+    "capacity": 74,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5991176946",
+    "lat": 51.5210045,
+    "lng": -0.1420713,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6161766771",
+    "lat": 51.5192527,
+    "lng": -0.1391194,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6250284705",
+    "lat": 51.5088421,
+    "lng": -0.1454134,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6311878823",
+    "lat": 51.5209918,
+    "lng": -0.1570762,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6312015489",
+    "lat": 51.525153,
+    "lng": -0.1635193,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6524235920",
+    "lat": 51.5081905,
+    "lng": -0.1304513,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6524252945",
+    "lat": 51.5184568,
+    "lng": -0.1374319,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6524302794",
+    "lat": 51.512319,
+    "lng": -0.1328292,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6524303291",
+    "lat": 51.5152102,
+    "lng": -0.1353659,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6528435824",
+    "lat": 51.5170608,
+    "lng": -0.1531093,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6528571770",
+    "lat": 51.517945,
+    "lng": -0.1520853,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6528571771",
+    "lat": 51.5171535,
+    "lng": -0.1526218,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 1,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6572562494",
+    "lat": 51.4986143,
+    "lng": -0.1763355,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 33,
+    "fee": "yes",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/6638609814",
+    "lat": 51.5171554,
+    "lng": -0.1649041,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6738357089",
+    "lat": 51.4980119,
+    "lng": -0.1765998,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6779395691",
+    "lat": 51.5006666,
+    "lng": -0.1536235,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6794179132",
+    "lat": 51.51005,
+    "lng": -0.1467735,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6816967486",
+    "lat": 51.4988012,
+    "lng": -0.172064,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 18,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6831648487",
+    "lat": 51.4905191,
+    "lng": -0.1554063,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6877559409",
+    "lat": 51.4971348,
+    "lng": -0.1495533,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 40,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6877559418",
+    "lat": 51.4974742,
+    "lng": -0.1495954,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6898244685",
+    "lat": 51.4907186,
+    "lng": -0.1505866,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6898244690",
+    "lat": 51.495715,
+    "lng": -0.1265577,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 40,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6900063289",
+    "lat": 51.5121209,
+    "lng": -0.1416551,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6900063296",
+    "lat": 51.5092231,
+    "lng": -0.1446233,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6900063302",
+    "lat": 51.5083111,
+    "lng": -0.1435189,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6953509218",
+    "lat": 51.514543,
+    "lng": -0.1813241,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6957504432",
+    "lat": 51.5115857,
+    "lng": -0.1367506,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6957504435",
+    "lat": 51.5132971,
+    "lng": -0.1379475,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6957504436",
+    "lat": 51.5119276,
+    "lng": -0.1371017,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes"
+  },
+  {
+    "id": "node/6996410285",
+    "lat": 51.5134123,
+    "lng": -0.1295627,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6996410385",
+    "lat": 51.5148812,
+    "lng": -0.1324355,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 30,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6996410386",
+    "lat": 51.5154672,
+    "lng": -0.1328439,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6997022987",
+    "lat": 51.5156963,
+    "lng": -0.1319879,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7098262887",
+    "lat": 51.5015827,
+    "lng": -0.1560266,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/7098271390",
+    "lat": 51.510042,
+    "lng": -0.1319981,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7549531085",
+    "lat": 51.5048423,
+    "lng": -0.1724396,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7577518585",
+    "lat": 51.4954572,
+    "lng": -0.1493742,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/7650201188",
+    "lat": 51.4997533,
+    "lng": -0.1778029,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7653422486",
+    "lat": 51.5016314,
+    "lng": -0.1682942,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7723684185",
+    "lat": 51.4987184,
+    "lng": -0.1785358,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/7727081485",
+    "lat": 51.511586,
+    "lng": -0.1210292,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/7796549586",
+    "lat": 51.4945838,
+    "lng": -0.1473115,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7796563285",
+    "lat": 51.4951021,
+    "lng": -0.1531944,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7796563385",
+    "lat": 51.4947074,
+    "lng": -0.1526683,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/7823142885",
+    "lat": 51.4958648,
+    "lng": -0.155646,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/8145826350",
+    "lat": 51.5064397,
+    "lng": -0.1402737,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/8145826358",
+    "lat": 51.5067405,
+    "lng": -0.1405091,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/8592798266",
+    "lat": 51.5101329,
+    "lng": -0.1387862,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/10996184296",
+    "lat": 51.5111935,
+    "lng": -0.1139591,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/11703868469",
+    "lat": 51.5065846,
+    "lng": -0.1395525,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/12160832110",
+    "lat": 51.490105,
+    "lng": -0.1306622,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/12674404599",
+    "lat": 51.5151176,
+    "lng": -0.1315829,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 20,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/12724983574",
+    "lat": 51.5121848,
+    "lng": -0.1205879,
+    "borough": "Westminster",
+    "street": "Motorcycle parking",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/12953496735",
+    "lat": 51.5217738,
+    "lng": -0.147266,
+    "borough": "Westminster",
+    "street": "Motorcycle parking",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/13009412950",
+    "lat": 51.5146114,
+    "lng": -0.1357887,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 13,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13009465916",
+    "lat": 51.5139294,
+    "lng": -0.1352404,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13013950217",
+    "lat": 51.5174947,
+    "lng": -0.1377802,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13015737262",
+    "lat": 51.5099385,
+    "lng": -0.1439235,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 31,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13015750902",
+    "lat": 51.5095138,
+    "lng": -0.144963,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13015758710",
+    "lat": 51.5078378,
+    "lng": -0.1439884,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13753566111",
+    "lat": 51.5191856,
+    "lng": -0.1391262,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13753570702",
+    "lat": 51.5193495,
+    "lng": -0.139986,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13799723456",
+    "lat": 51.5196689,
+    "lng": -0.1396904,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/302690911",
+    "lat": 51.5134519,
+    "lng": -0.1436976,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/302690913",
+    "lat": 51.5134239,
+    "lng": -0.1437854,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/302690914",
+    "lat": 51.5133764,
+    "lng": -0.14404,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "way/350390834",
+    "lat": 51.5054977,
+    "lng": -0.1399949,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "way/477968027",
+    "lat": 51.5150217,
+    "lng": -0.1352104,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/478686281",
+    "lat": 51.513936,
+    "lng": -0.1366038,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/999575387",
+    "lat": 51.5217914,
+    "lng": -0.1748404,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 16,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1479459237",
+    "lat": 51.5141991,
+    "lng": -0.1329035,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "way/1481266566",
+    "lat": 51.5127896,
+    "lng": -0.1550048,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "way/1481266570",
+    "lat": 51.5126964,
+    "lng": -0.1551262,
+    "borough": "Westminster",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
   }
 ];
