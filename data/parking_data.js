@@ -1359,8 +1359,8 @@ const PARKING_DATA = [
     "lng": -0.1246411,
     "borough": "Camden",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 5,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -1739,18 +1739,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "way/855193687",
-    "lat": 51.5587916,
-    "lng": 0.2510783,
-    "borough": "Havering",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -5647,7 +5635,10 @@ const PARKING_DATA = [
     "borough": "Kensington and Chelsea",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "yes"
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13846926499",
@@ -8631,8 +8622,11 @@ const PARKING_DATA = [
     "lng": 0.0070092,
     "borough": "Lewisham",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/377498323",
@@ -9283,6 +9277,121 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "node/6323052663",
+    "lat": 51.4093259,
+    "lng": -0.2324511,
+    "borough": "Merton",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/8880432579",
+    "lat": 51.4228298,
+    "lng": -0.1768858,
+    "borough": "Merton",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/6520952095",
+    "lat": 51.5026588,
+    "lng": 0.0508399,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/8173350896",
+    "lat": 51.5443908,
+    "lng": -0.0098182,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "way/233131496",
+    "lat": 51.5453287,
+    "lng": -0.0054354,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 25,
+    "fee": "yes",
+    "tags": {
+      "covered": "yes",
+      "note": "16 covered, 9 uncovered"
+    }
+  },
+  {
+    "id": "way/605890333",
+    "lat": 51.5415328,
+    "lng": -0.0081154,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "way/605890334",
+    "lat": 51.5414212,
+    "lng": -0.0083018,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 26,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "way/1161611701",
+    "lat": 51.5489075,
+    "lng": -0.0088702,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/859414458",
+    "lat": 51.525222,
+    "lng": 0.0073388,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "way/964668017",
+    "lat": 51.5328396,
+    "lng": 0.0205437,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
     "id": "node/9370489902",
     "lat": 51.4619537,
     "lng": -0.3044616,
@@ -9292,6 +9401,147 @@ const PARKING_DATA = [
     "fee": "no",
     "tags": {
       "covered": "no"
+    }
+  },
+  {
+    "id": "node/287453629",
+    "lat": 51.4982563,
+    "lng": -0.0861183,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1263485928",
+    "lat": 51.4978099,
+    "lng": -0.1008556,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/5102596077",
+    "lat": 51.5034712,
+    "lng": -0.106164,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5102596089",
+    "lat": 51.503355,
+    "lng": -0.1061809,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5137742679",
+    "lat": 51.5041707,
+    "lng": -0.0910573,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5398029321",
+    "lat": 51.5067777,
+    "lng": -0.1071588,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/8518700998",
+    "lat": 51.4968349,
+    "lng": -0.08234,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/9586144480",
+    "lat": 51.5028087,
+    "lng": -0.1004778,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 25,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/9759159298",
+    "lat": 51.5020923,
+    "lng": -0.0842341,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/10856883001",
+    "lat": 51.5032644,
+    "lng": -0.0981406,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11256889797",
+    "lat": 51.5040602,
+    "lng": -0.0949953,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 9,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/12337601719",
+    "lat": 51.5041594,
+    "lng": -0.1028068,
+    "borough": "Southwark",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
     }
   },
   {
@@ -9889,15 +10139,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/13753611897",
-    "lat": 51.5359812,
-    "lng": -0.0266005,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no"
-  },
-  {
     "id": "node/13753611898",
     "lat": 51.5398693,
     "lng": -0.0284468,
@@ -9953,6 +10194,15 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
+  },
+  {
+    "id": "node/13753626679",
+    "lat": 51.5097865,
+    "lng": 0.0003822,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
   },
   {
     "id": "node/13753626680",
@@ -10105,7 +10355,10 @@ const PARKING_DATA = [
     "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 5,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/13753626697",
@@ -10153,15 +10406,6 @@ const PARKING_DATA = [
     "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 7,
-    "fee": "no"
-  },
-  {
-    "id": "node/13753656701",
-    "lat": 51.5379235,
-    "lng": -0.0212237,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
     "fee": "no"
   },
   {
@@ -10417,12 +10661,57 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/13753626679",
-    "lat": 51.5097865,
-    "lng": 0.0003822,
-    "borough": "Tower Hamlets",
+    "id": "node/6019793707",
+    "lat": 51.4644025,
+    "lng": -0.160909,
+    "borough": "Wandsworth",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/7433707157",
+    "lat": 51.4631518,
+    "lng": -0.1690428,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/9583998716",
+    "lat": 51.4617408,
+    "lng": -0.205251,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11053620255",
+    "lat": 51.4721511,
+    "lng": -0.1668431,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13807247870",
+    "lat": 51.4739102,
+    "lng": -0.1387878,
+    "borough": "Wandsworth",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
     "fee": "no"
   },
   {
@@ -10707,7 +10996,7 @@ const PARKING_DATA = [
     "lng": -0.1550447,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 8,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -10797,8 +11086,8 @@ const PARKING_DATA = [
     "lng": -0.1851444,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 6,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -10920,8 +11209,8 @@ const PARKING_DATA = [
     "lng": -0.2078459,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 3,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -10950,8 +11239,11 @@ const PARKING_DATA = [
     "lng": -0.2078246,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/3742145000",
@@ -12126,7 +12418,7 @@ const PARKING_DATA = [
     "lng": -0.1589309,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 5,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -12626,8 +12918,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/3906990555",
-    "lat": 51.5189656,
-    "lng": -0.1445138,
+    "lat": 51.5189759,
+    "lng": -0.1444725,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
@@ -12938,7 +13230,7 @@ const PARKING_DATA = [
     "lat": 51.5066702,
     "lng": -0.1349716,
     "borough": "Westminster",
-    "street": "Motorcycle parking",
+    "street": "Solo Motorcycle Parking Bay",
     "capacity": 74,
     "fee": "yes",
     "tags": {
@@ -13505,8 +13797,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/11703868469",
-    "lat": 51.5065846,
-    "lng": -0.1395525,
+    "lat": 51.5065487,
+    "lng": -0.1396971,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -13702,18 +13994,6 @@ const PARKING_DATA = [
     "fee": "yes"
   },
   {
-    "id": "way/477968027",
-    "lat": 51.5150217,
-    "lng": -0.1352104,
-    "borough": "Westminster",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "way/478686281",
     "lat": 51.513936,
     "lng": -0.1366038,
@@ -13752,8 +14032,11 @@ const PARKING_DATA = [
     "lng": -0.1550048,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 8,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1481266570",
@@ -13761,242 +14044,52 @@ const PARKING_DATA = [
     "lng": -0.1551262,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/8173350896",
-    "lat": 51.5443908,
-    "lng": -0.0098182,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "way/233131496",
-    "lat": 51.5453287,
-    "lng": -0.0054354,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 25,
+    "capacity": 12,
     "fee": "yes",
     "tags": {
-      "covered": "yes",
-      "note": "16 covered, 9 uncovered"
+      "covered": "no"
     }
   },
   {
-    "id": "way/605890333",
-    "lat": 51.5415328,
-    "lng": -0.0081154,
-    "borough": "Newham",
+    "id": "way/855193687",
+    "lat": 51.5587916,
+    "lng": 0.2510783,
+    "borough": "Havering",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "way/605890334",
-    "lat": 51.5414212,
-    "lng": -0.0083018,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 26,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
-    "id": "way/1161611701",
-    "lat": 51.5489075,
-    "lng": -0.0088702,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
     "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
-    "id": "node/6520952095",
-    "lat": 51.5026588,
-    "lng": 0.0508399,
-    "borough": "Newham",
+    "id": "node/13753611897",
+    "lat": 51.5359812,
+    "lng": -0.0266005,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
+    "capacity": 3,
+    "fee": "no"
   },
   {
-    "id": "way/859414458",
-    "lat": 51.525222,
-    "lng": 0.0073388,
-    "borough": "Newham",
+    "id": "node/13753656701",
+    "lat": 51.5379235,
+    "lng": -0.0212237,
+    "borough": "Tower Hamlets",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 5,
     "fee": "no"
   },
   {
-    "id": "way/964668017",
-    "lat": 51.5328396,
-    "lng": 0.0205437,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/287453629",
-    "lat": 51.4982563,
-    "lng": -0.0861183,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/1263485928",
-    "lat": 51.4978099,
-    "lng": -0.1008556,
-    "borough": "Southwark",
+    "id": "way/477968027",
+    "lat": 51.5150217,
+    "lng": -0.1352104,
+    "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/5102596077",
-    "lat": 51.5034712,
-    "lng": -0.106164,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
-    }
-  },
-  {
-    "id": "node/5102596089",
-    "lat": 51.503355,
-    "lng": -0.1061809,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5137742679",
-    "lat": 51.5041707,
-    "lng": -0.0910573,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5398029321",
-    "lat": 51.5067777,
-    "lng": -0.1071588,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/8518700998",
-    "lat": 51.4968349,
-    "lng": -0.08234,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/9586144480",
-    "lat": 51.5028087,
-    "lng": -0.1004778,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 25,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/9759159298",
-    "lat": 51.5020923,
-    "lng": -0.0842341,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/10856883001",
-    "lat": 51.5032644,
-    "lng": -0.0981406,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/11256889797",
-    "lat": 51.5040602,
-    "lng": -0.0949953,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 9,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/12337601719",
-    "lat": 51.5041594,
-    "lng": -0.1028068,
-    "borough": "Southwark",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
     }
   },
   {
@@ -14015,60 +14108,6 @@ const PARKING_DATA = [
     "borough": "Tower Hamlets",
     "street": "Cambridge Heath Road",
     "capacity": 7,
-    "fee": "no"
-  },
-  {
-    "id": "node/6019793707",
-    "lat": 51.4644025,
-    "lng": -0.160909,
-    "borough": "Wandsworth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/7433707157",
-    "lat": 51.4631518,
-    "lng": -0.1690428,
-    "borough": "Wandsworth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/9583998716",
-    "lat": 51.4617408,
-    "lng": -0.205251,
-    "borough": "Wandsworth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/11053620255",
-    "lat": 51.4721511,
-    "lng": -0.1668431,
-    "borough": "Wandsworth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/13807247870",
-    "lat": 51.4739102,
-    "lng": -0.1387878,
-    "borough": "Wandsworth",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
     "fee": "no"
   },
   {
@@ -14506,35 +14545,9 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/849413388",
-    "lat": 52.6275826,
-    "lng": 1.2893992,
-    "borough": "United Kingdom",
-    "street": "Theatre Street",
-    "capacity": 5,
-    "fee": "no",
-    "tags": {
-      "covered": "no",
-      "note": "Marked bays near to Theatre Royal, adjacent to Dencora House"
-    }
-  },
-  {
-    "id": "node/849413396",
-    "lat": 52.6266705,
-    "lng": 1.2884143,
-    "borough": "United Kingdom",
-    "street": "Chapel Field East",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no",
-      "note": "On street Chapel Field East (rear of Chapelfield Centre) no anchors"
-    }
-  },
-  {
     "id": "node/849413397",
-    "lat": 52.6280372,
-    "lng": 1.2916344,
+    "lat": 52.6280667,
+    "lng": 1.2916386,
     "borough": "United Kingdom",
     "street": "Bethel Street",
     "capacity": 16,
@@ -14770,18 +14783,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/1427034770",
-    "lat": 52.4809493,
-    "lng": -1.9032861,
-    "borough": "United Kingdom",
-    "street": "Margaret Street",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/1430259957",
     "lat": 55.9133996,
     "lng": -3.3217407,
@@ -14812,21 +14813,9 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/1458099245",
-    "lat": 52.4816009,
-    "lng": -1.9022112,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/1458124761",
-    "lat": 52.4825026,
-    "lng": -1.8990892,
+    "lat": 52.4824907,
+    "lng": -1.8990711,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -14957,15 +14946,6 @@ const PARKING_DATA = [
     "lat": 52.4048332,
     "lng": -1.5136517,
     "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/1767293905",
-    "lat": 51.5248742,
-    "lng": -0.0794175,
-    "borough": "London",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
@@ -15466,19 +15446,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/2402502917",
-    "lat": 52.6282031,
-    "lng": 1.292378,
-    "borough": "United Kingdom",
-    "street": "St Peters Street",
-    "capacity": 36,
-    "fee": "no",
-    "tags": {
-      "covered": "no",
-      "note": "Unmarked spaces with wall tethers"
-    }
-  },
-  {
     "id": "node/2493103481",
     "lat": 51.4026989,
     "lng": -1.2575107,
@@ -15946,7 +15913,7 @@ const PARKING_DATA = [
     "lng": -4.2569466,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 3,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -16250,16 +16217,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2774850821",
-    "lat": 55.8696515,
-    "lng": -4.2797468,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/2774850823",
@@ -16268,7 +16229,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -16301,15 +16262,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/2774850830",
-    "lat": 55.8724058,
-    "lng": -4.280295,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
     "id": "node/2774850831",
     "lat": 55.8724323,
     "lng": -4.2597275,
@@ -16331,15 +16283,6 @@ const PARKING_DATA = [
     "id": "node/2774850833",
     "lat": 55.8726254,
     "lng": -4.2730337,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/2779294577",
-    "lat": 55.8720043,
-    "lng": -4.2806402,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -16413,18 +16356,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
     "fee": "no"
-  },
-  {
-    "id": "node/3041275683",
-    "lat": 54.2839973,
-    "lng": -0.3884102,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
   },
   {
     "id": "node/3046177342",
@@ -16925,18 +16856,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/4617826417",
-    "lat": 52.4806512,
-    "lng": -1.8995909,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/4621995204",
     "lat": 51.3797597,
     "lng": -2.3291581,
@@ -16978,7 +16897,7 @@ const PARKING_DATA = [
     "lng": 0.1263179,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 5,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -17094,8 +17013,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/4853957375",
-    "lat": 55.9377023,
-    "lng": -3.2005298,
+    "lat": 55.9376993,
+    "lng": -3.2005932,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
@@ -17526,8 +17445,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/4853971567",
-    "lat": 55.9472654,
-    "lng": -3.1841724,
+    "lat": 55.9471563,
+    "lng": -3.1839783,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
@@ -18018,8 +17937,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/4882126675",
-    "lat": 55.9570818,
-    "lng": -3.1816518,
+    "lat": 55.9570976,
+    "lng": -3.1816625,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
@@ -18385,8 +18304,8 @@ const PARKING_DATA = [
     "lng": 0.1356901,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
+    "capacity": 8,
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -18505,8 +18424,11 @@ const PARKING_DATA = [
     "lng": -1.3071544,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/5532116148",
@@ -18514,8 +18436,11 @@ const PARKING_DATA = [
     "lng": -1.3096292,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
+    "capacity": 1,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/5580536222",
@@ -19069,8 +18994,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/6290305239",
-    "lat": 53.9602431,
-    "lng": -1.0711633,
+    "lat": 53.9602448,
+    "lng": -1.0711684,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -19087,15 +19012,6 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
-  },
-  {
-    "id": "node/6323052663",
-    "lat": 51.4093259,
-    "lng": -0.2324511,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
   },
   {
     "id": "node/6373088760",
@@ -19144,18 +19060,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
-  },
-  {
-    "id": "node/6524691492",
-    "lat": 51.5206335,
-    "lng": -0.1292342,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
   },
   {
     "id": "node/6525148788",
@@ -19323,18 +19227,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/6985983139",
-    "lat": 51.7408105,
-    "lng": 0.4757089,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
-    }
-  },
-  {
     "id": "node/7033768933",
     "lat": 52.3768371,
     "lng": 1.1106612,
@@ -19349,7 +19241,7 @@ const PARKING_DATA = [
     "lng": -2.6324245,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
+    "capacity": 3,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -19451,8 +19343,11 @@ const PARKING_DATA = [
     "lng": -2.9401338,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
+    "capacity": 3,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/7727335386",
@@ -19710,15 +19605,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/8355706042",
-    "lat": 52.5695478,
-    "lng": -0.2419718,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
     "id": "node/8389558592",
     "lat": 52.4777309,
     "lng": -1.9147325,
@@ -19755,18 +19641,6 @@ const PARKING_DATA = [
     "id": "node/8490153565",
     "lat": 50.8179464,
     "lng": -0.1144467,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/8491617696",
-    "lat": 50.817664,
-    "lng": -0.1162244,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -19944,7 +19818,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Russell Street",
     "capacity": 24,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/8777590019",
@@ -19975,18 +19852,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
-  },
-  {
-    "id": "node/8880432579",
-    "lat": 51.4228298,
-    "lng": -0.1768858,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
   },
   {
     "id": "node/8880537546",
@@ -20538,18 +20403,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/9171784781",
-    "lat": 51.5664158,
-    "lng": -0.0909772,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/9178534391",
     "lat": 50.7946194,
     "lng": -1.1175458,
@@ -20623,18 +20476,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 10,
     "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/9244694137",
-    "lat": 52.4779065,
-    "lng": -1.9028125,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
-    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -22859,8 +22700,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498252088",
-    "lat": 50.817664,
-    "lng": -0.116234,
+    "lat": 50.8176538,
+    "lng": -0.1162003,
     "borough": "United Kingdom",
     "street": "Eaton Place (Zone H)",
     "capacity": 4,
@@ -23042,12 +22883,15 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498252106",
-    "lat": 50.823634,
-    "lng": -0.120777,
+    "lat": 50.8237913,
+    "lng": -0.1205487,
     "borough": "United Kingdom",
     "street": "Sutherland Road (Zone C)",
     "capacity": 4,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9498252107",
@@ -23276,8 +23120,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498252131",
-    "lat": 50.825828,
-    "lng": -0.123089,
+    "lat": 50.8258276,
+    "lng": -0.1230582,
     "borough": "United Kingdom",
     "street": "East Drive (Zone C)",
     "capacity": 4,
@@ -24046,7 +23890,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Milnthorpe Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537624",
@@ -24064,7 +23911,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Bolsover Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537626",
@@ -24082,7 +23932,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Scott Road",
     "capacity": 6,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/9503537628",
@@ -24321,8 +24174,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9964286883",
-    "lat": 51.8653676,
-    "lng": -2.2434966,
+    "lat": 51.8653421,
+    "lng": -2.2435517,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 16,
@@ -24455,18 +24308,6 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/10111019432",
-    "lat": 52.200882,
-    "lng": 0.1135014,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 15,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -24922,30 +24763,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/11013004405",
-    "lat": 50.8331142,
-    "lng": -0.1289878,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/11013060149",
-    "lat": 50.8354228,
-    "lng": -0.1261808,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/11015848852",
     "lat": 50.8336333,
     "lng": -0.1308569,
@@ -25205,8 +25022,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/11363152380",
-    "lat": 51.8658329,
-    "lng": -2.2429113,
+    "lat": 51.8657788,
+    "lng": -2.2428846,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 14,
@@ -25390,9 +25207,30 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "node/11816369151",
+    "lat": 50.7011823,
+    "lng": -1.0994831,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
     "id": "node/11816375215",
     "lat": 53.0910679,
     "lng": -2.2999615,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11816379324",
+    "lat": 50.6984798,
+    "lng": -1.2934437,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -26563,7 +26401,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
   },
   {
     "id": "node/13458754066",
@@ -26686,2169 +26527,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "node/13737273641",
-    "lat": 51.55666,
-    "lng": -0.160147,
-    "borough": "United Kingdom",
-    "street": "Tanza Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273642",
-    "lat": 51.54207,
-    "lng": -0.134157,
-    "borough": "United Kingdom",
-    "street": "Agar Grove Estate",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737273643",
-    "lat": 51.548005,
-    "lng": -0.154007,
-    "borough": "United Kingdom",
-    "street": "Queen's Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273644",
-    "lat": 51.550671,
-    "lng": -0.151101,
-    "borough": "United Kingdom",
-    "street": "Weedington Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273645",
-    "lat": 51.57033,
-    "lng": -0.146434,
-    "borough": "United Kingdom",
-    "street": "Bisham Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273646",
-    "lat": 51.5518,
-    "lng": -0.157411,
-    "borough": "United Kingdom",
-    "street": "Southampton Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273647",
-    "lat": 51.549373,
-    "lng": -0.179169,
-    "borough": "United Kingdom",
-    "street": "Netherhall Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273648",
-    "lat": 51.527147,
-    "lng": -0.140043,
-    "borough": "United Kingdom",
-    "street": "William Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273649",
-    "lat": 51.51614,
-    "lng": -0.121146,
-    "borough": "United Kingdom",
-    "street": "Parker Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273650",
-    "lat": 51.554777,
-    "lng": -0.162707,
-    "borough": "United Kingdom",
-    "street": "Constantine Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273651",
-    "lat": 51.555706,
-    "lng": -0.156562,
-    "borough": "United Kingdom",
-    "street": "Courthope Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273652",
-    "lat": 51.527433,
-    "lng": -0.117442,
-    "borough": "United Kingdom",
-    "street": "Ampton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273653",
-    "lat": 51.553407,
-    "lng": -0.202452,
-    "borough": "United Kingdom",
-    "street": "Gondar Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273654",
-    "lat": 51.557184,
-    "lng": -0.146827,
-    "borough": "United Kingdom",
-    "street": "Dartmouth Park Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273655",
-    "lat": 51.54843,
-    "lng": -0.162106,
-    "borough": "United Kingdom",
-    "street": "Antrim Grove",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273656",
-    "lat": 51.53354,
-    "lng": -0.138825,
-    "borough": "United Kingdom",
-    "street": "Harrington Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273657",
-    "lat": 51.543529,
-    "lng": -0.193059,
-    "borough": "United Kingdom",
-    "street": "Cotleigh Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273658",
-    "lat": 51.553815,
-    "lng": -0.200576,
-    "borough": "United Kingdom",
-    "street": "Gondar Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273659",
-    "lat": 51.553927,
-    "lng": -0.138085,
-    "borough": "United Kingdom",
-    "street": "Ospringe Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273660",
-    "lat": 51.529371,
-    "lng": -0.131031,
-    "borough": "United Kingdom",
-    "street": "Doric Way",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273661",
-    "lat": 51.546262,
-    "lng": -0.185403,
-    "borough": "United Kingdom",
-    "street": "Fairhazel Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273662",
-    "lat": 51.55125,
-    "lng": -0.180503,
-    "borough": "United Kingdom",
-    "street": "Frognal",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273663",
-    "lat": 51.545683,
-    "lng": -0.165495,
-    "borough": "United Kingdom",
-    "street": "Lambolle Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273664",
-    "lat": 51.541623,
-    "lng": -0.1954,
-    "borough": "United Kingdom",
-    "street": "Kingsgate Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273665",
-    "lat": 51.538575,
-    "lng": -0.137559,
-    "borough": "United Kingdom",
-    "street": "Pratt Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273666",
-    "lat": 51.546876,
-    "lng": -0.143297,
-    "borough": "United Kingdom",
-    "street": "Anglers Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273667",
-    "lat": 51.545939,
-    "lng": -0.149768,
-    "borough": "United Kingdom",
-    "street": "Prince Of Wales Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273668",
-    "lat": 51.521632,
-    "lng": -0.138046,
-    "borough": "United Kingdom",
-    "street": "Fitzroy Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273669",
-    "lat": 51.550498,
-    "lng": -0.193941,
-    "borough": "United Kingdom",
-    "street": "Holmdale Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737273670",
-    "lat": 51.542252,
-    "lng": -0.19678,
-    "borough": "United Kingdom",
-    "street": "Gascony Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296843",
-    "lat": 51.542301,
-    "lng": -0.198198,
-    "borough": "United Kingdom",
-    "street": "Messina Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296844",
-    "lat": 51.555527,
-    "lng": -0.154356,
-    "borough": "United Kingdom",
-    "street": "Rona Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296845",
-    "lat": 51.53433,
-    "lng": -0.13965,
-    "borough": "United Kingdom",
-    "street": "Mornington Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296846",
-    "lat": 51.552508,
-    "lng": -0.189554,
-    "borough": "United Kingdom",
-    "street": "Crediton Hill",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296847",
-    "lat": 51.547074,
-    "lng": -0.190748,
-    "borough": "United Kingdom",
-    "street": "Blackburn Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296848",
-    "lat": 51.544528,
-    "lng": -0.176967,
-    "borough": "United Kingdom",
-    "street": "Harben Road Estate 1",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737296849",
-    "lat": 51.526879,
-    "lng": -0.135707,
-    "borough": "United Kingdom",
-    "street": "Euston Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296850",
-    "lat": 51.531376,
-    "lng": -0.133508,
-    "borough": "United Kingdom",
-    "street": "Polygon Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296851",
-    "lat": 51.551127,
-    "lng": -0.138002,
-    "borough": "United Kingdom",
-    "street": "Lady Margaret Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296852",
-    "lat": 51.524477,
-    "lng": -0.131774,
-    "borough": "United Kingdom",
-    "street": "Gordon Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296853",
-    "lat": 51.541102,
-    "lng": -0.142954,
-    "borough": "United Kingdom",
-    "street": "Hawley Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296854",
-    "lat": 51.529521,
-    "lng": -0.117753,
-    "borough": "United Kingdom",
-    "street": "Wicklow Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296855",
-    "lat": 51.554322,
-    "lng": -0.136958,
-    "borough": "United Kingdom",
-    "street": "Lady Margaret Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296856",
-    "lat": 51.551731,
-    "lng": -0.201231,
-    "borough": "United Kingdom",
-    "street": "Hillfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296857",
-    "lat": 51.549428,
-    "lng": -0.19187,
-    "borough": "United Kingdom",
-    "street": "Sandwell Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296858",
-    "lat": 51.550815,
-    "lng": -0.191615,
-    "borough": "United Kingdom",
-    "street": "Inglewood Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296859",
-    "lat": 51.546444,
-    "lng": -0.166371,
-    "borough": "United Kingdom",
-    "street": "Lambolle Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296860",
-    "lat": 51.558805,
-    "lng": -0.143843,
-    "borough": "United Kingdom",
-    "street": "York Rise",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296861",
-    "lat": 51.542623,
-    "lng": -0.195074,
-    "borough": "United Kingdom",
-    "street": "Gascony Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296862",
-    "lat": 51.546058,
-    "lng": -0.143795,
-    "borough": "United Kingdom",
-    "street": "Kelly Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296863",
-    "lat": 51.513037,
-    "lng": -0.127474,
-    "borough": "United Kingdom",
-    "street": "Tower Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296864",
-    "lat": 51.522295,
-    "lng": -0.109477,
-    "borough": "United Kingdom",
-    "street": "Back Hill",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296865",
-    "lat": 51.542484,
-    "lng": -0.155168,
-    "borough": "United Kingdom",
-    "street": "Gloucester Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296866",
-    "lat": 51.555559,
-    "lng": -0.155514,
-    "borough": "United Kingdom",
-    "street": "Estelle Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296867",
-    "lat": 51.552471,
-    "lng": -0.19596,
-    "borough": "United Kingdom",
-    "street": "Aldred Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296868",
-    "lat": 51.556762,
-    "lng": -0.1772,
-    "borough": "United Kingdom",
-    "street": "Flask Walk",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296869",
-    "lat": 51.554302,
-    "lng": -0.210998,
-    "borough": "United Kingdom",
-    "street": "Skardu Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296870",
-    "lat": 51.555593,
-    "lng": -0.176266,
-    "borough": "United Kingdom",
-    "street": "Hampstead High Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296871",
-    "lat": 51.547318,
-    "lng": -0.199213,
-    "borough": "United Kingdom",
-    "street": "Loveridge Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737296872",
-    "lat": 51.551849,
-    "lng": -0.200521,
-    "borough": "United Kingdom",
-    "street": "Hillfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313846",
-    "lat": 51.54564,
-    "lng": -0.158572,
-    "borough": "United Kingdom",
-    "street": "Eton Villas",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313847",
-    "lat": 51.549687,
-    "lng": -0.134805,
-    "borough": "United Kingdom",
-    "street": "Bartholomew Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313848",
-    "lat": 51.541366,
-    "lng": -0.153431,
-    "borough": "United Kingdom",
-    "street": "Gloucester Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313849",
-    "lat": 51.547647,
-    "lng": -0.200995,
-    "borough": "United Kingdom",
-    "street": "Maygrove Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313850",
-    "lat": 51.551393,
-    "lng": -0.187039,
-    "borough": "United Kingdom",
-    "street": "Alvanley Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313851",
-    "lat": 51.549665,
-    "lng": -0.19279,
-    "borough": "United Kingdom",
-    "street": "Kingdon Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313852",
-    "lat": 51.52377,
-    "lng": -0.113809,
-    "borough": "United Kingdom",
-    "street": "Gough Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313853",
-    "lat": 51.546078,
-    "lng": -0.191545,
-    "borough": "United Kingdom",
-    "street": "Sherriff Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313854",
-    "lat": 51.549968,
-    "lng": -0.168629,
-    "borough": "United Kingdom",
-    "street": "Belsize Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313855",
-    "lat": 51.525605,
-    "lng": -0.129467,
-    "borough": "United Kingdom",
-    "street": "Tavistock Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313856",
-    "lat": 51.544264,
-    "lng": -0.132257,
-    "borough": "United Kingdom",
-    "street": "Camden Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313857",
-    "lat": 51.528142,
-    "lng": -0.116816,
-    "borough": "United Kingdom",
-    "street": "Frederick Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313858",
-    "lat": 51.543529,
-    "lng": -0.153541,
-    "borough": "United Kingdom",
-    "street": "Regent's Park Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313859",
-    "lat": 51.553652,
-    "lng": -0.203268,
-    "borough": "United Kingdom",
-    "street": "Minster Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313860",
-    "lat": 51.549065,
-    "lng": -0.146496,
-    "borough": "United Kingdom",
-    "street": "Spring Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313861",
-    "lat": 51.551329,
-    "lng": -0.206474,
-    "borough": "United Kingdom",
-    "street": "Fordwych Road",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313862",
-    "lat": 51.54452,
-    "lng": -0.195379,
-    "borough": "United Kingdom",
-    "street": "Hemstal Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313863",
-    "lat": 51.551038,
-    "lng": -0.138013,
-    "borough": "United Kingdom",
-    "street": "Lady Margaret Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313864",
-    "lat": 51.538316,
-    "lng": -0.1914,
-    "borough": "United Kingdom",
-    "street": "Kilburn Vale",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313865",
-    "lat": 51.54922,
-    "lng": -0.20046,
-    "borough": "United Kingdom",
-    "street": "West End Sidings Estate",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737313866",
-    "lat": 51.555222,
-    "lng": -0.196776,
-    "borough": "United Kingdom",
-    "street": "Fortune Green Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313867",
-    "lat": 51.550605,
-    "lng": -0.156671,
-    "borough": "United Kingdom",
-    "street": "Southampton Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313868",
-    "lat": 51.553834,
-    "lng": -0.136669,
-    "borough": "United Kingdom",
-    "street": "Ospringe Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313869",
-    "lat": 51.543807,
-    "lng": -0.169727,
-    "borough": "United Kingdom",
-    "street": "King's College Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313870",
-    "lat": 51.555504,
-    "lng": -0.178588,
-    "borough": "United Kingdom",
-    "street": "Heath Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313871",
-    "lat": 51.557493,
-    "lng": -0.148121,
-    "borough": "United Kingdom",
-    "street": "Lissenden Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313872",
-    "lat": 51.538879,
-    "lng": -0.141651,
-    "borough": "United Kingdom",
-    "street": "Greenland Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313873",
-    "lat": 51.549418,
-    "lng": -0.177681,
-    "borough": "United Kingdom",
-    "street": "Maresfield Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313874",
-    "lat": 51.555732,
-    "lng": -0.171877,
-    "borough": "United Kingdom",
-    "street": "Pilgrim's Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737313875",
-    "lat": 51.549636,
-    "lng": -0.155865,
-    "borough": "United Kingdom",
-    "street": "Grafton Terrace",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315542",
-    "lat": 51.537254,
-    "lng": -0.142736,
-    "borough": "United Kingdom",
-    "street": "Arlington Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315543",
-    "lat": 51.531502,
-    "lng": -0.131303,
-    "borough": "United Kingdom",
-    "street": "Ossulston Estate 1",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737315544",
-    "lat": 51.549392,
-    "lng": -0.19317,
-    "borough": "United Kingdom",
-    "street": "Kingdon Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315545",
-    "lat": 51.547161,
-    "lng": -0.169114,
-    "borough": "United Kingdom",
-    "street": "Belsize Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315546",
-    "lat": 51.550568,
-    "lng": -0.197511,
-    "borough": "United Kingdom",
-    "street": "Glenbrook Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315547",
-    "lat": 51.525634,
-    "lng": -0.133878,
-    "borough": "United Kingdom",
-    "street": "Gower Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315548",
-    "lat": 51.54515,
-    "lng": -0.160119,
-    "borough": "United Kingdom",
-    "street": "Steele's Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315549",
-    "lat": 51.522698,
-    "lng": -0.110351,
-    "borough": "United Kingdom",
-    "street": "Eyre Street Hill",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315550",
-    "lat": 51.533405,
-    "lng": -0.137141,
-    "borough": "United Kingdom",
-    "street": "Oakley Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315551",
-    "lat": 51.546615,
-    "lng": -0.151281,
-    "borough": "United Kingdom",
-    "street": "Malden Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315552",
-    "lat": 51.556548,
-    "lng": -0.160845,
-    "borough": "United Kingdom",
-    "street": "Nassington Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315553",
-    "lat": 51.553296,
-    "lng": -0.210758,
-    "borough": "United Kingdom",
-    "street": "Rondu Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315554",
-    "lat": 51.551165,
-    "lng": -0.201354,
-    "borough": "United Kingdom",
-    "street": "Mill Lane",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315555",
-    "lat": 51.552168,
-    "lng": -0.161655,
-    "borough": "United Kingdom",
-    "street": "Garnett Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315556",
-    "lat": 51.552506,
-    "lng": -0.210036,
-    "borough": "United Kingdom",
-    "street": "Manstone Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315557",
-    "lat": 51.546166,
-    "lng": -0.173894,
-    "borough": "United Kingdom",
-    "street": "Belsize Park",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315558",
-    "lat": 51.550019,
-    "lng": -0.193603,
-    "borough": "United Kingdom",
-    "street": "Holmdale Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315559",
-    "lat": 51.521804,
-    "lng": -0.136988,
-    "borough": "United Kingdom",
-    "street": "Howland Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315560",
-    "lat": 51.561809,
-    "lng": -0.15004,
-    "borough": "United Kingdom",
-    "street": "Swain's Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315561",
-    "lat": 51.524,
-    "lng": -0.129917,
-    "borough": "United Kingdom",
-    "street": "Gordon Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315562",
-    "lat": 51.543437,
-    "lng": -0.171393,
-    "borough": "United Kingdom",
-    "street": "Fellows Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315563",
-    "lat": 51.514345,
-    "lng": -0.1284,
-    "borough": "United Kingdom",
-    "street": "New Compton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315564",
-    "lat": 51.547315,
-    "lng": -0.198227,
-    "borough": "United Kingdom",
-    "street": "Ariel Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315565",
-    "lat": 51.543991,
-    "lng": -0.167149,
-    "borough": "United Kingdom",
-    "street": "Fellows Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315566",
-    "lat": 51.555796,
-    "lng": -0.155308,
-    "borough": "United Kingdom",
-    "street": "Savernake Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315567",
-    "lat": 51.548669,
-    "lng": -0.151428,
-    "borough": "United Kingdom",
-    "street": "Bassett Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315568",
-    "lat": 51.525658,
-    "lng": -0.143299,
-    "borough": "United Kingdom",
-    "street": "Longford Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315569",
-    "lat": 51.545603,
-    "lng": -0.145413,
-    "borough": "United Kingdom",
-    "street": "Healey Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315570",
-    "lat": 51.556844,
-    "lng": -0.163118,
-    "borough": "United Kingdom",
-    "street": "Parliament Hill",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737315571",
-    "lat": 51.526386,
-    "lng": -0.131209,
-    "borough": "United Kingdom",
-    "street": "Endsleigh Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737319300",
-    "lat": 51.554327,
-    "lng": -0.144055,
-    "borough": "United Kingdom",
-    "street": "Lady Somerset Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323205",
-    "lat": 51.522818,
-    "lng": -0.109372,
-    "borough": "United Kingdom",
-    "street": "Back Hill",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323206",
-    "lat": 51.549913,
-    "lng": -0.1741,
-    "borough": "United Kingdom",
-    "street": "Daleham Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323207",
-    "lat": 51.550963,
-    "lng": -0.200784,
-    "borough": "United Kingdom",
-    "street": "Ravenshaw Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323208",
-    "lat": 51.558209,
-    "lng": -0.164219,
-    "borough": "United Kingdom",
-    "street": "South Hill Park",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323209",
-    "lat": 51.548933,
-    "lng": -0.171082,
-    "borough": "United Kingdom",
-    "street": "Belsize Terrace",
-    "capacity": 1,
-    "fee": "yes",
-    "tags": {
-      "note": "Was bike parking for"
-    }
-  },
-  {
-    "id": "node/13737323210",
-    "lat": 51.548682,
-    "lng": -0.167952,
-    "borough": "United Kingdom",
-    "street": "Glenilla Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323211",
-    "lat": 51.552287,
-    "lng": -0.188069,
-    "borough": "United Kingdom",
-    "street": "Alvanley Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323212",
-    "lat": 51.55142,
-    "lng": -0.200722,
-    "borough": "United Kingdom",
-    "street": "Hillfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323213",
-    "lat": 51.548791,
-    "lng": -0.138583,
-    "borough": "United Kingdom",
-    "street": "Hammond Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323214",
-    "lat": 51.523647,
-    "lng": -0.118894,
-    "borough": "United Kingdom",
-    "street": "Guilford Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323215",
-    "lat": 51.548001,
-    "lng": -0.199759,
-    "borough": "United Kingdom",
-    "street": "Maygrove Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323216",
-    "lat": 51.559519,
-    "lng": -0.187704,
-    "borough": "United Kingdom",
-    "street": "Templewood Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323217",
-    "lat": 51.548855,
-    "lng": -0.192667,
-    "borough": "United Kingdom",
-    "street": "Sumatra Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323218",
-    "lat": 51.542391,
-    "lng": -0.171592,
-    "borough": "United Kingdom",
-    "street": "Winchester Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323219",
-    "lat": 51.54017,
-    "lng": -0.154432,
-    "borough": "United Kingdom",
-    "street": "Fitzroy Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323220",
-    "lat": 51.520992,
-    "lng": -0.136506,
-    "borough": "United Kingdom",
-    "street": "Chitty Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323221",
-    "lat": 51.515599,
-    "lng": -0.126165,
-    "borough": "United Kingdom",
-    "street": "Endell Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323222",
-    "lat": 51.517562,
-    "lng": -0.133276,
-    "borough": "United Kingdom",
-    "street": "Gresse Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323223",
-    "lat": 51.545514,
-    "lng": -0.163116,
-    "borough": "United Kingdom",
-    "street": "Eton Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323224",
-    "lat": 51.544971,
-    "lng": -0.197033,
-    "borough": "United Kingdom",
-    "street": "Hemstal Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323225",
-    "lat": 51.522909,
-    "lng": -0.134576,
-    "borough": "United Kingdom",
-    "street": "Huntley Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323226",
-    "lat": 51.550176,
-    "lng": -0.191215,
-    "borough": "United Kingdom",
-    "street": "Fawley Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323227",
-    "lat": 51.552626,
-    "lng": -0.197093,
-    "borough": "United Kingdom",
-    "street": "Hillfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323228",
-    "lat": 51.543739,
-    "lng": -0.151293,
-    "borough": "United Kingdom",
-    "street": "Belmont Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323229",
-    "lat": 51.544497,
-    "lng": -0.166802,
-    "borough": "United Kingdom",
-    "street": "Merton Rise",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323230",
-    "lat": 51.544653,
-    "lng": -0.15856,
-    "borough": "United Kingdom",
-    "street": "Provost Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323231",
-    "lat": 51.54655,
-    "lng": -0.140222,
-    "borough": "United Kingdom",
-    "street": "Bartholomew Villas",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323232",
-    "lat": 51.548473,
-    "lng": -0.1429,
-    "borough": "United Kingdom",
-    "street": "Raglan Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737323233",
-    "lat": 51.541897,
-    "lng": -0.128724,
-    "borough": "United Kingdom",
-    "street": "Maiden Lane",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737323234",
-    "lat": 51.526385,
-    "lng": -0.140923,
-    "borough": "United Kingdom",
-    "street": "Stanhope Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330465",
-    "lat": 51.554246,
-    "lng": -0.164412,
-    "borough": "United Kingdom",
-    "street": "Constantine Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330466",
-    "lat": 51.570466,
-    "lng": -0.148548,
-    "borough": "United Kingdom",
-    "street": "South Grove",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330467",
-    "lat": 51.547239,
-    "lng": -0.196086,
-    "borough": "United Kingdom",
-    "street": "Iverson Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330468",
-    "lat": 51.546315,
-    "lng": -0.135713,
-    "borough": "United Kingdom",
-    "street": "Lawford Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330469",
-    "lat": 51.545265,
-    "lng": -0.196164,
-    "borough": "United Kingdom",
-    "street": "Lowfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330470",
-    "lat": 51.535054,
-    "lng": -0.133203,
-    "borough": "United Kingdom",
-    "street": "Chalton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330471",
-    "lat": 51.562215,
-    "lng": -0.176485,
-    "borough": "United Kingdom",
-    "street": "Vale Of Health",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330472",
-    "lat": 51.526042,
-    "lng": -0.132196,
-    "borough": "United Kingdom",
-    "street": "Taviton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330473",
-    "lat": 51.554106,
-    "lng": -0.195841,
-    "borough": "United Kingdom",
-    "street": "Burrard Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330474",
-    "lat": 51.546677,
-    "lng": -0.161066,
-    "borough": "United Kingdom",
-    "street": "England's Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330475",
-    "lat": 51.545816,
-    "lng": -0.167774,
-    "borough": "United Kingdom",
-    "street": "Lancaster Grove",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330476",
-    "lat": 51.553013,
-    "lng": -0.209022,
-    "borough": "United Kingdom",
-    "street": "Manstone Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330477",
-    "lat": 51.539439,
-    "lng": -0.191827,
-    "borough": "United Kingdom",
-    "street": "West End Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330478",
-    "lat": 51.55396,
-    "lng": -0.211634,
-    "borough": "United Kingdom",
-    "street": "Skardu Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330479",
-    "lat": 51.555076,
-    "lng": -0.212878,
-    "borough": "United Kingdom",
-    "street": "Richborough Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330480",
-    "lat": 51.542522,
-    "lng": -0.144821,
-    "borough": "United Kingdom",
-    "street": "Castlehaven Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330481",
-    "lat": 51.554923,
-    "lng": -0.164176,
-    "borough": "United Kingdom",
-    "street": "South End Close Estate",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737330482",
-    "lat": 51.5499,
-    "lng": -0.196146,
-    "borough": "United Kingdom",
-    "street": "Solent Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330483",
-    "lat": 51.519694,
-    "lng": -0.123626,
-    "borough": "United Kingdom",
-    "street": "Bedford Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330484",
-    "lat": 51.543464,
-    "lng": -0.136195,
-    "borough": "United Kingdom",
-    "street": "Rochester Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330485",
-    "lat": 51.540278,
-    "lng": -0.142981,
-    "borough": "United Kingdom",
-    "street": "Buck Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330486",
-    "lat": 51.553154,
-    "lng": -0.142995,
-    "borough": "United Kingdom",
-    "street": "Greenwood Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330487",
-    "lat": 51.55148,
-    "lng": -0.182241,
-    "borough": "United Kingdom",
-    "street": "Lindfield Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330488",
-    "lat": 51.540656,
-    "lng": -0.191016,
-    "borough": "United Kingdom",
-    "street": "Abbot's Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330489",
-    "lat": 51.529867,
-    "lng": -0.129017,
-    "borough": "United Kingdom",
-    "street": "Ossulston Estate 2",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737330490",
-    "lat": 51.540099,
-    "lng": -0.146245,
-    "borough": "United Kingdom",
-    "street": "Jamestown Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330491",
-    "lat": 51.513511,
-    "lng": -0.125932,
-    "borough": "United Kingdom",
-    "street": "Shelton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330492",
-    "lat": 51.544647,
-    "lng": -0.16203,
-    "borough": "United Kingdom",
-    "street": "Fellows Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330493",
-    "lat": 51.529791,
-    "lng": -0.132535,
-    "borough": "United Kingdom",
-    "street": "Drummond Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737330494",
-    "lat": 51.555239,
-    "lng": -0.174353,
-    "borough": "United Kingdom",
-    "street": "Hampstead High Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331947",
-    "lat": 51.537847,
-    "lng": -0.13505,
-    "borough": "United Kingdom",
-    "street": "Royal College Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331948",
-    "lat": 51.551118,
-    "lng": -0.203037,
-    "borough": "United Kingdom",
-    "street": "Mill Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331949",
-    "lat": 51.544422,
-    "lng": -0.194076,
-    "borough": "United Kingdom",
-    "street": "Hemstal Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331950",
-    "lat": 51.556112,
-    "lng": -0.185505,
-    "borough": "United Kingdom",
-    "street": "Chesterford Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331951",
-    "lat": 51.522324,
-    "lng": -0.13112,
-    "borough": "United Kingdom",
-    "street": "Malet Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331952",
-    "lat": 51.552211,
-    "lng": -0.176176,
-    "borough": "United Kingdom",
-    "street": "Netherhall Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331953",
-    "lat": 51.544138,
-    "lng": -0.182415,
-    "borough": "United Kingdom",
-    "street": "Greencroft Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331954",
-    "lat": 51.541783,
-    "lng": -0.156505,
-    "borough": "United Kingdom",
-    "street": "Regent's Park Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331955",
-    "lat": 51.534289,
-    "lng": -0.143961,
-    "borough": "United Kingdom",
-    "street": "Park Village East",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331956",
-    "lat": 51.551285,
-    "lng": -0.208315,
-    "borough": "United Kingdom",
-    "street": "Minster Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331957",
-    "lat": 51.552132,
-    "lng": -0.140803,
-    "borough": "United Kingdom",
-    "street": "Falkland Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331958",
-    "lat": 51.535708,
-    "lng": -0.140232,
-    "borough": "United Kingdom",
-    "street": "Miller Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331959",
-    "lat": 51.520994,
-    "lng": -0.111486,
-    "borough": "United Kingdom",
-    "street": "Portpool Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331960",
-    "lat": 51.551102,
-    "lng": -0.194738,
-    "borough": "United Kingdom",
-    "street": "Holmdale Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331961",
-    "lat": 51.529809,
-    "lng": -0.131978,
-    "borough": "United Kingdom",
-    "street": "Drummond Crescent",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331962",
-    "lat": 51.52354,
-    "lng": -0.13995,
-    "borough": "United Kingdom",
-    "street": "Fitzroy Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331963",
-    "lat": 51.552465,
-    "lng": -0.152005,
-    "borough": "United Kingdom",
-    "street": "Vicar's Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331964",
-    "lat": 51.548122,
-    "lng": -0.166117,
-    "borough": "United Kingdom",
-    "street": "Howitt Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331965",
-    "lat": 51.555897,
-    "lng": -0.165247,
-    "borough": "United Kingdom",
-    "street": "South Hill Park",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331966",
-    "lat": 51.538951,
-    "lng": -0.144382,
-    "borough": "United Kingdom",
-    "street": "Arlington Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331967",
-    "lat": 51.54665,
-    "lng": -0.181058,
-    "borough": "United Kingdom",
-    "street": "Broadhurst Gardens",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331968",
-    "lat": 51.549127,
-    "lng": -0.183505,
-    "borough": "United Kingdom",
-    "street": "Rosemont Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331969",
-    "lat": 51.552045,
-    "lng": -0.19064,
-    "borough": "United Kingdom",
-    "street": "Honeybourne Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331970",
-    "lat": 51.517174,
-    "lng": -0.119695,
-    "borough": "United Kingdom",
-    "street": "Gate Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331971",
-    "lat": 51.545602,
-    "lng": -0.195957,
-    "borough": "United Kingdom",
-    "street": "Lowfield Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331972",
-    "lat": 51.545387,
-    "lng": -0.157721,
-    "borough": "United Kingdom",
-    "street": "Eton Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331973",
-    "lat": 51.554109,
-    "lng": -0.196934,
-    "borough": "United Kingdom",
-    "street": "Ajax Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331974",
-    "lat": 51.545717,
-    "lng": -0.174681,
-    "borough": "United Kingdom",
-    "street": "Belsize Park",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331975",
-    "lat": 51.521924,
-    "lng": -0.133512,
-    "borough": "United Kingdom",
-    "street": "Huntley Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737331976",
-    "lat": 51.541516,
-    "lng": -0.195305,
-    "borough": "United Kingdom",
-    "street": "Kingsgate Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333201",
-    "lat": 51.54292,
-    "lng": -0.198421,
-    "borough": "United Kingdom",
-    "street": "Grangeway",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333202",
-    "lat": 51.548003,
-    "lng": -0.142399,
-    "borough": "United Kingdom",
-    "street": "Raglan Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333203",
-    "lat": 51.544296,
-    "lng": -0.173488,
-    "borough": "United Kingdom",
-    "street": "Eton Avenue",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333204",
-    "lat": 51.549262,
-    "lng": -0.190715,
-    "borough": "United Kingdom",
-    "street": "Lymington Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333205",
-    "lat": 51.545068,
-    "lng": -0.193121,
-    "borough": "United Kingdom",
-    "street": "Hilltop Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333206",
-    "lat": 51.52783,
-    "lng": -0.119263,
-    "borough": "United Kingdom",
-    "street": "Harrison Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333207",
-    "lat": 51.521021,
-    "lng": -0.13198,
-    "borough": "United Kingdom",
-    "street": "Ridgmount Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333208",
-    "lat": 51.545214,
-    "lng": -0.141915,
-    "borough": "United Kingdom",
-    "street": "Castle Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333209",
-    "lat": 51.554875,
-    "lng": -0.156117,
-    "borough": "United Kingdom",
-    "street": "Courthope Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333210",
-    "lat": 51.549061,
-    "lng": -0.163854,
-    "borough": "United Kingdom",
-    "street": "Belsize Grove",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333211",
-    "lat": 51.535168,
-    "lng": -0.137419,
-    "borough": "United Kingdom",
-    "street": "Bayham Place",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333212",
-    "lat": 51.552184,
-    "lng": -0.191952,
-    "borough": "United Kingdom",
-    "street": "West End Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333213",
-    "lat": 51.522767,
-    "lng": -0.135883,
-    "borough": "United Kingdom",
-    "street": "Mortimer Market",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333214",
-    "lat": 51.555479,
-    "lng": -0.157446,
-    "borough": "United Kingdom",
-    "street": "Shirlock Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333215",
-    "lat": 51.548956,
-    "lng": -0.194279,
-    "borough": "United Kingdom",
-    "street": "Sumatra Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333216",
-    "lat": 51.519072,
-    "lng": -0.123745,
-    "borough": "United Kingdom",
-    "street": "Bloomsbury Square",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333217",
-    "lat": 51.558872,
-    "lng": -0.163684,
-    "borough": "United Kingdom",
-    "street": "South Hill Park",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333218",
-    "lat": 51.531849,
-    "lng": -0.136701,
-    "borough": "United Kingdom",
-    "street": "Ampthill Square Estate",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737333219",
-    "lat": 51.514611,
-    "lng": -0.12812,
-    "borough": "United Kingdom",
-    "street": "New Compton Street",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333220",
-    "lat": 51.541779,
-    "lng": -0.156276,
-    "borough": "United Kingdom",
-    "street": "Berkley Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333221",
-    "lat": 51.548249,
-    "lng": -0.201901,
-    "borough": "United Kingdom",
-    "street": "Fordwych Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333222",
-    "lat": 51.541895,
-    "lng": -0.128724,
-    "borough": "United Kingdom",
-    "street": "St Paul's Crescent",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737333223",
-    "lat": 51.542747,
-    "lng": -0.195529,
-    "borough": "United Kingdom",
-    "street": "Kingsgate Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333224",
-    "lat": 51.551774,
-    "lng": -0.163784,
-    "borough": "United Kingdom",
-    "street": "Russell Nurseries Estate",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13737333225",
-    "lat": 51.549007,
-    "lng": -0.171868,
-    "borough": "United Kingdom",
-    "street": "Belsize Lane",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333226",
-    "lat": 51.557853,
-    "lng": -0.143399,
-    "borough": "United Kingdom",
-    "street": "Twisden Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333227",
-    "lat": 51.547861,
-    "lng": -0.19644,
-    "borough": "United Kingdom",
-    "street": "Maygrove Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333228",
-    "lat": 51.550107,
-    "lng": -0.192405,
-    "borough": "United Kingdom",
-    "street": "Dennington Park Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
-    "id": "node/13737333229",
-    "lat": 51.541227,
-    "lng": -0.164895,
-    "borough": "United Kingdom",
-    "street": "Elsworthy Road",
-    "capacity": 1,
-    "fee": "yes"
-  },
-  {
     "id": "node/13766307720",
     "lat": 51.4424589,
     "lng": -1.0619736,
@@ -28867,21 +26545,735 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
+    "id": "node/13948852023",
+    "lat": 54.5416619,
+    "lng": -1.2024933,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13953988301",
+    "lat": 51.6077336,
+    "lng": -2.523421,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13954488101",
+    "lat": 51.6824861,
+    "lng": -2.3564474,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13962062341",
+    "lat": 50.3939445,
+    "lng": -4.082864,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13969287658",
+    "lat": 54.3070876,
+    "lng": -2.7335657,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/13983706072",
+    "lat": 50.6898934,
+    "lng": -4.6909726,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/13993835206",
+    "lat": 52.4843445,
+    "lng": -1.8994123,
+    "borough": "United Kingdom",
+    "street": "Three Snowhill Underground Motorcycle Parking",
+    "capacity": 9,
+    "fee": "no",
+    "tags": {
+      "covered": "yes",
+      "note": "this is the correct spelling NOT Snow Hill as the station"
+    }
+  },
+  {
+    "id": "node/13993835242",
+    "lat": 52.4840457,
+    "lng": -1.8991207,
+    "borough": "United Kingdom",
+    "street": "Two Snowhill Underground Motorcycle Parking",
+    "capacity": 7,
+    "fee": "no",
+    "tags": {
+      "covered": "yes",
+      "note": "this is the correct spelling NOT Snow Hill as the station"
+    }
+  },
+  {
+    "id": "node/13999956704",
+    "lat": 53.2273995,
+    "lng": -4.1603754,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14002832385",
+    "lat": 51.8911271,
+    "lng": -0.5203469,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14008404942",
+    "lat": 53.5429329,
+    "lng": -1.5259373,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14027111697",
+    "lat": 53.3883049,
+    "lng": -1.4613811,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14058934917",
+    "lat": 50.6994429,
+    "lng": -1.2972239,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14058952305",
+    "lat": 50.7018087,
+    "lng": -1.2930722,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14063617650",
+    "lat": 51.7030798,
+    "lng": -0.0242589,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14063833684",
+    "lat": 51.717411,
+    "lng": -2.359953,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/14064663646",
+    "lat": 50.6978489,
+    "lng": -1.2970553,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14064663647",
+    "lat": 50.6983256,
+    "lng": -1.297406,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14064663663",
+    "lat": 50.7000789,
+    "lng": -1.2945588,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14064663675",
+    "lat": 50.7098514,
+    "lng": -1.3009431,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14067218424",
+    "lat": 52.481341,
+    "lng": -1.9010136,
+    "borough": "United Kingdom",
+    "street": "Phoenix House Basement Motorcycle Parking",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "yes"
+    }
+  },
+  {
+    "id": "node/14069070869",
+    "lat": 50.6299113,
+    "lng": -1.1785945,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14069070875",
+    "lat": 50.6808818,
+    "lng": -1.5143079,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14069934284",
+    "lat": 50.6263031,
+    "lng": -1.1782759,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14069941389",
+    "lat": 50.7002145,
+    "lng": -1.2972561,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14069941390",
+    "lat": 50.700149,
+    "lng": -1.2974652,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14069963353",
+    "lat": 50.7605702,
+    "lng": -1.2983803,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14069975818",
+    "lat": 50.7286608,
+    "lng": -1.1642804,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14070492365",
+    "lat": 50.5939312,
+    "lng": -1.2036648,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14070508474",
+    "lat": 50.6158806,
+    "lng": -1.2220234,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14070508799",
+    "lat": 50.594786,
+    "lng": -1.1987228,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14070538702",
+    "lat": 50.5931148,
+    "lng": -1.2029996,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14077257642",
+    "lat": 53.6440503,
+    "lng": -1.7851093,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14077303137",
+    "lat": 53.6819714,
+    "lng": -1.4980272,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14084226324",
+    "lat": 50.7254512,
+    "lng": -1.1292985,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14084253807",
+    "lat": 50.7324462,
+    "lng": -1.1572284,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14088578668",
+    "lat": 50.6488605,
+    "lng": -1.1689029,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14094910835",
+    "lat": 50.729021,
+    "lng": -1.1620905,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14096146751",
+    "lat": 51.0736094,
+    "lng": 1.1448606,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no",
+    "tags": {
+      "payment": "no"
+    }
+  },
+  {
+    "id": "node/14096146982",
+    "lat": 50.5953646,
+    "lng": -1.205382,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14096146987",
+    "lat": 50.5927529,
+    "lng": -1.2113258,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14103900943",
+    "lat": 50.4332836,
+    "lng": -3.5654846,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14115696758",
+    "lat": 50.7326988,
+    "lng": -1.1606824,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14115696767",
+    "lat": 50.7321839,
+    "lng": -1.1623628,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14115696769",
+    "lat": 50.7391117,
+    "lng": -1.1605261,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14129262116",
+    "lat": 50.6521228,
+    "lng": -1.1567643,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14131090708",
+    "lat": 50.6314344,
+    "lng": -1.1713891,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14132910628",
+    "lat": 50.6457877,
+    "lng": -1.1809505,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14142161195",
+    "lat": 50.703734,
+    "lng": -1.5007126,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14142172404",
+    "lat": 50.7066834,
+    "lng": -1.4995094,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14155817530",
+    "lat": 50.6978007,
+    "lng": -1.2925002,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14158117154",
+    "lat": 50.6551015,
+    "lng": -1.1554838,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14160689274",
+    "lat": 50.7281398,
+    "lng": -1.1642788,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14185869540",
+    "lat": 56.4033995,
+    "lng": -3.435447,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14188952367",
+    "lat": 50.7271844,
+    "lng": -1.1434284,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14197154472",
+    "lat": 50.633886,
+    "lng": -1.1794444,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14204731553",
+    "lat": 50.7604495,
+    "lng": -1.2877404,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14204748988",
+    "lat": 50.7589407,
+    "lng": -1.2882928,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14209332810",
+    "lat": 53.7982242,
+    "lng": -1.5368836,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "yes",
+      "note": "Free for motorcycles. Push bike past barrier (advice given to me over phone with car park operator)"
+    }
+  },
+  {
+    "id": "node/14209781598",
+    "lat": 50.70507,
+    "lng": -1.2905501,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14211966513",
+    "lat": 50.7243982,
+    "lng": -1.2306648,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14222530422",
+    "lat": 50.6934113,
+    "lng": -1.2852298,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14223651117",
+    "lat": 50.6985388,
+    "lng": -1.2933062,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14224658700",
+    "lat": 50.6940722,
+    "lng": -1.2862191,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14243736513",
+    "lat": 52.0505134,
+    "lng": -2.7181895,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14248123111",
+    "lat": 50.6889338,
+    "lng": -1.53801,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14254227481",
+    "lat": 53.3713987,
+    "lng": -4.5549948,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14272872418",
+    "lat": 50.5952904,
+    "lng": -1.2021768,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14273570985",
+    "lat": 50.6820915,
+    "lng": -1.5235369,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14273724866",
+    "lat": 50.6912524,
+    "lng": -1.3124772,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
     "id": "way/42056455",
-    "lat": 53.9659556,
-    "lng": -1.0837049,
+    "lat": 53.9659539,
+    "lng": -1.0836946,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
   },
   {
     "id": "way/115618464",
-    "lat": 51.7580925,
-    "lng": -1.2598248,
+    "lat": 51.7580978,
+    "lng": -1.2598051,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29158,7 +27550,7 @@ const PARKING_DATA = [
     "lng": -1.9853715,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 15,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -29222,6 +27614,15 @@ const PARKING_DATA = [
     "id": "way/543024138",
     "lat": 52.2155538,
     "lng": 0.0228854,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/567356035",
+    "lat": 51.1307331,
+    "lng": -1.7965823,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29320,7 +27721,7 @@ const PARKING_DATA = [
     "lng": -0.2075472,
     "borough": "Stevenage",
     "street": "High Street",
-    "capacity": 20,
+    "capacity": 6,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -29352,8 +27753,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/636898434",
-    "lat": 51.3787269,
-    "lng": -2.3273762,
+    "lat": 51.3787346,
+    "lng": -2.3273854,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29364,8 +27765,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/636898435",
-    "lat": 51.3787167,
-    "lng": -2.3272714,
+    "lat": 51.3787237,
+    "lng": -2.3272831,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29376,8 +27777,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/636898436",
-    "lat": 51.3786671,
-    "lng": -2.3267553,
+    "lat": 51.3786719,
+    "lng": -2.3267684,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29625,8 +28026,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/842316730",
-    "lat": 50.8410371,
-    "lng": -1.0810293,
+    "lat": 50.8410194,
+    "lng": -1.0809868,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -29868,8 +28269,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/881615969",
-    "lat": 52.5739824,
-    "lng": -0.2488567,
+    "lat": 52.5739837,
+    "lng": -0.2488551,
     "borough": "United Kingdom",
     "street": "15cm diameter metal bars to secure the bike.",
     "capacity": null,
@@ -30111,6 +28512,18 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "way/1020626943",
+    "lat": 53.1334398,
+    "lng": -3.0814957,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1024283188",
@@ -30621,11 +29034,11 @@ const PARKING_DATA = [
   },
   {
     "id": "way/1209295522",
-    "lat": 54.0427209,
-    "lng": -2.798252,
+    "lat": 54.0427229,
+    "lng": -2.7982581,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 4,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -31076,6 +29489,15 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "way/1264999350",
+    "lat": 51.7890147,
+    "lng": -1.2823569,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
     "id": "way/1266207715",
     "lat": 51.7044171,
     "lng": -3.4329811,
@@ -31277,7 +29699,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1288960310",
@@ -31526,7 +29951,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1302898412",
@@ -31598,12 +30026,15 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1307813620",
-    "lat": 51.8758195,
-    "lng": -0.3782737,
+    "lat": 51.8758689,
+    "lng": -0.3782783,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -32283,8 +30714,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/1455235759",
-    "lat": 56.5481233,
-    "lng": -2.616195,
+    "lat": 56.5481357,
+    "lng": -2.6162078,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 3,
@@ -32295,8 +30726,8 @@ const PARKING_DATA = [
   },
   {
     "id": "way/1455235760",
-    "lat": 56.5480863,
-    "lng": -2.6162761,
+    "lat": 56.5480981,
+    "lng": -2.6162974,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 3,
@@ -32612,7 +31043,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1472748612",
@@ -32772,5 +31206,330 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "yes"
+  },
+  {
+    "id": "way/1513919904",
+    "lat": 53.9860615,
+    "lng": -1.0445238,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1523809534",
+    "lat": 52.0967642,
+    "lng": 0.1357425,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 30,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1524474304",
+    "lat": 51.3871742,
+    "lng": -2.3657594,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1534669444",
+    "lat": 50.8331141,
+    "lng": -0.1289871,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1536948835",
+    "lat": 54.2842323,
+    "lng": -0.3861605,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1536948836",
+    "lat": 54.2845045,
+    "lng": -0.3861648,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1537239731",
+    "lat": 54.2840099,
+    "lng": -0.3884664,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1537438064",
+    "lat": 52.9062897,
+    "lng": -3.6059181,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1540368122",
+    "lat": 52.4815962,
+    "lng": -1.9021571,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1544955728",
+    "lat": 55.0103103,
+    "lng": -1.6081453,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1545523110",
+    "lat": 53.5530146,
+    "lng": -1.4825911,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1546261721",
+    "lat": 52.3681703,
+    "lng": -0.7038556,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1546261722",
+    "lat": 52.3681519,
+    "lng": -0.7037621,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1546261723",
+    "lat": 52.3680937,
+    "lng": -0.7038274,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1546261765",
+    "lat": 52.3643956,
+    "lng": -0.705652,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1548867249",
+    "lat": 52.4806953,
+    "lng": -1.8995624,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1549735629",
+    "lat": 52.651973,
+    "lng": -1.0692843,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1550341979",
+    "lat": 51.5516206,
+    "lng": -1.7756322,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1551599026",
+    "lat": 53.7731715,
+    "lng": -1.4707545,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1552517459",
+    "lat": 50.8294314,
+    "lng": -0.1628443,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1553440356",
+    "lat": 53.6939786,
+    "lng": -1.6292191,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1553799193",
+    "lat": 50.7115303,
+    "lng": -2.7618142,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1557656526",
+    "lat": 52.4812591,
+    "lng": -1.9035252,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1561071558",
+    "lat": 52.4778829,
+    "lng": -1.902748,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1562940724",
+    "lat": 50.8219531,
+    "lng": -0.150286,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "way/1563557728",
+    "lat": 52.6281927,
+    "lng": 1.2923335,
+    "borough": "United Kingdom",
+    "street": "St Peters Street",
+    "capacity": 36,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1563754108",
+    "lat": 52.6276075,
+    "lng": 1.2893798,
+    "borough": "United Kingdom",
+    "street": "Theatre Street",
+    "capacity": 5,
+    "fee": "no",
+    "tags": {
+      "covered": "no",
+      "note": "Marked bays near to Theatre Royal, adjacent to Dencora House"
+    }
+  },
+  {
+    "id": "way/1563815063",
+    "lat": 50.8354166,
+    "lng": -0.1261664,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1567192580",
+    "lat": 53.5626895,
+    "lng": -0.0312565,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   }
 ];
