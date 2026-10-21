@@ -1744,6 +1744,18 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "way/855193687",
+    "lat": 51.5587916,
+    "lng": 0.2510783,
+    "borough": "Havering",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
     "id": "node/4367769571",
     "lat": 51.471965,
     "lng": -0.4548038,
@@ -9359,18 +9371,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "way/1161611701",
-    "lat": 51.5489075,
-    "lng": -0.0088702,
-    "borough": "Newham",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "way/859414458",
     "lat": 51.525222,
     "lng": 0.0073388,
@@ -9386,6 +9386,18 @@ const PARKING_DATA = [
     "borough": "Newham",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1161611701",
+    "lat": 51.5489075,
+    "lng": -0.0088702,
+    "borough": "Newham",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 8,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -12574,8 +12586,11 @@ const PARKING_DATA = [
     "lng": -0.1571559,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/3906199409",
@@ -14051,18 +14066,6 @@ const PARKING_DATA = [
     }
   },
   {
-    "id": "way/855193687",
-    "lat": 51.5587916,
-    "lng": 0.2510783,
-    "borough": "Havering",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
     "id": "node/13753611897",
     "lat": 51.5359812,
     "lng": -0.0266005,
@@ -14159,7 +14162,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 4,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/412815445",
@@ -15566,18 +15572,6 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 2,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/2678526457",
-    "lat": 50.8271191,
-    "lng": -0.1642147,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -18338,18 +18332,6 @@ const PARKING_DATA = [
     "fee": "no",
     "tags": {
       "covered": "no"
-    }
-  },
-  {
-    "id": "node/5335062964",
-    "lat": 52.2136092,
-    "lng": 0.1135982,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
-    "tags": {
-      "covered": "yes"
     }
   },
   {
@@ -26163,8 +26145,8 @@ const PARKING_DATA = [
     "lng": -2.7315055,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no",
+    "capacity": 2,
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -26317,7 +26299,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 1,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -30281,7 +30263,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1328222182",
