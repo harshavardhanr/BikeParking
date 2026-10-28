@@ -37,15 +37,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/3742145004",
-    "lat": 51.5309623,
-    "lng": -0.2153028,
-    "borough": "Brent",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "no"
-  },
-  {
     "id": "node/3742145008",
     "lat": 51.5329585,
     "lng": -0.2059318,
@@ -494,8 +485,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/3834774284",
-    "lat": 51.5228724,
-    "lng": -0.1248435,
+    "lat": 51.5228778,
+    "lng": -0.1248341,
     "borough": "Camden",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
@@ -890,8 +881,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/3904746769",
-    "lat": 51.5220655,
-    "lng": -0.1230528,
+    "lat": 51.522059,
+    "lng": -0.1230907,
     "borough": "Camden",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 3,
@@ -10493,15 +10484,6 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
-    "id": "node/13753656805",
-    "lat": 51.5208669,
-    "lng": -0.0774109,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no"
-  },
-  {
     "id": "node/13753656806",
     "lat": 51.5167074,
     "lng": -0.074233,
@@ -11122,8 +11104,8 @@ const PARKING_DATA = [
     "lng": -0.1873647,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 8,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -11488,8 +11470,8 @@ const PARKING_DATA = [
     "lng": -0.1916032,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 8,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -14066,6 +14048,24 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "node/3742145004",
+    "lat": 51.5309623,
+    "lng": -0.2153028,
+    "borough": "Brent",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656805",
+    "lat": 51.5208669,
+    "lng": -0.0774109,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
     "id": "node/13753611897",
     "lat": 51.5359812,
     "lng": -0.0266005,
@@ -15012,18 +15012,6 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
-  },
-  {
-    "id": "node/1783149219",
-    "lat": 55.9519521,
-    "lng": -3.2087311,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
   },
   {
     "id": "node/1783149220",
@@ -17300,18 +17288,6 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/4853957401",
-    "lat": 55.9542997,
-    "lng": -3.1859627,
-    "borough": "United Kingdom",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 2,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -19671,7 +19647,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -19707,7 +19683,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -22372,18 +22348,6 @@ const PARKING_DATA = [
     "id": "node/9498252055",
     "lat": 50.8308822,
     "lng": -0.1602898,
-    "borough": "United Kingdom",
-    "street": "Holland Road (Zone M)",
-    "capacity": 4,
-    "fee": "no",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/9498252057",
-    "lat": 50.8259632,
-    "lng": -0.1619364,
     "borough": "United Kingdom",
     "street": "Holland Road (Zone M)",
     "capacity": 4,
@@ -27241,6 +27205,18 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "node/14318771113",
+    "lat": 50.7103023,
+    "lng": -1.1445669,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
     "id": "way/42056455",
     "lat": 53.9659539,
     "lng": -1.0836946,
@@ -27396,7 +27372,7 @@ const PARKING_DATA = [
     "lng": 0.1313241,
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 10,
     "fee": "no",
     "tags": {
       "covered": "no"
@@ -31516,5 +31492,26 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
+  },
+  {
+    "id": "way/1571193935",
+    "lat": 50.8259662,
+    "lng": -0.1619687,
+    "borough": "United Kingdom",
+    "street": "Holland Road (Zone M)",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "way/1572185582",
+    "lat": 54.2463859,
+    "lng": -1.0612091,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
   }
 ];
