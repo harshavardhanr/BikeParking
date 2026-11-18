@@ -1519,6 +1519,180 @@ const PARKING_DATA = [
     }
   },
   {
+    "id": "node/256366622",
+    "lat": 51.5292493,
+    "lng": -0.0838663,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1763198844",
+    "lat": 51.5243331,
+    "lng": -0.0841555,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 10,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/1774445808",
+    "lat": 51.5260174,
+    "lng": -0.0820341,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/1776830863",
+    "lat": 51.5257132,
+    "lng": -0.0819181,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3050443216",
+    "lat": 51.527401,
+    "lng": -0.0809494,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 6,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3050443231",
+    "lat": 51.5280274,
+    "lng": -0.0809382,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 2,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742218662",
+    "lat": 51.5243157,
+    "lng": -0.0760051,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 15,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3742225840",
+    "lat": 51.52924,
+    "lng": -0.0779734,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3784250440",
+    "lat": 51.5210794,
+    "lng": -0.0834882,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/3784250443",
+    "lat": 51.5218113,
+    "lng": -0.0833341,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/3786978411",
+    "lat": 51.5450856,
+    "lng": -0.0761785,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 4,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/5160943779",
+    "lat": 51.521607,
+    "lng": -0.0833595,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
+    "id": "node/8927094718",
+    "lat": 51.5390329,
+    "lng": -0.0781477,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/9917787138",
+    "lat": 51.5235181,
+    "lng": -0.0807171,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/11433329760",
+    "lat": 51.5271612,
+    "lng": -0.0799237,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 12,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
+  },
+  {
+    "id": "node/14076434269",
+    "lat": 51.5709319,
+    "lng": -0.0946104,
+    "borough": "Hackney",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "yes"
+  },
+  {
     "id": "node/12802947394",
     "lat": 51.5869691,
     "lng": -0.1168945,
@@ -2244,7 +2418,7 @@ const PARKING_DATA = [
     "lng": -0.1075843,
     "borough": "Islington",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 5,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -12082,8 +12256,11 @@ const PARKING_DATA = [
     "lng": -0.1812319,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 4,
+    "fee": "yes",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/3905037119",
@@ -12442,7 +12619,7 @@ const PARKING_DATA = [
     "lng": -0.1538776,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 6,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -12466,7 +12643,7 @@ const PARKING_DATA = [
     "lng": -0.1542395,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
+    "capacity": 6,
     "fee": "yes",
     "tags": {
       "covered": "no"
@@ -13896,180 +14073,6 @@ const PARKING_DATA = [
     "tags": {
       "covered": "no"
     }
-  },
-  {
-    "id": "node/256366622",
-    "lat": 51.5292493,
-    "lng": -0.0838663,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/1763198844",
-    "lat": 51.5243331,
-    "lng": -0.0841555,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 10,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/1774445808",
-    "lat": 51.5260174,
-    "lng": -0.0820341,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/1776830863",
-    "lat": 51.5257132,
-    "lng": -0.0819181,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/3050443216",
-    "lat": 51.527401,
-    "lng": -0.0809494,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 6,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3050443231",
-    "lat": 51.5280274,
-    "lng": -0.0809382,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 2,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3742218662",
-    "lat": 51.5243157,
-    "lng": -0.0760051,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 15,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3742225840",
-    "lat": 51.52924,
-    "lng": -0.0779734,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/3784250440",
-    "lat": 51.5210794,
-    "lng": -0.0834882,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/3784250443",
-    "lat": 51.5218113,
-    "lng": -0.0833341,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/3786978411",
-    "lat": 51.5450856,
-    "lng": -0.0761785,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 4,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/5160943779",
-    "lat": 51.521607,
-    "lng": -0.0833595,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
-  },
-  {
-    "id": "node/8927094718",
-    "lat": 51.5390329,
-    "lng": -0.0781477,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/9917787138",
-    "lat": 51.5235181,
-    "lng": -0.0807171,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/11433329760",
-    "lat": 51.5271612,
-    "lng": -0.0799237,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 12,
-    "fee": "yes",
-    "tags": {
-      "covered": "no"
-    }
-  },
-  {
-    "id": "node/14076434269",
-    "lat": 51.5709319,
-    "lng": -0.0946104,
-    "borough": "Hackney",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
   },
   {
     "id": "node/3742145000",
@@ -20666,8 +20669,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498248800",
-    "lat": 50.8270352,
-    "lng": -0.1385984,
+    "lat": 50.827067,
+    "lng": -0.1386246,
     "borough": "United Kingdom",
     "street": "Tidy Street",
     "capacity": 4,
@@ -20954,8 +20957,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498251927",
-    "lat": 50.8289532,
-    "lng": -0.1386044,
+    "lat": 50.8289582,
+    "lng": -0.1386588,
     "borough": "United Kingdom",
     "street": "Blackman Street",
     "capacity": 4,
@@ -22835,8 +22838,8 @@ const PARKING_DATA = [
   },
   {
     "id": "node/9498252102",
-    "lat": 50.825193,
-    "lng": -0.126716,
+    "lat": 50.825184,
+    "lng": -0.1266755,
     "borough": "United Kingdom",
     "street": "West Drive (Zone C)",
     "capacity": 4,
@@ -25273,7 +25276,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 5,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
@@ -27290,6 +27293,27 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "node/14382724561",
+    "lat": 50.8963112,
+    "lng": -1.4048643,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no"
+  },
+  {
+    "id": "node/14389250850",
+    "lat": 51.4418157,
+    "lng": 0.7590248,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/42056455",
@@ -29945,7 +29969,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1302588569",
@@ -29954,7 +29981,10 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "way/1302739090",
@@ -31606,5 +31636,17 @@ const PARKING_DATA = [
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
     "fee": "no"
+  },
+  {
+    "id": "way/1577940716",
+    "lat": 51.4325647,
+    "lng": -2.1867824,
+    "borough": "United Kingdom",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": null,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   }
 ];
