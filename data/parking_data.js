@@ -10673,6 +10673,33 @@ const PARKING_DATA = [
     "fee": "no"
   },
   {
+    "id": "node/13753611897",
+    "lat": 51.5359812,
+    "lng": -0.0266005,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 3,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656701",
+    "lat": 51.5379235,
+    "lng": -0.0212237,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 5,
+    "fee": "no"
+  },
+  {
+    "id": "node/13753656805",
+    "lat": 51.5208669,
+    "lng": -0.0774109,
+    "borough": "Tower Hamlets",
+    "street": "Solo Motorcycle Parking Bay",
+    "capacity": 7,
+    "fee": "no"
+  },
+  {
     "id": "node/6019793707",
     "lat": 51.4644025,
     "lng": -0.160909,
@@ -11041,8 +11068,11 @@ const PARKING_DATA = [
     "lng": -0.1882251,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/3740829888",
@@ -11138,7 +11168,7 @@ const PARKING_DATA = [
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 6,
-    "fee": "yes",
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -11611,8 +11641,8 @@ const PARKING_DATA = [
     "lng": -0.1829363,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes",
+    "capacity": 2,
+    "fee": "no",
     "tags": {
       "covered": "no"
     }
@@ -13561,8 +13591,11 @@ const PARKING_DATA = [
     "lng": -0.1813241,
     "borough": "Westminster",
     "street": "Solo Motorcycle Parking Bay",
-    "capacity": null,
-    "fee": "yes"
+    "capacity": 8,
+    "fee": "no",
+    "tags": {
+      "covered": "no"
+    }
   },
   {
     "id": "node/6957504432",
@@ -14090,33 +14123,6 @@ const PARKING_DATA = [
     "borough": "Brent",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": null,
-    "fee": "no"
-  },
-  {
-    "id": "node/13753656805",
-    "lat": 51.5208669,
-    "lng": -0.0774109,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 7,
-    "fee": "no"
-  },
-  {
-    "id": "node/13753611897",
-    "lat": 51.5359812,
-    "lng": -0.0266005,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 3,
-    "fee": "no"
-  },
-  {
-    "id": "node/13753656701",
-    "lat": 51.5379235,
-    "lng": -0.0212237,
-    "borough": "Tower Hamlets",
-    "street": "Solo Motorcycle Parking Bay",
-    "capacity": 5,
     "fee": "no"
   },
   {
@@ -14717,7 +14723,7 @@ const PARKING_DATA = [
     "borough": "United Kingdom",
     "street": "Solo Motorcycle Parking Bay",
     "capacity": 8,
-    "fee": "no",
+    "fee": "yes",
     "tags": {
       "covered": "no"
     }
